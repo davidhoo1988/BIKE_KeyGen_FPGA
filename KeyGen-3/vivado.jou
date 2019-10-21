@@ -1,0 +1,69 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat May  4 12:34:41 2019
+# Process ID: 5112
+# Current directory: C:/Users/David/Desktop/KeyGen-3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4512 C:\Users\David\Desktop\KeyGen-3\KeyGen.xpr
+# Log file: C:/Users/David/Desktop/KeyGen-3/vivado.log
+# Journal file: C:/Users/David/Desktop/KeyGen-3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/David/Desktop/KeyGen-3/KeyGen.xpr
+set_property part xc7a75tfgg484-1 [current_project]
+update_ip_catalog
+open_run synth_6 -name synth_6
+reset_run mem_g_synth_1
+reset_run mul_64bit_synth_1
+reset_run mem_h_synth_1
+reset_run fifo_rng_synth_1
+reset_run synth_6
+launch_runs impl_2 -jobs 6
+wait_on_run impl_2
+refresh_design
+close_design
+open_run impl_2
+save_constraints
+reset_run synth_6
+reset_run impl_2
+launch_runs impl_2 -jobs 6
+wait_on_run impl_2
+report_ip_status -name ip_status 
+report_utilization -name utilization_1
+report_ip_status -name ip_status 
+upgrade_ip -srcset fifo_rng [get_ips  {fifo_rng mem_g mem_h mul_64bit}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {fifo_rng mem_g mem_h mul_64bit}] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+generate_target all [get_files C:/Users/David/Desktop/KeyGen-3/KeyGen.ip/fifo_rng/fifo_rng.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/David/Desktop/KeyGen-3/KeyGen.ip/fifo_rng/fifo_rng.xci]
+generate_target all [get_files C:/Users/David/Desktop/KeyGen-3/KeyGen.ip/mem_g/mem_g.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/David/Desktop/KeyGen-3/KeyGen.ip/mem_g/mem_g.xci]
+generate_target all [get_files C:/Users/David/Desktop/KeyGen-3/KeyGen.ip/mem_h/mem_h.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/David/Desktop/KeyGen-3/KeyGen.ip/mem_h/mem_h.xci]
+generate_target all [get_files C:/Users/David/Desktop/KeyGen-3/KeyGen.ip/mul_64bit/mul_64bit/mul_64bit.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/David/Desktop/KeyGen-3/KeyGen.ip/mul_64bit/mul_64bit/mul_64bit.xci]
+launch_runs fifo_rng_synth_1
+wait_on_run fifo_rng_synth_1
+launch_runs mem_g_synth_1
+wait_on_run mem_g_synth_1
+launch_runs mem_h_synth_1
+wait_on_run mem_h_synth_1
+launch_runs mul_64bit_synth_1
+wait_on_run mul_64bit_synth_1
+reset_run synth_6
+launch_runs synth_6 -jobs 6
+wait_on_run synth_6
+launch_runs impl_2 -jobs 6
+wait_on_run impl_2
+refresh_design
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+save_constraints
+reset_run synth_6
+reset_run impl_2
+launch_runs impl_2 -jobs 6
+wait_on_run impl_2
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+report_utilization -name utilization_1
+refresh_design
+report_utilization -name utilization_1

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat May  4 12:16:20 2019
+# Process ID: 11512
+# Current directory: C:/Users/David/Desktop/KeyGen/KeyGen.runs/mul_64bit_synth_1
+# Command line: vivado.exe -log mul_64bit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mul_64bit.tcl
+# Log file: C:/Users/David/Desktop/KeyGen/KeyGen.runs/mul_64bit_synth_1/mul_64bit.vds
+# Journal file: C:/Users/David/Desktop/KeyGen/KeyGen.runs/mul_64bit_synth_1\vivado.jou
+#-----------------------------------------------------------
+source mul_64bit.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP mul_64bit, cache-ID = 313d71f7f77dd221.
+INFO: [Common 17-206] Exiting Vivado at Sat May  4 12:16:33 2019...

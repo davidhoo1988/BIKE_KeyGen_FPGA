@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Apr  2 09:50:42 2019
+# Process ID: 39568
+# Current directory: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent34628 C:\Users\David\Desktop\BIKE KeyGen\KeyGen-2\KeyGen.xpr
+# Log file: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/vivado.log
+# Journal file: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.xpr}
+export_ip_user_files -of_objects  [get_files {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/src/BIKE_1_top.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/src/BIKE_1_top.v}}
+add_files -norecurse {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/src/BIKE_2_top.v}}
+add_files -norecurse {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/src/BIKE_2_top_tb.v}}
+reset_run synth_6
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top BIKE_2_top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+launch_simulation -install_path F:/modelsim64_10.5/win64
+refresh_design
+launch_simulation -install_path F:/modelsim64_10.5/win64
+set_property top BIKE_2_top_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_ip_catalog
+update_ip_catalog
+launch_simulation -install_path F:/modelsim64_10.5/win64
+update_ip_catalog
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_runs synth_6 -jobs 4
+wait_on_run synth_6
+set_property target_simulator XSim [current_project]
+update_ip_catalog
+update_ip_catalog
+launch_simulation
+export_ip_user_files -of_objects  [get_files {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/src/BIKE_1_top_tb.v}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/src/BIKE_1_top_tb.v}}
+launch_simulation
+source BIKE_2_top_tb.tcl
+set_property target_simulator ModelSim [current_project]
+update_ip_catalog
+update_ip_catalog
+close_sim
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+refresh_design

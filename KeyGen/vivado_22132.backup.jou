@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed Feb 20 14:39:05 2019
+# Process ID: 22132
+# Current directory: C:/Users/David/Desktop/BIKE KeyGen/KeyGen
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23720 C:\Users\David\Desktop\BIKE KeyGen\KeyGen\KeyGen.xpr
+# Log file: C:/Users/David/Desktop/BIKE KeyGen/KeyGen/vivado.log
+# Journal file: C:/Users/David/Desktop/BIKE KeyGen/KeyGen\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.xpr}
+update_compile_order -fileset sources_1
+update_ip_catalog
+launch_simulation -install_path F:/modelsim64_10.1c/win64
+reset_simulation -simset sim_1 -mode behavioral
+update_ip_catalog
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top prng_lcg [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+create_run synth_2 -flow {Vivado Synthesis 2018} -strategy {Vivado Synthesis Defaults} -report_strategy {Vivado Synthesis Default Reports}
+current_run [get_runs synth_2]
+set_property part xc7v585tffg1157-1 [current_project]
+update_ip_catalog
+update_ip_catalog
+compile_simlib -simulator modelsim -simulator_exec_path {F:/modelsim64_10.1c/win64} -family virtex7 -family artix7 -language verilog -library all -dir {F:/modelsim64_10.1c/Xilinx_lib/64bit_vivado_lib}
+update_ip_catalog
+launch_simulation -install_path F:/modelsim64_10.5/win64
+set_property compxlib.modelsim_compiled_library_dir F:/modelsim64_10.5/Xilinx_lib/64bit_vivado_lib [current_project]
+compile_simlib -simulator modelsim -simulator_exec_path {F:/modelsim64_10.5/win64} -family virtex7 -family artix7 -language verilog -library all -dir {F:/modelsim64_10.5/Xilinx_lib/64bit_vivado_lib}
+clear
+launch_runs synth_2 -jobs 4
+wait_on_run synth_2
+reset_run synth_2
+launch_runs synth_2 -jobs 4
+wait_on_run synth_2
+set_property part xa7a25tcpg238-1I [current_project]
+reset_run synth_2
+launch_runs synth_2 -jobs 4
+wait_on_run synth_2
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+export_ip_user_files -of_objects  [get_files {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mul_32bit/mul_32bit/mul_32bit.xci}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mul_32bit/mul_32bit/mul_32bit.xci}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen/src/prng_lcg.v} {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/src/prng_lcg_tb.v}}

@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Thu Mar 28 10:45:20 2019
+# Process ID: 24528
+# Current directory: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32724 C:\Users\David\Desktop\BIKE KeyGen\KeyGen-2\KeyGen.xpr
+# Log file: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/vivado.log
+# Journal file: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/David/Desktop/BIKE KeyGen/KeyGen' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 856.453 ; gain = 161.363
+export_ip_user_files -of_objects  [get_files {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/src/BIKE_1_top.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/src/BIKE_1_top.v}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/src/BIKE_1_top_tb.v}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/src/BIKE_1_top_tb.v}}
+add_files -norecurse {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/src/BIKE_2_top_tb.v} {C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/src/BIKE_2_top.v}}
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 28 10:59:27 2019...

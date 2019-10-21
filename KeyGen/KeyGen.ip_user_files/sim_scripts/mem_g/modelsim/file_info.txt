@@ -1,0 +1,2 @@
+mem_g.v,verilog,xil_defaultlib,../../../../KeyGen.ip/mem_g/sim/mem_g.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

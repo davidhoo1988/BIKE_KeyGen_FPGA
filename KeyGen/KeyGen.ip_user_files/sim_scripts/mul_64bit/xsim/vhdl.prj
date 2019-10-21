@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../KeyGen.ip/mul_64bit/mul_64bit/sim/mul_64bit.vhd" \
+
+nosort

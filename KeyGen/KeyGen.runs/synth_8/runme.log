@@ -1,0 +1,1060 @@
+
+*** Running vivado
+    with args -log BIKE_1_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source BIKE_1_top.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source BIKE_1_top.tcl -notrace
+Command: synth_design -top BIKE_1_top -part xa7a75tcsg324-1I
+Starting synth_design
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+C:/Users/David/Desktop/KeyGen/KeyGen.ip/mem_g/mem_g.xci
+C:/Users/David/Desktop/KeyGen/KeyGen.ip/mem_h/mem_h.xci
+C:/Users/David/Desktop/KeyGen/KeyGen.ip/mul_64bit/mul_64bit/mul_64bit.xci
+C:/Users/David/Desktop/KeyGen/KeyGen.ip/fifo_rng/fifo_rng.xci
+
+INFO: [IP_Flow 19-2162] IP 'mem_g' is locked:
+* Current project part 'xa7a75tcsg324-1I' and the part 'xc7a200tfbg484-1' used to customize the IP 'mem_g' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [IP_Flow 19-2162] IP 'mem_h' is locked:
+* Current project part 'xa7a75tcsg324-1I' and the part 'xc7a200tfbg484-1' used to customize the IP 'mem_h' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [IP_Flow 19-2162] IP 'mul_64bit' is locked:
+* Current project part 'xa7a75tcsg324-1I' and the part 'xc7a200tfbg484-1' used to customize the IP 'mul_64bit' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [IP_Flow 19-2162] IP 'fifo_rng' is locked:
+* Current project part 'xa7a75tcsg324-1I' and the part 'xc7a200tfbg484-1' used to customize the IP 'fifo_rng' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+Attempting to get a license for feature 'Synthesis' and/or device 'xa7a75t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xa7a75t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3520 
+WARNING: [Synth 8-2507] parameter declaration becomes local in g_ctrl with formal parameter declaration list [C:/Users/David/Desktop/KeyGen/src/g_ctrl.v:113]
+WARNING: [Synth 8-2507] parameter declaration becomes local in h_ctrl with formal parameter declaration list [C:/Users/David/Desktop/KeyGen/src/h_ctrl.v:64]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mul_ctrl with formal parameter declaration list [C:/Users/David/Desktop/KeyGen/src/mul_ctrl.v:82]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 460.473 ; gain = 113.988
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'BIKE_1_top' [C:/Users/David/Desktop/KeyGen/src/BIKE_1_top.v:22]
+	Parameter r bound to: 10163 - type: integer 
+	Parameter RNG_DAT_W bound to: 64 - type: integer 
+	Parameter G_ADDR_W bound to: 8 - type: integer 
+	Parameter G_DAT_W bound to: 64 - type: integer 
+	Parameter H_ADDR_W bound to: 7 - type: integer 
+	Parameter H_DAT_W bound to: 14 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'core_ctrl' [C:/Users/David/Desktop/KeyGen/src/core_ctrl.v:23]
+	Parameter INIT bound to: 3'b000 
+	Parameter G_GEN bound to: 3'b001 
+	Parameter H0_GEN bound to: 3'b010 
+	Parameter H1_GEN bound to: 3'b011 
+	Parameter F_GEN bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'core_ctrl' (1#1) [C:/Users/David/Desktop/KeyGen/src/core_ctrl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'g_ctrl' [C:/Users/David/Desktop/KeyGen/src/g_ctrl.v:24]
+	Parameter RNG_DAT_W bound to: 64 - type: integer 
+	Parameter G_ADDR_W bound to: 8 - type: integer 
+	Parameter G_DAT_W bound to: 64 - type: integer 
+	Parameter INIT bound to: 2'b00 
+	Parameter WAIT bound to: 2'b01 
+	Parameter G_GEN bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'hw_sum' [C:/Users/David/Desktop/KeyGen/src/g_ctrl.v:232]
+	Parameter DAT_W bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'hw_sum' (2#1) [C:/Users/David/Desktop/KeyGen/src/g_ctrl.v:232]
+INFO: [Synth 8-6155] done synthesizing module 'g_ctrl' (3#1) [C:/Users/David/Desktop/KeyGen/src/g_ctrl.v:24]
+INFO: [Synth 8-6157] synthesizing module 'h_ctrl' [C:/Users/David/Desktop/KeyGen/src/h_ctrl.v:23]
+	Parameter r bound to: 10163 - type: integer 
+	Parameter RNG_DAT_W bound to: 64 - type: integer 
+	Parameter H_ADDR_W bound to: 7 - type: integer 
+	Parameter H_DAT_W bound to: 14 - type: integer 
+	Parameter INIT bound to: 2'b00 
+	Parameter WAIT bound to: 2'b01 
+	Parameter H_GEN bound to: 2'b10 
+	Parameter H_CHK bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [C:/Users/David/Desktop/KeyGen/src/h_ctrl.v:80]
+INFO: [Synth 8-226] default block is never used [C:/Users/David/Desktop/KeyGen/src/h_ctrl.v:117]
+INFO: [Synth 8-6155] done synthesizing module 'h_ctrl' (4#1) [C:/Users/David/Desktop/KeyGen/src/h_ctrl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mul_ctrl' [C:/Users/David/Desktop/KeyGen/src/mul_ctrl.v:23]
+	Parameter r bound to: 10163 - type: integer 
+	Parameter G_DAT_DEP bound to: 159 - type: integer 
+	Parameter G_ADDR_W bound to: 8 - type: integer 
+	Parameter G_DAT_W bound to: 64 - type: integer 
+	Parameter H_ADDR_W bound to: 7 - type: integer 
+	Parameter H_DAT_W bound to: 14 - type: integer 
+	Parameter H_DAT_DEP bound to: 71 - type: integer 
+	Parameter INIT bound to: 3'b000 
+	Parameter READ_H bound to: 3'b001 
+	Parameter READ_G bound to: 3'b010 
+	Parameter LOAD bound to: 3'b011 
+	Parameter ROTATE bound to: 3'b100 
+	Parameter ADD bound to: 3'b101 
+	Parameter WRITE_F bound to: 3'b110 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/David/Desktop/KeyGen/src/mul_ctrl.v:150]
+WARNING: [Synth 8-6014] Unused sequential element f_wr_done_reg was removed.  [C:/Users/David/Desktop/KeyGen/src/mul_ctrl.v:156]
+INFO: [Synth 8-6155] done synthesizing module 'mul_ctrl' (5#1) [C:/Users/David/Desktop/KeyGen/src/mul_ctrl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fifo_rng' [C:/Users/David/Desktop/KeyGen/KeyGen.runs/synth_8/.Xil/Vivado-9908-David-NTU-Desktop/realtime/fifo_rng_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_rng' (6#1) [C:/Users/David/Desktop/KeyGen/KeyGen.runs/synth_8/.Xil/Vivado-9908-David-NTU-Desktop/realtime/fifo_rng_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mem_g' [C:/Users/David/Desktop/KeyGen/KeyGen.runs/synth_8/.Xil/Vivado-9908-David-NTU-Desktop/realtime/mem_g_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mem_g' (7#1) [C:/Users/David/Desktop/KeyGen/KeyGen.runs/synth_8/.Xil/Vivado-9908-David-NTU-Desktop/realtime/mem_g_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mem_h' [C:/Users/David/Desktop/KeyGen/KeyGen.runs/synth_8/.Xil/Vivado-9908-David-NTU-Desktop/realtime/mem_h_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mem_h' (8#1) [C:/Users/David/Desktop/KeyGen/KeyGen.runs/synth_8/.Xil/Vivado-9908-David-NTU-Desktop/realtime/mem_h_stub.v:6]
+WARNING: [Synth 8-3848] Net f0_web in module/entity BIKE_1_top does not have driver. [C:/Users/David/Desktop/KeyGen/src/BIKE_1_top.v:161]
+WARNING: [Synth 8-3848] Net f0_addrb in module/entity BIKE_1_top does not have driver. [C:/Users/David/Desktop/KeyGen/src/BIKE_1_top.v:162]
+WARNING: [Synth 8-3848] Net f0_dinb in module/entity BIKE_1_top does not have driver. [C:/Users/David/Desktop/KeyGen/src/BIKE_1_top.v:163]
+WARNING: [Synth 8-3848] Net f1_web in module/entity BIKE_1_top does not have driver. [C:/Users/David/Desktop/KeyGen/src/BIKE_1_top.v:166]
+WARNING: [Synth 8-3848] Net f1_addrb in module/entity BIKE_1_top does not have driver. [C:/Users/David/Desktop/KeyGen/src/BIKE_1_top.v:167]
+WARNING: [Synth 8-3848] Net f1_dinb in module/entity BIKE_1_top does not have driver. [C:/Users/David/Desktop/KeyGen/src/BIKE_1_top.v:168]
+INFO: [Synth 8-6155] done synthesizing module 'BIKE_1_top' (9#1) [C:/Users/David/Desktop/KeyGen/src/BIKE_1_top.v:22]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[63]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[62]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[61]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[60]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[59]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[58]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[57]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[56]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[55]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[54]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[53]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[52]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[51]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[50]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[49]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[48]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[47]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[46]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[45]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[44]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[43]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[42]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[41]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[40]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[39]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[38]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[37]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[36]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[35]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[34]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[33]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[32]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[31]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[30]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[15]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[14]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 503.953 ; gain = 157.469
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 503.953 ; gain = 157.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 503.953 ; gain = 157.469
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xa7a75tcsg324-1I
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/David/Desktop/KeyGen/KeyGen.ip/mem_g/mem_g/mem_g_in_context.xdc] for cell 'g'
+Finished Parsing XDC File [c:/Users/David/Desktop/KeyGen/KeyGen.ip/mem_g/mem_g/mem_g_in_context.xdc] for cell 'g'
+Parsing XDC File [c:/Users/David/Desktop/KeyGen/KeyGen.ip/mem_g/mem_g/mem_g_in_context.xdc] for cell 'g1'
+Finished Parsing XDC File [c:/Users/David/Desktop/KeyGen/KeyGen.ip/mem_g/mem_g/mem_g_in_context.xdc] for cell 'g1'
+Parsing XDC File [c:/Users/David/Desktop/KeyGen/KeyGen.ip/mem_g/mem_g/mem_g_in_context.xdc] for cell 'f0'
+Finished Parsing XDC File [c:/Users/David/Desktop/KeyGen/KeyGen.ip/mem_g/mem_g/mem_g_in_context.xdc] for cell 'f0'
+Parsing XDC File [c:/Users/David/Desktop/KeyGen/KeyGen.ip/mem_g/mem_g/mem_g_in_context.xdc] for cell 'f1'
+Finished Parsing XDC File [c:/Users/David/Desktop/KeyGen/KeyGen.ip/mem_g/mem_g/mem_g_in_context.xdc] for cell 'f1'
+Parsing XDC File [c:/Users/David/Desktop/KeyGen/KeyGen.ip/mem_h/mem_h/mem_h_in_context.xdc] for cell 'h0'
+Finished Parsing XDC File [c:/Users/David/Desktop/KeyGen/KeyGen.ip/mem_h/mem_h/mem_h_in_context.xdc] for cell 'h0'
+Parsing XDC File [c:/Users/David/Desktop/KeyGen/KeyGen.ip/mem_h/mem_h/mem_h_in_context.xdc] for cell 'h1'
+Finished Parsing XDC File [c:/Users/David/Desktop/KeyGen/KeyGen.ip/mem_h/mem_h/mem_h_in_context.xdc] for cell 'h1'
+Parsing XDC File [c:/Users/David/Desktop/KeyGen/KeyGen.ip/fifo_rng/fifo_rng/fifo_rng_in_context.xdc] for cell 'rng'
+Finished Parsing XDC File [c:/Users/David/Desktop/KeyGen/KeyGen.ip/fifo_rng/fifo_rng/fifo_rng_in_context.xdc] for cell 'rng'
+Parsing XDC File [c:/Users/David/Desktop/KeyGen/KeyGen.ip/fifo_rng/fifo_rng/fifo_rng_in_context.xdc] for cell 'h0_rng'
+Finished Parsing XDC File [c:/Users/David/Desktop/KeyGen/KeyGen.ip/fifo_rng/fifo_rng/fifo_rng_in_context.xdc] for cell 'h0_rng'
+Parsing XDC File [c:/Users/David/Desktop/KeyGen/KeyGen.ip/fifo_rng/fifo_rng/fifo_rng_in_context.xdc] for cell 'h1_rng'
+Finished Parsing XDC File [c:/Users/David/Desktop/KeyGen/KeyGen.ip/fifo_rng/fifo_rng/fifo_rng_in_context.xdc] for cell 'h1_rng'
+Parsing XDC File [C:/Users/David/Desktop/KeyGen/KeyGen.srcs/constrs_1/new/user_constrains.xdc]
+Finished Parsing XDC File [C:/Users/David/Desktop/KeyGen/KeyGen.srcs/constrs_1/new/user_constrains.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 865.520 ; gain = 0.297
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'f0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'f1' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'g' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'g1' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'h0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'h0_rng' at clock pin 'clk' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'h1' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'h1_rng' at clock pin 'clk' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'rng' at clock pin 'clk' is different from the actual clock period '6.250', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 867.023 ; gain = 520.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xa7a75tcsg324-1I
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 867.023 ; gain = 520.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for f0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for f1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for g. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for g1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for h0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for h1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for h0_rng. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for h1_rng. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for rng. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 867.023 ; gain = 520.539
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'core_ctrl'
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'g_ctrl'
+INFO: [Synth 8-5546] ROM "done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "g_addr_tmp" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "g_addr_sel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "rng_start" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "hw" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "g_we_tmp" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_gen_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_web" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'g_web_reg' into 'g_wea_reg' [C:/Users/David/Desktop/KeyGen/src/mul_ctrl.v:169]
+INFO: [Synth 8-4471] merging register 'g_doutb_reg[63:0]' into 'g_douta_reg[63:0]' [C:/Users/David/Desktop/KeyGen/src/mul_ctrl.v:170]
+INFO: [Synth 8-4471] merging register 'h_wea_reg' into 'g_wea_reg' [C:/Users/David/Desktop/KeyGen/src/mul_ctrl.v:173]
+WARNING: [Synth 8-6014] Unused sequential element g_web_reg was removed.  [C:/Users/David/Desktop/KeyGen/src/mul_ctrl.v:169]
+WARNING: [Synth 8-6014] Unused sequential element g_doutb_reg was removed.  [C:/Users/David/Desktop/KeyGen/src/mul_ctrl.v:170]
+WARNING: [Synth 8-6014] Unused sequential element h_wea_reg was removed.  [C:/Users/David/Desktop/KeyGen/src/mul_ctrl.v:173]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'mul_ctrl'
+INFO: [Synth 8-5544] ROM "g_rd_done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rot_done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "h_flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "offset_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "g_addra" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "done" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "h_flag" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "offset_reg2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_addra" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "g_rd_done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rot_done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "h_flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "offset_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "g_addra" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "done" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "h_flag" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "offset_reg2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_addra" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rotate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rotate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "h0_rng_wr_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "h1_rng_wr_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                            00001 |                              000
+                   G_GEN |                            00010 |                              001
+                  H0_GEN |                            00100 |                              010
+                  H1_GEN |                            01000 |                              011
+                   F_GEN |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'core_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                               00 |                               00
+                    WAIT |                               01 |                               01
+                   G_GEN |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'g_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                              000 |                              000
+                  READ_H |                              001 |                              001
+                  READ_G |                              010 |                              010
+                    LOAD |                              011 |                              011
+                  ROTATE |                              100 |                              100
+                     ADD |                              101 |                              101
+                 WRITE_F |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'mul_ctrl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:32 . Memory (MB): peak = 867.023 ; gain = 520.539
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 9     
+	   2 Input      7 Bit       Adders := 8     
+	   2 Input      6 Bit       Adders := 6     
+	   2 Input      4 Bit       Adders := 2     
++---XORs : 
+	   2 Input     64 Bit         XORs := 3     
+	   2 Input     51 Bit         XORs := 2     
+	  51 Input      1 Bit         XORs := 1     
+	  14 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	              128 Bit    Registers := 2     
+	               64 Bit    Registers := 10    
+	               14 Bit    Registers := 10    
+	                8 Bit    Registers := 14    
+	                7 Bit    Registers := 12    
+	                6 Bit    Registers := 10    
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 48    
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 10    
+	   3 Input    128 Bit        Muxes := 2     
+	   6 Input    128 Bit        Muxes := 2     
+	   7 Input    128 Bit        Muxes := 4     
+	   2 Input     64 Bit        Muxes := 8     
+	   3 Input     64 Bit        Muxes := 3     
+	   7 Input     64 Bit        Muxes := 2     
+	   4 Input     14 Bit        Muxes := 4     
+	   2 Input     14 Bit        Muxes := 12    
+	   3 Input     14 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 22    
+	   7 Input      8 Bit        Muxes := 6     
+	   3 Input      8 Bit        Muxes := 2     
+	   4 Input      7 Bit        Muxes := 6     
+	   2 Input      7 Bit        Muxes := 14    
+	   7 Input      7 Bit        Muxes := 2     
+	   3 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 10    
+	   4 Input      6 Bit        Muxes := 2     
+	   7 Input      6 Bit        Muxes := 4     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 8     
+	   7 Input      4 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 14    
+	   2 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 5     
+	   5 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 33    
+	   4 Input      1 Bit        Muxes := 18    
+	   3 Input      1 Bit        Muxes := 11    
+	   7 Input      1 Bit        Muxes := 26    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module BIKE_1_top 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 6     
+	               14 Bit    Registers := 4     
+	                8 Bit    Registers := 6     
+	                7 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   3 Input     64 Bit        Muxes := 2     
+	   2 Input     64 Bit        Muxes := 4     
+	   3 Input     14 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 4     
+	   3 Input      7 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 10    
+Module core_ctrl 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 4     
+Module hw_sum 
+Detailed RTL Component Info : 
++---XORs : 
+	  51 Input      1 Bit         XORs := 1     
+	  14 Input      1 Bit         XORs := 1     
+Module g_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input     64 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   3 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 3     
+Module h_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 2     
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   4 Input     14 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 4     
+	   4 Input      7 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 6     
+	   2 Input      6 Bit        Muxes := 4     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   5 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 3     
+Module mul_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input     64 Bit         XORs := 1     
+	   2 Input     51 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               64 Bit    Registers := 2     
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 5     
+	   3 Input    128 Bit        Muxes := 1     
+	   6 Input    128 Bit        Muxes := 1     
+	   7 Input    128 Bit        Muxes := 2     
+	   2 Input     64 Bit        Muxes := 1     
+	   7 Input     64 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 9     
+	   7 Input      8 Bit        Muxes := 3     
+	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   7 Input      6 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 4     
+	   7 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   7 Input      1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 180 (col length:80)
+BRAMs: 210 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "g_addr_sel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'cnt_reg[5:0]' into 'cnt_reg[5:0]' [C:/Users/David/Desktop/KeyGen/src/h_ctrl.v:123]
+INFO: [Synth 8-4471] merging register 'cnt_reg[5:0]' into 'cnt_reg[5:0]' [C:/Users/David/Desktop/KeyGen/src/h_ctrl.v:123]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/David/Desktop/KeyGen/src/h_ctrl.v:123]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/David/Desktop/KeyGen/src/h_ctrl.v:123]
+INFO: [Synth 8-5546] ROM "done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_web" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_web" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "offset_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "offset_reg" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[63]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[62]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[61]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[60]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[59]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[58]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[57]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[56]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[55]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[54]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[53]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[52]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[51]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[50]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[49]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[48]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[47]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[46]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[45]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[44]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[43]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[42]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[41]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[40]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[39]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[38]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[37]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[36]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[35]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[34]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[33]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[32]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[31]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[30]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[15]
+WARNING: [Synth 8-3331] design h_ctrl has unconnected port fifo_rng_din[14]
+INFO: [Synth 8-3886] merging instance 'g_ctrl/hw_sel_tmp_reg[0]' (FDR) to 'g_ctrl/g_we_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\g_ctrl/hw_sel_tmp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/h_douta_reg[0]' (FDE) to 'mul_ctrl:/g_douta_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/h_douta_reg[1]' (FDE) to 'mul_ctrl:/g_douta_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/h_douta_reg[2]' (FDE) to 'mul_ctrl:/g_douta_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/h_douta_reg[3]' (FDE) to 'mul_ctrl:/g_douta_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/h_douta_reg[4]' (FDE) to 'mul_ctrl:/g_douta_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/h_douta_reg[5]' (FDE) to 'mul_ctrl:/g_douta_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/h_douta_reg[6]' (FDE) to 'mul_ctrl:/g_douta_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/h_douta_reg[7]' (FDE) to 'mul_ctrl:/g_douta_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/h_douta_reg[8]' (FDE) to 'mul_ctrl:/g_douta_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/h_douta_reg[9]' (FDE) to 'mul_ctrl:/g_douta_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/h_douta_reg[10]' (FDE) to 'mul_ctrl:/g_douta_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/h_douta_reg[11]' (FDE) to 'mul_ctrl:/g_douta_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/h_douta_reg[12]' (FDE) to 'mul_ctrl:/g_douta_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/h_douta_reg[13]' (FDE) to 'mul_ctrl:/g_douta_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[0]' (FDE) to 'mul_ctrl:/g_douta_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[1]' (FDE) to 'mul_ctrl:/g_douta_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[2]' (FDE) to 'mul_ctrl:/g_douta_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[3]' (FDE) to 'mul_ctrl:/g_douta_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[4]' (FDE) to 'mul_ctrl:/g_douta_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[5]' (FDE) to 'mul_ctrl:/g_douta_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[6]' (FDE) to 'mul_ctrl:/g_douta_reg[7]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[7]' (FDE) to 'mul_ctrl:/g_douta_reg[8]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[8]' (FDE) to 'mul_ctrl:/g_douta_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[9]' (FDE) to 'mul_ctrl:/g_douta_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[10]' (FDE) to 'mul_ctrl:/g_douta_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[11]' (FDE) to 'mul_ctrl:/g_douta_reg[12]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[12]' (FDE) to 'mul_ctrl:/g_douta_reg[13]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[13]' (FDE) to 'mul_ctrl:/g_douta_reg[14]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[14]' (FDE) to 'mul_ctrl:/g_douta_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[15]' (FDE) to 'mul_ctrl:/g_douta_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[16]' (FDE) to 'mul_ctrl:/g_douta_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[17]' (FDE) to 'mul_ctrl:/g_douta_reg[18]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[18]' (FDE) to 'mul_ctrl:/g_douta_reg[19]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[19]' (FDE) to 'mul_ctrl:/g_douta_reg[20]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[20]' (FDE) to 'mul_ctrl:/g_douta_reg[21]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[21]' (FDE) to 'mul_ctrl:/g_douta_reg[22]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[22]' (FDE) to 'mul_ctrl:/g_douta_reg[23]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[23]' (FDE) to 'mul_ctrl:/g_douta_reg[24]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[24]' (FDE) to 'mul_ctrl:/g_douta_reg[25]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[25]' (FDE) to 'mul_ctrl:/g_douta_reg[26]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[26]' (FDE) to 'mul_ctrl:/g_douta_reg[27]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[27]' (FDE) to 'mul_ctrl:/g_douta_reg[28]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[28]' (FDE) to 'mul_ctrl:/g_douta_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[29]' (FDE) to 'mul_ctrl:/g_douta_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[30]' (FDE) to 'mul_ctrl:/g_douta_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[31]' (FDE) to 'mul_ctrl:/g_douta_reg[32]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[32]' (FDE) to 'mul_ctrl:/g_douta_reg[33]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[33]' (FDE) to 'mul_ctrl:/g_douta_reg[34]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[34]' (FDE) to 'mul_ctrl:/g_douta_reg[35]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[35]' (FDE) to 'mul_ctrl:/g_douta_reg[36]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[36]' (FDE) to 'mul_ctrl:/g_douta_reg[37]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[37]' (FDE) to 'mul_ctrl:/g_douta_reg[38]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[38]' (FDE) to 'mul_ctrl:/g_douta_reg[39]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[39]' (FDE) to 'mul_ctrl:/g_douta_reg[40]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[40]' (FDE) to 'mul_ctrl:/g_douta_reg[41]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[41]' (FDE) to 'mul_ctrl:/g_douta_reg[42]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[42]' (FDE) to 'mul_ctrl:/g_douta_reg[43]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[43]' (FDE) to 'mul_ctrl:/g_douta_reg[44]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[44]' (FDE) to 'mul_ctrl:/g_douta_reg[45]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[45]' (FDE) to 'mul_ctrl:/g_douta_reg[46]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[46]' (FDE) to 'mul_ctrl:/g_douta_reg[47]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[47]' (FDE) to 'mul_ctrl:/g_douta_reg[48]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[48]' (FDE) to 'mul_ctrl:/g_douta_reg[49]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[49]' (FDE) to 'mul_ctrl:/g_douta_reg[50]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[50]' (FDE) to 'mul_ctrl:/g_douta_reg[51]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[51]' (FDE) to 'mul_ctrl:/g_douta_reg[52]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[52]' (FDE) to 'mul_ctrl:/g_douta_reg[53]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[53]' (FDE) to 'mul_ctrl:/g_douta_reg[54]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[54]' (FDE) to 'mul_ctrl:/g_douta_reg[55]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[55]' (FDE) to 'mul_ctrl:/g_douta_reg[56]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[56]' (FDE) to 'mul_ctrl:/g_douta_reg[57]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[57]' (FDE) to 'mul_ctrl:/g_douta_reg[58]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[58]' (FDE) to 'mul_ctrl:/g_douta_reg[59]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[59]' (FDE) to 'mul_ctrl:/g_douta_reg[60]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[60]' (FDE) to 'mul_ctrl:/g_douta_reg[61]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[61]' (FDE) to 'mul_ctrl:/g_douta_reg[62]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[62]' (FDE) to 'mul_ctrl:/g_douta_reg[63]'
+INFO: [Synth 8-3886] merging instance 'mul_ctrl:/g_douta_reg[63]' (FDE) to 'mul_ctrl:/g_wea_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mul_ctrl:/g_wea_reg)
+WARNING: [Synth 8-3332] Sequential element (g_ctrl/hw_sel_tmp_reg[1]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_wea_reg) is unused and will be removed from module mul_ctrl.
+WARNING: [Synth 8-3332] Sequential element (g_web_reg) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[63]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[62]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[61]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[60]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[59]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[58]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[57]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[56]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[55]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[54]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[53]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[52]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[51]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[50]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[49]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[48]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[47]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[46]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[45]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[44]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[43]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[42]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[41]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[40]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[39]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[38]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[37]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[36]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[35]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[34]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[33]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[32]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[31]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[30]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[29]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[28]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[27]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[26]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[25]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[24]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[23]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[22]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[21]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[20]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[19]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[18]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[17]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[16]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[15]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[14]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[13]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[12]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[11]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[10]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[9]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[8]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[7]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[6]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[5]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[4]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[3]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[2]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[1]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g_dinb_reg[0]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_web_reg) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[63]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[62]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[61]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[60]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[59]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[58]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[57]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[56]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[55]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[54]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[53]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[52]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[51]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[50]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[49]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[48]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[47]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[46]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[45]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[44]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[43]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[42]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[41]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[40]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[39]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[38]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[37]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[36]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[35]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[34]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[33]) is unused and will be removed from module BIKE_1_top.
+WARNING: [Synth 8-3332] Sequential element (g1_dinb_reg[32]) is unused and will be removed from module BIKE_1_top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'g1_dina_reg[0]' (FDR) to 'g_dina_reg[0]'
+INFO: [Synth 8-3886] merging instance 'g1_dina_reg[1]' (FDR) to 'g_dina_reg[1]'
+INFO: [Synth 8-3886] merging instance 'g1_dina_reg[2]' (FDR) to 'g_dina_reg[2]'
+INFO: [Synth 8-3886] merging instance 'g1_dina_reg[3]' (FDR) to 'g_dina_reg[3]'
+INFO: [Synth 8-3886] merging instance 'g1_dina_reg[4]' (FDR) to 'g_dina_reg[4]'
+INFO: [Synth 8-3886] merging instance 'g1_dina_reg[5]' (FDR) to 'g_dina_reg[5]'
+INFO: [Synth 8-3886] merging instance 'g1_dina_reg[6]' (FDR) to 'g_dina_reg[6]'
+INFO: [Synth 8-3886] merging instance 'g1_dina_reg[7]' (FDR) to 'g_dina_reg[7]'
+INFO: [Synth 8-3886] merging instance 'g1_dina_reg[8]' (FDR) to 'g_dina_reg[8]'
+INFO: [Synth 8-3886] merging instance 'g1_dina_reg[9]' (FDR) to 'g_dina_reg[9]'
+INFO: [Synth 8-3886] merging instance 'g1_dina_reg[10]' (FDR) to 'g_dina_reg[10]'
+INFO: [Synth 8-3886] merging instance 'g1_dina_reg[11]' (FDR) to 'g_dina_reg[11]'
+INFO: [Synth 8-3886] merging instance 'g1_dina_reg[12]' (FDR) to 'g_dina_reg[12]'
+INFO: [Synth 8-3886] merging instance 'g1_dina_reg[13]' (FDR) to 'g_dina_reg[13]'
+INFO: [Synth 8-3886] merging instance 'g1_dina_reg[14]' (FDR) to 'g_dina_reg[14]'
+INFO: [Synth 8-3886] merging instance 'g1_dina_reg[15]' (FDR) to 'g_dina_reg[15]'
+INFO: [Synth 8-3886] merging instance 'g1_dina_reg[16]' (FDR) to 'g_dina_reg[16]'
+INFO: [Synth 8-3886] merging instance 'g1_dina_reg[17]' (FDR) to 'g_dina_reg[17]'
+INFO: [Synth 8-3886] merging instance 'g1_dina_reg[18]' (FDR) to 'g_dina_reg[18]'
+INFO: [Synth 8-3886] merging instance 'g1_dina_reg[19]' (FDR) to 'g_dina_reg[19]'
+INFO: [Synth 8-3886] merging instance 'g1_dina_reg[20]' (FDR) to 'g_dina_reg[20]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:44 . Memory (MB): peak = 867.023 ; gain = 520.539
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:53 . Memory (MB): peak = 867.023 ; gain = 520.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:57 . Memory (MB): peak = 960.227 ; gain = 613.742
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:58 . Memory (MB): peak = 993.602 ; gain = 647.117
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin web[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin addrb[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin addrb[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin addrb[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin addrb[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin addrb[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin addrb[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin addrb[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin addrb[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[63]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[62]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[61]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[60]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[59]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[58]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[57]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[56]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[55]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[54]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[53]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[52]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[51]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[50]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[49]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[48]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[47]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[46]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[45]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[44]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[43]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[42]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[41]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[40]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[39]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[38]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[37]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[36]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[35]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[34]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[33]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[32]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[31]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[30]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[29]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[28]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[27]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[26]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[25]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[24]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[23]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[22]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[21]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[20]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[19]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[18]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[17]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[16]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f0 has unconnected pin dinb[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f1 has unconnected pin web[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f1 has unconnected pin addrb[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f1 has unconnected pin addrb[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f1 has unconnected pin addrb[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f1 has unconnected pin addrb[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f1 has unconnected pin addrb[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f1 has unconnected pin addrb[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f1 has unconnected pin addrb[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f1 has unconnected pin addrb[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f1 has unconnected pin dinb[63]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f1 has unconnected pin dinb[62]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f1 has unconnected pin dinb[61]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f1 has unconnected pin dinb[60]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f1 has unconnected pin dinb[59]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f1 has unconnected pin dinb[58]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f1 has unconnected pin dinb[57]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f1 has unconnected pin dinb[56]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f1 has unconnected pin dinb[55]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f1 has unconnected pin dinb[54]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f1 has unconnected pin dinb[53]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f1 has unconnected pin dinb[52]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f1 has unconnected pin dinb[51]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f1 has unconnected pin dinb[50]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f1 has unconnected pin dinb[49]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f1 has unconnected pin dinb[48]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f1 has unconnected pin dinb[47]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module f1 has unconnected pin dinb[46]
+INFO: [Common 17-14] Message 'Synth 8-4442' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:59 . Memory (MB): peak = 993.602 ; gain = 647.117
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:59 . Memory (MB): peak = 993.602 ; gain = 647.117
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:59 . Memory (MB): peak = 993.602 ; gain = 647.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:59 . Memory (MB): peak = 993.602 ; gain = 647.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:59 . Memory (MB): peak = 993.602 ; gain = 647.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:59 . Memory (MB): peak = 993.602 ; gain = 647.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |fifo_rng      |         3|
+|2     |mem_g         |         4|
+|3     |mem_h         |         2|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |fifo_rng    |     1|
+|2     |fifo_rng__1 |     1|
+|3     |fifo_rng__2 |     1|
+|4     |mem_g       |     1|
+|5     |mem_g__1    |     1|
+|6     |mem_g__2    |     1|
+|7     |mem_g__3    |     1|
+|8     |mem_h       |     1|
+|9     |mem_h__1    |     1|
+|10    |BUFG        |     1|
+|11    |CARRY4      |    24|
+|12    |LUT1        |    35|
+|13    |LUT2        |   239|
+|14    |LUT3        |    67|
+|15    |LUT4        |   365|
+|16    |LUT5        |   386|
+|17    |LUT6        |  1181|
+|18    |FDRE        |   992|
+|19    |FDSE        |     1|
+|20    |IBUF        |    68|
+|21    |OBUF        |     5|
++------+------------+------+
+
+Report Instance Areas: 
++------+------------+-----------+------+
+|      |Instance    |Module     |Cells |
++------+------------+-----------+------+
+|1     |top         |           |  4142|
+|2     |  core_ctrl |core_ctrl  |    21|
+|3     |  g_ctrl    |g_ctrl     |   148|
+|4     |    hw_sum  |hw_sum     |    26|
+|5     |  h0_ctrl   |h_ctrl     |   204|
+|6     |  h1_ctrl   |h_ctrl_0   |   213|
+|7     |  mul0_ctrl |mul_ctrl   |  1188|
+|8     |  mul1_ctrl |mul_ctrl_1 |  1151|
++------+------------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:59 . Memory (MB): peak = 993.602 ; gain = 647.117
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 146 critical warnings and 175 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:39 . Memory (MB): peak = 993.602 ; gain = 284.047
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:01:00 . Memory (MB): peak = 993.602 ; gain = 647.117
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 92 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+209 Infos, 197 Warnings, 100 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:01:03 . Memory (MB): peak = 993.602 ; gain = 658.586
+INFO: [Common 17-1381] The checkpoint 'C:/Users/David/Desktop/KeyGen/KeyGen.runs/synth_8/BIKE_1_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file BIKE_1_top_utilization_synth.rpt -pb BIKE_1_top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 993.602 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat May  4 01:01:48 2019...

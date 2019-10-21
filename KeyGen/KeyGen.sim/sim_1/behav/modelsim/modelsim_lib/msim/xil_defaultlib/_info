@@ -1,0 +1,427 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.sim/sim_1/behav/modelsim
+T_opt
+!s110 1550739772
+V6Ubh0ec8107fMHA_602zK0
+04 11 4 work prng_lcg_tb fast 0
+Z1 04 4 4 work glbl fast 0
+=1-d46e0e1fef10-5c6e693b-321-64c0
+o-quiet -auto_acc_if_foreign -work xil_defaultlib -L xbip_utils_v3_0_9 -L xbip_pipe_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm +acc
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;10.5;63
+R0
+T_opt1
+!s110 1552395601
+Vb`[Q4K7QiM^JR;3QU4YA[0
+Z4 04 13 4 work BIKE_1_top_tb fast 0
+R1
+=1-94c6916e481e-5c87ad50-368-6f48
+o-quiet -auto_acc_if_foreign -work xil_defaultlib -L xbip_utils_v3_0_9 -L xbip_pipe_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L xil_defaultlib -L blk_mem_gen_v8_4_1 -L fifo_generator_v13_2_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm +acc
+R2
+n@_opt1
+R3
+R0
+T_opt2
+!s110 1553570799
+Vm3=BYETm>I6=]DmH]8Z^T2
+R4
+R1
+=1-d46e0e1fef10-5c999bee-295-2d34
+Z5 o-quiet -auto_acc_if_foreign -work xil_defaultlib -L xbip_utils_v3_0_9 -L xbip_pipe_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L xil_defaultlib -L fifo_generator_v13_2_2 -L blk_mem_gen_v8_4_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm +acc
+R2
+n@_opt2
+R3
+T_opt3
+!s110 1553568425
+V4o>@AH<cLhS@7WJ^mUhh:1
+R4
+R1
+=1-d46e0e1fef10-5c9992a7-312-35bc
+R5
+R2
+n@_opt3
+R3
+R0
+vBIKE_1_top
+Z6 !s110 1553570790
+!i10b 1
+!s100 GZAY6Q3ZK6_E<hI;zD8z40
+IEbU1VGTRS<O6kNOY59KbT0
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1553570759
+8../../../../src/BIKE_1_top.v
+F../../../../src/BIKE_1_top.v
+Z8 L0 22
+Z9 OL;L;10.5;63
+r1
+!s85 0
+31
+Z10 !s108 1553570790.000000
+Z11 !s107 ../../../../src/BIKE_1_top_tb.v|../../../../KeyGen.ip/mem_h/sim/mem_h.v|../../../../KeyGen.ip/mem_g/sim/mem_g.v|../../../../src/mul_ctrl.v|../../../../src/h_ctrl.v|../../../../src/BIKE_1_top.v|../../../../src/prng_lcg_tb.v|../../../../src/prng_lcg.v|../../../../src/g_ctrl.v|../../../../src/core_ctrl.v|../../../../KeyGen.ip/fifo_rng/sim/fifo_rng.v|
+Z12 !s90 -64|-incr|-work|xil_defaultlib|../../../../KeyGen.ip/fifo_rng/sim/fifo_rng.v|../../../../src/core_ctrl.v|../../../../src/g_ctrl.v|../../../../src/prng_lcg.v|../../../../src/prng_lcg_tb.v|../../../../src/BIKE_1_top.v|../../../../src/h_ctrl.v|../../../../src/mul_ctrl.v|../../../../KeyGen.ip/mem_g/sim/mem_g.v|../../../../KeyGen.ip/mem_h/sim/mem_h.v|../../../../src/BIKE_1_top_tb.v|
+!i113 0
+Z13 o-work xil_defaultlib -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+R2
+n@b@i@k@e_1_top
+vBIKE_1_top_tb
+!s10a 1552874035
+!s110 1552875022
+!i10b 1
+!s100 lASE`e;`a`L@KOoIRgK^l0
+IEJ]H9aoiCAD46`eBSab^[0
+R7
+R0
+w1552874035
+8../../../../src/BIKE_1_top_tb.v
+F../../../../src/BIKE_1_top_tb.v
+Z14 L0 23
+R9
+r1
+!s85 0
+31
+!s108 1552875021.000000
+Z15 !s107 ../../../../src/BIKE_1_top_tb.v|../../../../src/mul_ctrl.v|../../../../src/h_ctrl.v|../../../../src/BIKE_1_top.v|../../../../src/prng_lcg_tb.v|../../../../src/prng_lcg.v|../../../../src/g_ctrl.v|../../../../src/core_ctrl.v|../../../../KeyGen.ip/mem_h/sim/mem_h.v|../../../../KeyGen.ip/fifo_rng/sim/fifo_rng.v|../../../../KeyGen.ip/mem_g/sim/mem_g.v|
+Z16 !s90 -64|-incr|-work|xil_defaultlib|../../../../KeyGen.ip/mem_g/sim/mem_g.v|../../../../KeyGen.ip/fifo_rng/sim/fifo_rng.v|../../../../KeyGen.ip/mem_h/sim/mem_h.v|../../../../src/core_ctrl.v|../../../../src/g_ctrl.v|../../../../src/prng_lcg.v|../../../../src/prng_lcg_tb.v|../../../../src/BIKE_1_top.v|../../../../src/h_ctrl.v|../../../../src/mul_ctrl.v|../../../../src/BIKE_1_top_tb.v|
+!i113 0
+R13
+R2
+n@b@i@k@e_1_top_tb
+vcore_ctrl
+!s10a 1552879254
+!s110 1553080102
+!i10b 1
+!s100 VO4eA3Ygm3O1JcVAV>MD61
+IBC6B5d>jJWJgRLQ6iETRk3
+R7
+R0
+w1552879254
+8../../../../src/core_ctrl.v
+F../../../../src/core_ctrl.v
+R14
+R9
+r1
+!s85 0
+31
+!s108 1553080102.000000
+R15
+R16
+!i113 0
+R13
+R2
+vfifo_rng
+!s10a 1551925637
+!s110 1551929183
+!i10b 1
+!s100 CLnOO9lV5nLBmMB0PmBQJ1
+IVCT4VW81VW9abgmNK90P>2
+R7
+R0
+w1551925637
+8../../../../KeyGen.ip/fifo_rng/sim/fifo_rng.v
+F../../../../KeyGen.ip/fifo_rng/sim/fifo_rng.v
+Z17 L0 56
+R9
+r1
+!s85 0
+31
+!s108 1551929183.000000
+Z18 !s107 ../../../../src/BIKE_1_top_tb.v|../../../../src/BIKE_1_top.v|../../../../src/prng_lcg_tb.v|../../../../src/prng_lcg.v|../../../../src/g_ctrl.v|../../../../src/core_ctrl.v|../../../../KeyGen.ip/fifo_rng/sim/fifo_rng.v|../../../../KeyGen.ip/mem_g/sim/mem_g.v|
+Z19 !s90 -64|-incr|-work|xil_defaultlib|../../../../KeyGen.ip/mem_g/sim/mem_g.v|../../../../KeyGen.ip/fifo_rng/sim/fifo_rng.v|../../../../src/core_ctrl.v|../../../../src/g_ctrl.v|../../../../src/prng_lcg.v|../../../../src/prng_lcg_tb.v|../../../../src/BIKE_1_top.v|../../../../src/BIKE_1_top_tb.v|
+!i113 0
+R13
+R2
+vg_ctrl
+Z20 !s10a 1551876852
+!s110 1551876915
+!i10b 1
+!s100 kd3B>fU>VERPQJZ@^Bc[f0
+Icn>3zC_JnDaW2?bmhcS;b1
+R7
+R0
+w1551876852
+Z21 8../../../../src/g_ctrl.v
+Z22 F../../../../src/g_ctrl.v
+L0 24
+R9
+r1
+!s85 0
+31
+!s108 1551876915.000000
+R18
+R19
+!i113 0
+R13
+R2
+vglbl
+R6
+!i10b 1
+!s100 JWZ^meD<P7inSF0<1SiO32
+IL8YcKafUHU:^<bbgBfW?_0
+R7
+R0
+w1522801934
+8glbl.v
+Fglbl.v
+L0 6
+R9
+r1
+!s85 0
+31
+R10
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 0
+R13
+R2
+vh_ctrl
+!s10a 1552358324
+!s110 1552358359
+!i10b 1
+!s100 ieAS0QbGJZETRGF`5H0:d1
+Im8XLQYBfQh;JO4KK[MPQe1
+R7
+R0
+w1552358324
+8../../../../src/h_ctrl.v
+F../../../../src/h_ctrl.v
+R14
+R9
+r1
+!s85 0
+31
+!s108 1552358359.000000
+Z23 !s107 ../../../../src/BIKE_1_top_tb.v|../../../../src/h_ctrl.v|../../../../src/BIKE_1_top.v|../../../../src/prng_lcg_tb.v|../../../../src/prng_lcg.v|../../../../src/g_ctrl.v|../../../../src/core_ctrl.v|../../../../KeyGen.ip/mem_h/sim/mem_h.v|../../../../KeyGen.ip/fifo_rng/sim/fifo_rng.v|../../../../KeyGen.ip/mem_g/sim/mem_g.v|
+Z24 !s90 -64|-incr|-work|xil_defaultlib|../../../../KeyGen.ip/mem_g/sim/mem_g.v|../../../../KeyGen.ip/fifo_rng/sim/fifo_rng.v|../../../../KeyGen.ip/mem_h/sim/mem_h.v|../../../../src/core_ctrl.v|../../../../src/g_ctrl.v|../../../../src/prng_lcg.v|../../../../src/prng_lcg_tb.v|../../../../src/BIKE_1_top.v|../../../../src/h_ctrl.v|../../../../src/BIKE_1_top_tb.v|
+!i113 0
+R13
+R2
+vhw_sum
+R20
+!s110 1551876482
+!i10b 1
+!s100 DX<RioABdFecb]B07^Mmm0
+IRI]E`cd13=WUVlR__Bj_F3
+R7
+R0
+w1551876462
+R21
+R22
+L0 232
+R9
+r1
+!s85 0
+31
+!s108 1551876482.000000
+R18
+R19
+!i113 0
+R13
+R2
+vmem_g
+!s10a 1553142084
+Z25 !s110 1551753473
+!i10b 1
+!s100 25a13AiX4aIGAhJjX>;XC0
+I=@[moc6Lf4<R5jmfHJec>2
+R7
+R0
+w1551665761
+8../../../../KeyGen.ip/mem_g/sim/mem_g.v
+F../../../../KeyGen.ip/mem_g/sim/mem_g.v
+R17
+R9
+r1
+!s85 0
+31
+Z26 !s108 1551753473.000000
+R18
+R19
+!i113 0
+R13
+R2
+vmem_h
+!s10a 1553142204
+!s110 1552189196
+!i10b 1
+!s100 gWV2RgIBD@a4PJgYmXMAo1
+InmjOV[a]XQ_@3bPI=8]Yj2
+R7
+R0
+w1551959269
+8../../../../KeyGen.ip/mem_h/sim/mem_h.v
+F../../../../KeyGen.ip/mem_h/sim/mem_h.v
+R17
+R9
+r1
+!s85 0
+31
+!s108 1552189195.000000
+R23
+R24
+!i113 0
+R13
+R2
+Emul_32bit
+Z27 w1550632181
+Z28 DPx17 mult_gen_v12_0_14 26 mult_gen_v12_0_14_viv_comp 0 22 52V0:UR@9H>_;198[KM^N0
+Z29 DEx17 mult_gen_v12_0_14 17 mult_gen_v12_0_14 0 22 @z<c3;Q>jDGIM5Lo:`Z?S0
+Z30 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z31 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z32 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z33 8../../../../KeyGen.ip/mul_32bit/mul_32bit/sim/mul_32bit.vhd
+Z34 F../../../../KeyGen.ip/mul_32bit/mul_32bit/sim/mul_32bit.vhd
+l0
+L59
+VZ>`CM6A]M:B7S6?kZ=KEz1
+!s100 2e9K>hUFKM7e3m^1bEbHB2
+Z35 OL;C;10.5;63
+31
+Z36 !s110 1550724784
+!i10b 1
+Z37 !s108 1550724784.000000
+Z38 !s90 -64|-93|-work|xil_defaultlib|../../../../KeyGen.ip/mul_32bit/mul_32bit/sim/mul_32bit.vhd|
+Z39 !s107 ../../../../KeyGen.ip/mul_32bit/mul_32bit/sim/mul_32bit.vhd|
+!i113 0
+Z40 o-93 -work xil_defaultlib
+Z41 tExplicit 1 CvgOpt 0
+Amul_32bit_arch
+R28
+R30
+R31
+R32
+DEx4 work 9 mul_32bit 0 22 Z>`CM6A]M:B7S6?kZ=KEz1
+l110
+L67
+VNE?kL2FZa;ZAUAc9BaW9g1
+!s100 R>0^IM90aBmkH12iZM32T3
+R35
+31
+R36
+!i10b 1
+R37
+R38
+R39
+!i113 0
+R40
+R41
+Emul_64bit
+Z42 w1551092823
+R28
+R29
+R30
+R31
+R32
+R0
+Z43 8../../../../KeyGen.ip/mul_64bit/mul_64bit/sim/mul_64bit.vhd
+Z44 F../../../../KeyGen.ip/mul_64bit/mul_64bit/sim/mul_64bit.vhd
+l0
+L59
+V1TRX^iKJ:0HYeabTXG:hD0
+!s100 =7QnS`h72:3Pe`JROJWFU2
+R35
+31
+R6
+!i10b 1
+R10
+Z45 !s90 -64|-93|-work|xil_defaultlib|../../../../KeyGen.ip/mul_64bit/mul_64bit/sim/mul_64bit.vhd|
+Z46 !s107 ../../../../KeyGen.ip/mul_64bit/mul_64bit/sim/mul_64bit.vhd|
+!i113 0
+R40
+R41
+Amul_64bit_arch
+R28
+R30
+R31
+R32
+DEx4 work 9 mul_64bit 0 22 1TRX^iKJ:0HYeabTXG:hD0
+l110
+L67
+V=@D61;UR2gJlWNKAMDhD`2
+!s100 =5M;KXPDhW`Z[DVY`EhM30
+R35
+31
+R6
+!i10b 1
+R10
+R45
+R46
+!i113 0
+R40
+R41
+vmul_ctrl
+!s10a 1553515617
+!s110 1553515741
+!i10b 1
+!s100 ?laeV]PoaoYgU9cHQ8ne71
+IQ6eHN^m^:<hdI8[fPM8[e0
+R7
+R0
+w1553515617
+8../../../../src/mul_ctrl.v
+F../../../../src/mul_ctrl.v
+R14
+R9
+r1
+!s85 0
+31
+!s108 1553515741.000000
+R11
+R12
+!i113 0
+R13
+R2
+vprng_lcg
+!s10a 1551615153
+R25
+!i10b 1
+!s100 CmB7W9m2kXla<PCV^n6ad1
+I:FNP:WeV0kif]z=B6BWUl0
+R7
+R0
+w1551615153
+8../../../../src/prng_lcg.v
+F../../../../src/prng_lcg.v
+R8
+R9
+r1
+!s85 0
+31
+R26
+R18
+R19
+!i113 0
+R13
+R2
+vprng_lcg_tb
+!s10a 1550739141
+!s110 1550739148
+!i10b 1
+!s100 TgPn37>HA?BDokllYaD?_0
+IDl:3<[UE7MUmElAFh:Z?K1
+R7
+R0
+w1550739141
+8../../../../src/prng_lcg_tb.v
+F../../../../src/prng_lcg_tb.v
+L0 25
+R9
+r1
+!s85 0
+31
+!s108 1550739148.000000
+!s107 ../../../../src/prng_lcg_tb.v|../../../../src/prng_lcg.v|
+!s90 -64|-incr|-work|xil_defaultlib|../../../../src/prng_lcg.v|../../../../src/prng_lcg_tb.v|
+!i113 0
+R13
+R2

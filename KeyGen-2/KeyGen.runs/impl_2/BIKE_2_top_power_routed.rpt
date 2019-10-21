@@ -1,0 +1,242 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date             : Sat May  4 14:00:42 2019
+| Host             : David-NTU-Desktop running 64-bit major release  (build 9200)
+| Command          : report_power -file BIKE_2_top_power_routed.rpt -pb BIKE_2_top_power_summary_routed.pb -rpx BIKE_2_top_power_routed.rpx
+| Design           : BIKE_2_top
+| Device           : xc7a75tfgg484-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 0.187        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 0.095        |
+| Device Static (W)        | 0.092        |
+| Effective TJA (C/W)      | 2.7          |
+| Max Ambient (C)          | 84.5         |
+| Junction Temperature (C) | 25.5         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++-------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
++-------------------------+-----------+----------+-----------+-----------------+
+| Clocks                  |     0.022 |        3 |       --- |             --- |
+| Slice Logic             |     0.012 |     7066 |       --- |             --- |
+|   LUT as Logic          |     0.012 |     3842 |     47200 |            8.14 |
+|   Register              |    <0.001 |     2141 |     94400 |            2.27 |
+|   CARRY4                |    <0.001 |       42 |     15850 |            0.26 |
+|   LUT as Shift Register |    <0.001 |       32 |     19000 |            0.17 |
+|   Others                |     0.000 |       52 |       --- |             --- |
+| Signals                 |     0.015 |     5869 |       --- |             --- |
+| Block RAM               |     0.045 |       10 |       105 |            9.52 |
+| I/O                     |    <0.001 |       37 |       285 |           12.98 |
+| Static Power            |     0.092 |          |           |                 |
+| Total                   |     0.187 |          |           |                 |
++-------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.106 |       0.091 |      0.015 |
+| Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.004 |       0.000 |      0.004 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.004 |       0.004 |      0.000 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 2.7                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 4.6                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+| clk   | clk    |             6.2 |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++----------------------------------------------+-----------+
+| Name                                         | Power (W) |
++----------------------------------------------+-----------+
+| BIKE_2_top                                   |     0.095 |
+|   core_ctrl                                  |    <0.001 |
+|   f                                          |     0.003 |
+|     U0                                       |     0.003 |
+|       inst_blk_mem_gen                       |     0.003 |
+|         gnbram.gnativebmg.native_blk_mem_gen |     0.003 |
+|           valid.cstr                         |     0.003 |
+|             ramloop[0].ram.r                 |     0.003 |
+|               prim_init.ram                  |     0.003 |
+|   h0                                         |     0.003 |
+|     U0                                       |     0.003 |
+|       inst_blk_mem_gen                       |     0.003 |
+|         gnbram.gnativebmg.native_blk_mem_gen |     0.003 |
+|           valid.cstr                         |     0.003 |
+|             ramloop[0].ram.r                 |     0.003 |
+|               prim_init.ram                  |     0.003 |
+|   h0_bk                                      |     0.006 |
+|     U0                                       |     0.006 |
+|       inst_blk_mem_gen                       |     0.006 |
+|         gnbram.gnativebmg.native_blk_mem_gen |     0.006 |
+|           valid.cstr                         |     0.006 |
+|             ramloop[0].ram.r                 |     0.003 |
+|               prim_init.ram                  |     0.003 |
+|             ramloop[1].ram.r                 |     0.003 |
+|               prim_init.ram                  |     0.003 |
+|   h0_ctrl                                    |     0.001 |
+|   h0_rng                                     |    <0.001 |
+|     U0                                       |    <0.001 |
+|       inst_fifo_gen                          |    <0.001 |
+|         gconvfifo.rf                         |    <0.001 |
+|           grf.rf                             |    <0.001 |
+|             gntv_or_sync_fifo.gl1.lsshft     |    <0.001 |
+|               c0                             |    <0.001 |
+|               c1                             |    <0.001 |
+|               crd                            |    <0.001 |
+|               rsts                           |    <0.001 |
+|               wsts                           |    <0.001 |
+|             gntv_or_sync_fifo.mem            |    <0.001 |
+|               gsm.sm                         |    <0.001 |
+|                 gsm1.sm1                     |    <0.001 |
+|   h1                                         |     0.003 |
+|     U0                                       |     0.003 |
+|       inst_blk_mem_gen                       |     0.003 |
+|         gnbram.gnativebmg.native_blk_mem_gen |     0.003 |
+|           valid.cstr                         |     0.003 |
+|             ramloop[0].ram.r                 |     0.003 |
+|               prim_init.ram                  |     0.003 |
+|   h1_ctrl                                    |     0.001 |
+|   h1_rng                                     |    <0.001 |
+|     U0                                       |    <0.001 |
+|       inst_fifo_gen                          |    <0.001 |
+|         gconvfifo.rf                         |    <0.001 |
+|           grf.rf                             |    <0.001 |
+|             gntv_or_sync_fifo.gl1.lsshft     |    <0.001 |
+|               c0                             |    <0.001 |
+|               c1                             |    <0.001 |
+|               crd                            |    <0.001 |
+|               rsts                           |    <0.001 |
+|               wsts                           |    <0.001 |
+|             gntv_or_sync_fifo.mem            |    <0.001 |
+|               gsm.sm                         |    <0.001 |
+|                 gsm1.sm1                     |    <0.001 |
+|   inv_ctrl                                   |     0.032 |
+|     exp                                      |     0.005 |
+|     mul                                      |     0.023 |
+|       blk_mul                                |     0.007 |
+|   mul_ctrl                                   |     0.005 |
+|   mul_op0                                    |     0.012 |
+|     U0                                       |     0.012 |
+|       inst_blk_mem_gen                       |     0.012 |
+|         gnbram.gnativebmg.native_blk_mem_gen |     0.012 |
+|           valid.cstr                         |     0.012 |
+|             ramloop[0].ram.r                 |     0.006 |
+|               prim_init.ram                  |     0.006 |
+|             ramloop[1].ram.r                 |     0.006 |
+|               prim_init.ram                  |     0.006 |
+|   mul_op1                                    |     0.013 |
+|     U0                                       |     0.013 |
+|       inst_blk_mem_gen                       |     0.013 |
+|         gnbram.gnativebmg.native_blk_mem_gen |     0.013 |
+|           valid.cstr                         |     0.013 |
+|             ramloop[0].ram.r                 |     0.006 |
+|               prim_init.ram                  |     0.006 |
+|             ramloop[1].ram.r                 |     0.006 |
+|               prim_init.ram                  |     0.006 |
+|   mul_re                                     |     0.007 |
+|     U0                                       |     0.007 |
+|       inst_blk_mem_gen                       |     0.007 |
+|         gnbram.gnativebmg.native_blk_mem_gen |     0.007 |
+|           valid.cstr                         |     0.007 |
+|             ramloop[0].ram.r                 |     0.004 |
+|               prim_init.ram                  |     0.004 |
+|             ramloop[1].ram.r                 |     0.004 |
+|               prim_init.ram                  |     0.004 |
+|   spa2dsn                                    |     0.002 |
++----------------------------------------------+-----------+
+
+

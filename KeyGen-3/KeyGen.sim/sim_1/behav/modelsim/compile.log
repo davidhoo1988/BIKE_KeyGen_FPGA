@@ -1,0 +1,51 @@
+# do {BIKE_2_top_tb_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vcom-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:22:58 on Mar 29,2019
+# vcom -64 -93 -work xil_defaultlib ../../../../KeyGen.ip/mul_64bit/mul_64bit/sim/mul_64bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mul_64bit
+# -- Compiling architecture mul_64bit_arch of mul_64bit
+# End time: 10:22:58 on Mar 29,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:22:58 on Mar 29,2019
+# vlog -64 -incr -work xil_defaultlib ../../../../KeyGen.ip/fifo_rng/sim/fifo_rng.v ../../../../src/core_ctrl.v ../../../../src/g_ctrl.v ../../../../src/prng_lcg.v ../../../../src/prng_lcg_tb.v ../../../../src/h_ctrl.v ../../../../src/mul_ctrl.v ../../../../KeyGen.ip/mem_g/sim/mem_g.v ../../../../KeyGen.ip/mem_h/sim/mem_h.v ../../../../src/BIKE_2_top_tb.v ../../../../src/BIKE_2_top.v ../../../../src/add_ctrl.v 
+# -- Skipping module fifo_rng
+# -- Skipping module core_ctrl
+# -- Skipping module g_ctrl
+# -- Skipping module hw_sum
+# -- Skipping module prng_lcg
+# -- Skipping module prng_lcg_tb
+# -- Skipping module h_ctrl
+# -- Skipping module mul_ctrl
+# -- Skipping module mem_g
+# -- Skipping module mem_h
+# -- Skipping module BIKE_2_top_tb
+# -- Skipping module BIKE_2_top
+# -- Skipping module add_ctrl
+# 
+# Top level modules:
+# 	prng_lcg_tb
+# 	BIKE_2_top_tb
+# End time: 10:22:58 on Mar 29,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:22:58 on Mar 29,2019
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 10:22:58 on Mar 29,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

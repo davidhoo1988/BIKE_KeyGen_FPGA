@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat May  4 12:12:54 2019
+# Process ID: 8460
+# Current directory: C:/Users/David/Desktop/KeyGen
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13756 C:\Users\David\Desktop\KeyGen\KeyGen.xpr
+# Log file: C:/Users/David/Desktop/KeyGen/vivado.log
+# Journal file: C:/Users/David/Desktop/KeyGen\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/David/Desktop/KeyGen/KeyGen.xpr
+set_property part xc7a75tcsg324-1 [current_project]
+update_ip_catalog
+reset_run mul_64bit_synth_1
+reset_run fifo_rng_synth_1
+reset_run synth_6
+launch_runs impl_3 -jobs 6
+wait_on_run impl_3
+open_run impl_3
+save_constraints
+reset_run synth_6
+reset_run impl_3
+launch_runs impl_3 -jobs 6
+wait_on_run impl_3
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_utilization -name utilization_1
+refresh_design
+report_utilization -name utilization_1

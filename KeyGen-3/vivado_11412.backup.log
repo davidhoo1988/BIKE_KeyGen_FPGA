@@ -1,0 +1,434 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon Apr  1 18:55:00 2019
+# Process ID: 11412
+# Current directory: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent36600 C:\Users\David\Desktop\BIKE KeyGen\KeyGen-2\KeyGen.xpr
+# Log file: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/vivado.log
+# Journal file: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 845.070 ; gain = 116.508
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Write_Depth_A {173}] [get_ips mem_g]
+generate_target all [get_files  {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mem_g/mem_g.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mem_g'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mem_g'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mem_g'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'mem_g'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'mem_g'...
+catch { config_ip_cache -export [get_ips -all mem_g] }
+export_ip_user_files -of_objects [get_files {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mem_g/mem_g.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mem_g/mem_g.xci}}]
+launch_runs -jobs 4 mem_g_synth_1
+[Mon Apr  1 19:04:26 2019] Launched mem_g_synth_1...
+Run output will be captured here: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/mem_g_synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 1091.594 ; gain = 0.000
+export_simulation -of_objects [get_files {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mem_g/mem_g.xci}}] -directory {C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip_user_files} -ipstatic_source_dir {C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip_user_files/ipstatic} -lib_map_path [list {modelsim=F:/modelsim64_10.5/Xilinx_lib/64bit_vivado_lib} {questa=C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.cache/compile_simlib/questa} {riviera=C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.cache/compile_simlib/riviera} {activehdl=C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Write_Depth_A {67}] [get_ips mem_h]
+generate_target all [get_files  {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mem_h/mem_h.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mem_h'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mem_h'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mem_h'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'mem_h'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'mem_h'...
+catch { config_ip_cache -export [get_ips -all mem_h] }
+export_ip_user_files -of_objects [get_files {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mem_h/mem_h.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mem_h/mem_h.xci}}]
+launch_runs -jobs 4 mem_h_synth_1
+[Mon Apr  1 19:10:19 2019] Launched mem_h_synth_1...
+Run output will be captured here: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/mem_h_synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 1114.574 ; gain = 0.000
+export_simulation -of_objects [get_files {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mem_h/mem_h.xci}}] -directory {C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip_user_files} -ipstatic_source_dir {C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip_user_files/ipstatic} -lib_map_path [list {modelsim=F:/modelsim64_10.5/Xilinx_lib/64bit_vivado_lib} {questa=C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.cache/compile_simlib/questa} {riviera=C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.cache/compile_simlib/riviera} {activehdl=C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_6
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/synth_6
+
+launch_runs impl_2 -jobs 4
+[Mon Apr  1 19:11:04 2019] Launched mem_h_synth_1, synth_6...
+Run output will be captured here:
+mem_h_synth_1: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/mem_h_synth_1/runme.log
+synth_6: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/synth_6/runme.log
+[Mon Apr  1 19:11:05 2019] Launched impl_2...
+Run output will be captured here: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/impl_2/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 1114.574 ; gain = 0.000
+open_run impl_2
+INFO: [Netlist 29-17] Analyzing 93 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Constraints 18-4398] Generator version for shapeDB does not match. shapeDB will be regenerated.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.218 . Memory (MB): peak = 1658.887 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.219 . Memory (MB): peak = 1658.887 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 120 instances were transformed.
+  SRLC16E => SRL16E: 120 instances
+
+open_run: Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1762.598 ; gain = 648.023
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+set_property part xc7v585tffg1157-3 [current_project]
+WARNING: [IP_Flow 19-2162] IP 'mul_64bit' is locked:
+* Current project part 'xc7v585tffg1157-3' and the part 'xc7s50csga324-1' used to customize the IP 'mul_64bit' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'fifo_rng' is locked:
+* Current project part 'xc7v585tffg1157-3' and the part 'xc7s50csga324-1' used to customize the IP 'fifo_rng' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'mem_g' is locked:
+* Current project part 'xc7v585tffg1157-3' and the part 'xc7s50csga324-1' used to customize the IP 'mem_g' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'mem_h' is locked:
+* Current project part 'xc7v585tffg1157-3' and the part 'xc7s50csga324-1' used to customize the IP 'mem_h' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+report_ip_status -name ip_status 
+upgrade_ip -srcset fifo_rng [get_ips  {fifo_rng mem_g mem_h mul_64bit}] -log ip_upgrade.log
+Upgrading 'fifo_rng'
+INFO: [Project 1-386] Moving file 'C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/fifo_rng/fifo_rng.xci' from fileset 'fifo_rng' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated fifo_rng to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fifo_rng'...
+Upgrading 'mem_g'
+INFO: [Project 1-386] Moving file 'C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mem_g/mem_g.xci' from fileset 'mem_g' to fileset 'sources_1'.
+INFO: [Device 21-403] Loading part xc7v585tffg1157-3
+INFO: [IP_Flow 19-3420] Updated mem_g to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mem_g'...
+Upgrading 'mem_h'
+INFO: [Project 1-386] Moving file 'C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mem_h/mem_h.xci' from fileset 'mem_h' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated mem_h to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mem_h'...
+Upgrading 'mul_64bit'
+INFO: [Project 1-386] Moving file 'C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mul_64bit/mul_64bit/mul_64bit.xci' from fileset 'mul_64bit' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated mul_64bit to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mul_64bit'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2194.895 ; gain = 301.871
+export_ip_user_files -of_objects [get_ips {fifo_rng mem_g mem_h mul_64bit}] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_6
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/synth_6
+
+launch_runs impl_2 -jobs 4
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fifo_rng'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mem_g'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mem_h'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mul_64bit'...
+[Mon Apr  1 19:22:16 2019] Launched mem_g_synth_1, mul_64bit_synth_1, mem_h_synth_1, fifo_rng_synth_1, synth_6...
+Run output will be captured here:
+mem_g_synth_1: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/mem_g_synth_1/runme.log
+mul_64bit_synth_1: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/mul_64bit_synth_1/runme.log
+mem_h_synth_1: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/mem_h_synth_1/runme.log
+fifo_rng_synth_1: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/fifo_rng_synth_1/runme.log
+synth_6: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/synth_6/runme.log
+[Mon Apr  1 19:22:16 2019] Launched impl_2...
+Run output will be captured here: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/impl_2/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:23 . Memory (MB): peak = 2201.273 ; gain = 6.379
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+save_constraints -force
+reset_run impl_2
+save_constraints -force
+reset_run synth_6
+launch_runs synth_6 -jobs 4
+[Mon Apr  1 19:37:55 2019] Launched synth_6...
+Run output will be captured here: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/synth_6/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 2346.832 ; gain = 0.000
+launch_runs impl_2 -jobs 4
+[Mon Apr  1 19:41:02 2019] Launched impl_2...
+Run output will be captured here: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/impl_2/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 2349.074 ; gain = 1.988
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_3
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 2349.375 ; gain = 0.000
+close_design; open_run impl_2
+INFO: [Netlist 29-17] Analyzing 93 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.288 . Memory (MB): peak = 2972.020 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.289 . Memory (MB): peak = 2972.020 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 120 instances were transformed.
+  SRLC16E => SRL16E: 120 instances
+
+open_run: Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 3068.621 ; gain = 714.168
+save_constraints
+reset_run synth_6
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/synth_6
+
+reset_run impl_2
+launch_runs impl_2 -jobs 4
+[Mon Apr  1 19:48:46 2019] Launched synth_6...
+Run output will be captured here: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/synth_6/runme.log
+[Mon Apr  1 19:48:46 2019] Launched impl_2...
+Run output will be captured here: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/impl_2/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 3070.086 ; gain = 0.000
+refresh_design
+INFO: [Netlist 29-17] Analyzing 93 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.308 . Memory (MB): peak = 3073.777 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.308 . Memory (MB): peak = 3073.777 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 3101.848 ; gain = 31.762
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 3101.848 ; gain = 0.000
+set_property part xc7s50csga324-2 [current_project]
+WARNING: [IP_Flow 19-2162] IP 'mem_g' is locked:
+* Current project part 'xc7s50csga324-2' and the part 'xc7v585tffg1157-3' used to customize the IP 'mem_g' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'mul_64bit' is locked:
+* Current project part 'xc7s50csga324-2' and the part 'xc7v585tffg1157-3' used to customize the IP 'mul_64bit' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'mem_h' is locked:
+* Current project part 'xc7s50csga324-2' and the part 'xc7v585tffg1157-3' used to customize the IP 'mem_h' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'fifo_rng' is locked:
+* Current project part 'xc7s50csga324-2' and the part 'xc7v585tffg1157-3' used to customize the IP 'fifo_rng' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+reset_run mem_g_synth_1
+reset_run mul_64bit_synth_1
+reset_run mem_h_synth_1
+reset_run fifo_rng_synth_1
+save_constraints -force
+reset_run synth_6
+launch_runs synth_6 -jobs 4
+WARNING: [Project 1-577] IP run mem_g_synth_1 is available but is out of date. Since the IP is locked, the synthesis checkpoint cannot be updated. The out-of-date checkpoint will be used and it may result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-577] IP run mul_64bit_synth_1 is available but is out of date. Since the IP is locked, the synthesis checkpoint cannot be updated. The out-of-date checkpoint will be used and it may result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-577] IP run mem_h_synth_1 is available but is out of date. Since the IP is locked, the synthesis checkpoint cannot be updated. The out-of-date checkpoint will be used and it may result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-577] IP run fifo_rng_synth_1 is available but is out of date. Since the IP is locked, the synthesis checkpoint cannot be updated. The out-of-date checkpoint will be used and it may result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mem_g/mem_g.xci
+
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mul_64bit/mul_64bit/mul_64bit.xci
+
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mem_h/mem_h.xci
+
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/fifo_rng/fifo_rng.xci
+
+WARNING: [Project 1-576] IP 'C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mem_g/mem_g.xci' in run mem_g_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mul_64bit/mul_64bit/mul_64bit.xci' in run mul_64bit_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mem_h/mem_h.xci' in run mem_h_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/fifo_rng/fifo_rng.xci' in run fifo_rng_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+[Mon Apr  1 20:03:45 2019] Launched mem_g_synth_1, mul_64bit_synth_1, mem_h_synth_1, fifo_rng_synth_1...
+Run output will be captured here:
+mem_g_synth_1: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/mem_g_synth_1/runme.log
+mul_64bit_synth_1: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/mul_64bit_synth_1/runme.log
+mem_h_synth_1: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/mem_h_synth_1/runme.log
+fifo_rng_synth_1: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/fifo_rng_synth_1/runme.log
+[Mon Apr  1 20:03:45 2019] Launched synth_6...
+Run output will be captured here: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/synth_6/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:19 . Memory (MB): peak = 3207.094 ; gain = 4.355
+report_ip_status -name ip_status 
+upgrade_ip -srcset fifo_rng [get_ips  {fifo_rng mem_g mem_h mul_64bit}] -log ip_upgrade.log
+Upgrading 'fifo_rng'
+INFO: [Project 1-386] Moving file 'C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/fifo_rng/fifo_rng.xci' from fileset 'fifo_rng' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated fifo_rng to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fifo_rng'...
+Upgrading 'mem_g'
+INFO: [Project 1-386] Moving file 'C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mem_g/mem_g.xci' from fileset 'mem_g' to fileset 'sources_1'.
+INFO: [Device 21-403] Loading part xc7s50csga324-2
+INFO: [IP_Flow 19-3420] Updated mem_g to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mem_g'...
+Upgrading 'mem_h'
+INFO: [Project 1-386] Moving file 'C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mem_h/mem_h.xci' from fileset 'mem_h' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated mem_h to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mem_h'...
+Upgrading 'mul_64bit'
+INFO: [Project 1-386] Moving file 'C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mul_64bit/mul_64bit/mul_64bit.xci' from fileset 'mul_64bit' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated mul_64bit to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mul_64bit'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3229.984 ; gain = 18.770
+export_ip_user_files -of_objects [get_ips {fifo_rng mem_g mem_h mul_64bit}] -no_script -sync -force -quiet
+close_design
+reset_run synth_6
+launch_runs synth_6 -jobs 4
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fifo_rng'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mem_g'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mem_h'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mul_64bit'...
+[Mon Apr  1 20:05:06 2019] Launched mem_g_synth_1, mul_64bit_synth_1, mem_h_synth_1, fifo_rng_synth_1...
+Run output will be captured here:
+mem_g_synth_1: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/mem_g_synth_1/runme.log
+mul_64bit_synth_1: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/mul_64bit_synth_1/runme.log
+mem_h_synth_1: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/mem_h_synth_1/runme.log
+fifo_rng_synth_1: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/fifo_rng_synth_1/runme.log
+[Mon Apr  1 20:05:06 2019] Launched synth_6...
+Run output will be captured here: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/synth_6/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:22 . Memory (MB): peak = 3229.984 ; gain = 0.000
+launch_runs impl_2 -jobs 4
+[Mon Apr  1 20:12:06 2019] Launched impl_2...
+Run output will be captured here: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/impl_2/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 3229.984 ; gain = 0.000
+open_run impl_2
+INFO: [Netlist 29-17] Analyzing 93 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Constraints 18-4398] Generator version for shapeDB does not match. shapeDB will be regenerated.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.204 . Memory (MB): peak = 3506.352 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.204 . Memory (MB): peak = 3506.352 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 120 instances were transformed.
+  SRLC16E => SRL16E: 120 instances
+
+open_run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 3541.660 ; gain = 311.676
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+save_constraints
+reset_run synth_6
+reset_run impl_2
+launch_runs impl_2 -jobs 4
+[Mon Apr  1 20:16:22 2019] Launched synth_6...
+Run output will be captured here: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/synth_6/runme.log
+[Mon Apr  1 20:16:22 2019] Launched impl_2...
+Run output will be captured here: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/impl_2/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 3553.590 ; gain = 1.707
+refresh_design
+INFO: [Netlist 29-17] Analyzing 93 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Constraints 18-4398] Generator version for shapeDB does not match. shapeDB will be regenerated.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.200 . Memory (MB): peak = 3561.656 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.200 . Memory (MB): peak = 3561.656 ; gain = 0.000
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+save_constraints
+reset_run synth_6
+reset_run impl_2
+launch_runs impl_2 -jobs 4
+[Mon Apr  1 20:27:24 2019] Launched synth_6...
+Run output will be captured here: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/synth_6/runme.log
+[Mon Apr  1 20:27:24 2019] Launched impl_2...
+Run output will be captured here: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/impl_2/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 3571.410 ; gain = 3.148
+refresh_design
+INFO: [Netlist 29-17] Analyzing 93 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Constraints 18-4398] Generator version for shapeDB does not match. shapeDB will be regenerated.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.198 . Memory (MB): peak = 3581.559 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.198 . Memory (MB): peak = 3581.559 ; gain = 0.000
+save_constraints
+reset_run synth_6
+reset_run impl_2
+launch_runs impl_2 -jobs 4
+[Mon Apr  1 20:32:31 2019] Launched synth_6...
+Run output will be captured here: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/synth_6/runme.log
+[Mon Apr  1 20:32:31 2019] Launched impl_2...
+Run output will be captured here: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.runs/impl_2/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 3592.309 ; gain = 4.141
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+refresh_design
+INFO: [Netlist 29-17] Analyzing 93 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Constraints 18-4398] Generator version for shapeDB does not match. shapeDB will be regenerated.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.202 . Memory (MB): peak = 3601.023 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.202 . Memory (MB): peak = 3601.023 ; gain = 0.000
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 3605.078 ; gain = 4.055
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  2 09:48:43 2019...

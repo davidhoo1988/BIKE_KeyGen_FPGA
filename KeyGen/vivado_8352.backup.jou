@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Fri Apr 26 19:35:01 2019
+# Process ID: 8352
+# Current directory: C:/Users/David/Desktop/BIKE KeyGen/KeyGen
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19648 C:\Users\David\Desktop\BIKE KeyGen\KeyGen\KeyGen.xpr
+# Log file: C:/Users/David/Desktop/BIKE KeyGen/KeyGen/vivado.log
+# Journal file: C:/Users/David/Desktop/BIKE KeyGen/KeyGen\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.xpr}
+create_run impl_3 -parent_run synth_6 -flow {Vivado Implementation 2018} -strategy Performance_Explore -report_strategy {Vivado Implementation Default Reports}
+current_run [get_runs impl_3]
+set_property strategy Performance_ExtraTimingOpt [get_runs impl_3]
+update_ip_catalog
+update_ip_catalog
+delete_runs "impl_2"
+open_run synth_6 -name synth_6
+save_constraints
+reset_run synth_6
+launch_runs impl_3 -jobs 6
+wait_on_run impl_3
+refresh_design
+close_design
+open_run impl_3
+save_constraints
+reset_run synth_6
+reset_run impl_3
+launch_runs impl_3 -jobs 6
+wait_on_run impl_3
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+save_constraints -force
+reset_run synth_6
+reset_run impl_3
+launch_runs impl_3 -jobs 6
+wait_on_run impl_3
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+report_utilization -name utilization_1
+refresh_design
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+save_constraints
+reset_run synth_6
+reset_run impl_3
+launch_runs impl_3 -jobs 6
+wait_on_run impl_3
+refresh_design
+save_constraints
+reset_run synth_6
+reset_run impl_3
+launch_runs impl_3 -jobs 6
+wait_on_run impl_3
+refresh_design
+report_utilization -name utilization_1

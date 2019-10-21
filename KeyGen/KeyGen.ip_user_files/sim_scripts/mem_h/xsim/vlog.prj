@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../KeyGen.ip/mem_h/sim/mem_h.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

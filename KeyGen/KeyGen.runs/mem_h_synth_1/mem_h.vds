@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat May  4 01:00:19 2019
+# Process ID: 33136
+# Current directory: C:/Users/David/Desktop/KeyGen/KeyGen.runs/mem_h_synth_1
+# Command line: vivado.exe -log mem_h.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mem_h.tcl
+# Log file: C:/Users/David/Desktop/KeyGen/KeyGen.runs/mem_h_synth_1/mem_h.vds
+# Journal file: C:/Users/David/Desktop/KeyGen/KeyGen.runs/mem_h_synth_1\vivado.jou
+#-----------------------------------------------------------
+source mem_h.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP mem_h, cache-ID = a97041823ce3b1c8.
+INFO: [Common 17-206] Exiting Vivado at Sat May  4 01:00:30 2019...

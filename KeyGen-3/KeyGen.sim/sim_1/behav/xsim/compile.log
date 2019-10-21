@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Desktop/BIKE KeyGen/KeyGen/src/prng_lcg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prng_lcg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Desktop/BIKE KeyGen/KeyGen/src/prng_lcg_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prng_lcg_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mul_32bit/mul_32bit/sim/mul_32bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mul_32bit

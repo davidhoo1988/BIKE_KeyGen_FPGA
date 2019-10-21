@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="mul_64bit_synth_1" LaunchPart="xc7a75tcsg324-1" LaunchTime="1556943376">
+  <File Type="PA-TCL" Name="mul_64bit.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="mul_64bit_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="mul_64bit_reports.tcl"/>
+  <File Type="RDS-RDS" Name="mul_64bit.vds"/>
+  <File Type="RDS-UTIL" Name="mul_64bit_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="mul_64bit_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="mul_64bit.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="mul_64bit_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="mul_64bit_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/mul_64bit">
+    <File Path="$PPRDIR/KeyGen.ip/mul_64bit/mul_64bit/mul_64bit.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="mul_64bit"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/mul_64bit">
+    <File Path="$PPRDIR/KeyGen.ip/mul_64bit/mul_64bit/mul_64bit.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="mul_64bit"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

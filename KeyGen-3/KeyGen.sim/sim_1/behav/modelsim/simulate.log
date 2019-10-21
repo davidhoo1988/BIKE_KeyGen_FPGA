@@ -1,0 +1,193 @@
+# A bookmarks file was found in the current directory with 1 bookmark
+# //  ModelSim SE-64 10.5 Feb 13 2016 
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do {BIKE_2_top_tb_simulate.do}
+# vsim -voptargs=""+acc"" -L xbip_utils_v3_0_9 -L xbip_pipe_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L xil_defaultlib -L fifo_generator_v13_2_2 -L blk_mem_gen_v8_4_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm -lib xil_defaultlib xil_defaultlib.BIKE_2_top_tb xil_defaultlib.glbl 
+# Start time: 10:23:06 on Mar 29,2019
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: F:\Xilinx\Vivado\2018.1\data\ip\xilinx\blk_mem_gen_v8_4\simulation\blk_mem_gen_v8_4.v(2419): (vopt-2576) [BSOB] - Bit-select into 'current_contents' is out of bounds.
+# ** Warning: F:\Xilinx\Vivado\2018.1\data\ip\xilinx\blk_mem_gen_v8_4\simulation\blk_mem_gen_v8_4.v(2420): (vopt-2576) [BSOB] - Bit-select into 'current_contents' is out of bounds.
+# ** Note: (vopt-143) Recognized 1 FSM in module "mul_ctrl(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "h_ctrl(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "add_ctrl(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "g_ctrl(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "core_ctrl(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "prng_lcg(fast)".
+# Loading work.BIKE_2_top_tb(fast)
+# Loading work.BIKE_2_top(fast)
+# Loading work.core_ctrl(fast)
+# Loading work.g_ctrl(fast)
+# Loading work.hw_sum(fast)
+# Loading work.h_ctrl(fast)
+# Loading work.mul_ctrl(fast)
+# Loading work.add_ctrl(fast)
+# Loading work.fifo_rng(fast)
+# Loading fifo_generator_v13_2_2.fifo_generator_vlog_beh(fast)
+# Loading fifo_generator_v13_2_2.fifo_generator_v13_2_2_CONV_VER(fast)
+# Loading fifo_generator_v13_2_2.fifo_generator_v13_2_2_bhv_ver_ss(fast)
+# Loading work.mem_g(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_output_reg_stage(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_axi_regs_fwd_v8_4(fast)
+# Loading work.mem_h(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(fast__1)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(fast__1)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(fast__1)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_output_reg_stage(fast__1)
+# Loading work.prng_lcg(fast)
+# Loading work.glbl(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.mul_64bit(mul_64bit_arch)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading unisim.vpkg(body)
+# Loading unisim.srl16e(srl16e_v)#2
+# Loading unisim.fdre(fdre_v)#2
+# Loading unisim.dsp48e1(dsp48e1_v)#1
+# ** Warning: (vsim-8684) No drivers exist on out port /BIKE_2_top_tb/rng/multiplier/U0/<protected>/<protected>(1 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /BIKE_2_top_tb/rng/multiplier/U0/<protected>(1 downto 0).
+# A bookmarks file was found in the current directory with 1 bookmark
+# 1
+# 1
+# Bookmark(s) were restored for window "Wave"
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: David  Hostname: DAVID-NTU-DESKT  ProcessID: 25792
+#           Attempting to use alternate WLF file "./wlftrx6bqg".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftrx6bqg
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#  Block Memory Generator module loading initial data...
+#  Block Memory Generator data initialization complete.
+# Block Memory Generator module BIKE_2_top_tb.uut.g.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+#  Block Memory Generator module loading initial data...
+#  Block Memory Generator data initialization complete.
+# Block Memory Generator module BIKE_2_top_tb.uut.h0.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+#  Block Memory Generator module loading initial data...
+#  Block Memory Generator data initialization complete.
+# Block Memory Generator module BIKE_2_top_tb.uut.h1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+#  Block Memory Generator module loading initial data...
+#  Block Memory Generator data initialization complete.
+# Block Memory Generator module BIKE_2_top_tb.uut.f0.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt3
+# Loading work.BIKE_2_top_tb(fast)
+# Loading work.BIKE_2_top(fast)
+# Loading work.core_ctrl(fast)
+# Loading work.g_ctrl(fast)
+# Loading work.hw_sum(fast)
+# Loading work.h_ctrl(fast)
+# Loading work.mul_ctrl(fast)
+# Loading work.add_ctrl(fast)
+# Loading work.fifo_rng(fast)
+# Loading fifo_generator_v13_2_2.fifo_generator_vlog_beh(fast)
+# Loading fifo_generator_v13_2_2.fifo_generator_v13_2_2_CONV_VER(fast)
+# Loading fifo_generator_v13_2_2.fifo_generator_v13_2_2_bhv_ver_ss(fast)
+# Loading work.mem_g(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_output_reg_stage(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_axi_regs_fwd_v8_4(fast)
+# Loading work.mem_h(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(fast__1)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(fast__1)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(fast__1)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_output_reg_stage(fast__1)
+# Loading work.prng_lcg(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-8684) No drivers exist on out port /BIKE_2_top_tb/rng/multiplier/U0/<protected>/<protected>(1 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /BIKE_2_top_tb/rng/multiplier/U0/<protected>(1 downto 0).
+add wave -r /*
+run 1ms
+#  Block Memory Generator module loading initial data...
+#  Block Memory Generator data initialization complete.
+# Block Memory Generator module BIKE_2_top_tb.uut.g.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+#  Block Memory Generator module loading initial data...
+#  Block Memory Generator data initialization complete.
+# Block Memory Generator module BIKE_2_top_tb.uut.h0.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+#  Block Memory Generator module loading initial data...
+#  Block Memory Generator data initialization complete.
+# Block Memory Generator module BIKE_2_top_tb.uut.h1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+#  Block Memory Generator module loading initial data...
+#  Block Memory Generator data initialization complete.
+# Block Memory Generator module BIKE_2_top_tb.uut.f0.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# blk_mem_gen_v8_4_1 collision detected at time: 315000, Instance: BIKE_2_top_tb.uut.g.inst.native_mem_module.blk_mem_gen_v8_4_1_inst.async_coll, A write address: 0, B  read address: 0
+# blk_mem_gen_v8_4_1 WARNING: Address 47 is outside range for A Read
+# blk_mem_gen_v8_4_1 WARNING: Address 47 is outside range for A Read
+# blk_mem_gen_v8_4_1 WARNING: Address 47 is outside range for A Read
+run 1ms
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt3
+# Loading work.BIKE_2_top_tb(fast)
+# Loading work.BIKE_2_top(fast)
+# Loading work.core_ctrl(fast)
+# Loading work.g_ctrl(fast)
+# Loading work.hw_sum(fast)
+# Loading work.h_ctrl(fast)
+# Loading work.mul_ctrl(fast)
+# Loading work.add_ctrl(fast)
+# Loading work.fifo_rng(fast)
+# Loading fifo_generator_v13_2_2.fifo_generator_vlog_beh(fast)
+# Loading fifo_generator_v13_2_2.fifo_generator_v13_2_2_CONV_VER(fast)
+# Loading fifo_generator_v13_2_2.fifo_generator_v13_2_2_bhv_ver_ss(fast)
+# Loading work.mem_g(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_output_reg_stage(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_axi_regs_fwd_v8_4(fast)
+# Loading work.mem_h(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(fast__1)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(fast__1)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(fast__1)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_output_reg_stage(fast__1)
+# Loading work.prng_lcg(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-8684) No drivers exist on out port /BIKE_2_top_tb/rng/multiplier/U0/<protected>/<protected>(1 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /BIKE_2_top_tb/rng/multiplier/U0/<protected>(1 downto 0).
+run 961220ns
+#  Block Memory Generator module loading initial data...
+#  Block Memory Generator data initialization complete.
+# Block Memory Generator module BIKE_2_top_tb.uut.g.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+#  Block Memory Generator module loading initial data...
+#  Block Memory Generator data initialization complete.
+# Block Memory Generator module BIKE_2_top_tb.uut.h0.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+#  Block Memory Generator module loading initial data...
+#  Block Memory Generator data initialization complete.
+# Block Memory Generator module BIKE_2_top_tb.uut.h1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+#  Block Memory Generator module loading initial data...
+#  Block Memory Generator data initialization complete.
+# Block Memory Generator module BIKE_2_top_tb.uut.f0.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# blk_mem_gen_v8_4_1 collision detected at time: 315000, Instance: BIKE_2_top_tb.uut.g.inst.native_mem_module.blk_mem_gen_v8_4_1_inst.async_coll, A write address: 0, B  read address: 0
+run 10us
+# blk_mem_gen_v8_4_1 WARNING: Address 47 is outside range for A Read
+# blk_mem_gen_v8_4_1 WARNING: Address 47 is outside range for A Read
+# blk_mem_gen_v8_4_1 WARNING: Address 47 is outside range for A Read
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.sim/sim_1/behav/modelsim/wave.do}
+# No bookmark changes exist in window "Wave"
+# End time: 12:05:51 on Mar 29,2019, Elapsed time: 1:42:45
+# Errors: 0, Warnings: 11

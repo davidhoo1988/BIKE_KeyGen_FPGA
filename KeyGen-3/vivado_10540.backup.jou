@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Fri Apr 26 20:51:23 2019
+# Process ID: 10540
+# Current directory: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14356 C:\Users\David\Desktop\BIKE KeyGen\KeyGen-3\KeyGen.xpr
+# Log file: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-3/vivado.log
+# Journal file: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/David/Desktop/BIKE KeyGen/KeyGen-3/KeyGen.xpr}
+open_run impl_2
+report_utilization -name utilization_1
+set_property strategy Performance_ExtraTimingOpt [get_runs impl_2]
+update_ip_catalog
+update_ip_catalog
+reset_run synth_6
+save_constraints -force
+launch_runs impl_2 -jobs 6
+wait_on_run impl_2
+refresh_design
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+create_clock -period 5.000 -name clk -waveform {0.000 2.500} [get_ports clk]
+save_constraints
+reset_run synth_6
+launch_runs synth_6 -jobs 6
+wait_on_run synth_6
+close_design
+open_run synth_6 -name synth_6
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+launch_runs impl_2 -jobs 6
+wait_on_run impl_2
+open_run impl_2
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_utilization -name utilization_1

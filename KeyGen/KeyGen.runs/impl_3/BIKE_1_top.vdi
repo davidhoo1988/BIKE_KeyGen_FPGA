@@ -1,0 +1,1243 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat May  4 12:26:27 2019
+# Process ID: 17372
+# Current directory: C:/Users/David/Desktop/KeyGen/KeyGen.runs/impl_3
+# Command line: vivado.exe -log BIKE_1_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source BIKE_1_top.tcl -notrace
+# Log file: C:/Users/David/Desktop/KeyGen/KeyGen.runs/impl_3/BIKE_1_top.vdi
+# Journal file: C:/Users/David/Desktop/KeyGen/KeyGen.runs/impl_3\vivado.jou
+#-----------------------------------------------------------
+source BIKE_1_top.tcl -notrace
+Command: link_design -top BIKE_1_top -part xc7a75tcsg324-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/David/Desktop/KeyGen/KeyGen.ip/mem_g/mem_g.dcp' for cell 'f0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/David/Desktop/KeyGen/KeyGen.ip/mem_h/mem_h.dcp' for cell 'h0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/David/Desktop/KeyGen/KeyGen.ip/fifo_rng/fifo_rng.dcp' for cell 'h0_rng'
+INFO: [Netlist 29-17] Analyzing 102 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Device 21-403] Loading part xc7a75tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/David/Desktop/KeyGen/KeyGen.ip/fifo_rng/fifo_rng.xdc] for cell 'h0_rng/U0'
+Finished Parsing XDC File [c:/Users/David/Desktop/KeyGen/KeyGen.ip/fifo_rng/fifo_rng.xdc] for cell 'h0_rng/U0'
+Parsing XDC File [c:/Users/David/Desktop/KeyGen/KeyGen.ip/fifo_rng/fifo_rng.xdc] for cell 'h1_rng/U0'
+Finished Parsing XDC File [c:/Users/David/Desktop/KeyGen/KeyGen.ip/fifo_rng/fifo_rng.xdc] for cell 'h1_rng/U0'
+Parsing XDC File [c:/Users/David/Desktop/KeyGen/KeyGen.ip/fifo_rng/fifo_rng.xdc] for cell 'rng/U0'
+Finished Parsing XDC File [c:/Users/David/Desktop/KeyGen/KeyGen.ip/fifo_rng/fifo_rng.xdc] for cell 'rng/U0'
+Parsing XDC File [C:/Users/David/Desktop/KeyGen/KeyGen.srcs/constrs_1/new/user_constrains.xdc]
+Finished Parsing XDC File [C:/Users/David/Desktop/KeyGen/KeyGen.srcs/constrs_1/new/user_constrains.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+10 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 698.578 ; gain = 337.191
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a75t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a75t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.561 . Memory (MB): peak = 708.977 ; gain = 10.398
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 3be87a93
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.326 . Memory (MB): peak = 1265.668 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 7bdba073
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.397 . Memory (MB): peak = 1265.668 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 0128edcf
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.871 . Memory (MB): peak = 1265.668 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 674 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 0128edcf
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.946 . Memory (MB): peak = 1265.668 ; gain = 0.000
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 0128edcf
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.992 . Memory (MB): peak = 1265.668 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 0128edcf
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1265.668 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1265.668 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 0128edcf
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1265.668 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.945 | TNS=-53.107 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 2 BRAM(s) out of a total of 8 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 2 WE to EN ports
+Number of BRAM Ports augmented: 2 newly gated: 4 Total Ports: 16
+Ending PowerOpt Patch Enables Task | Checksum: 158145d8f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1460.422 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 158145d8f
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1460.422 ; gain = 194.754
+INFO: [Common 17-83] Releasing license: Implementation
+32 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 1460.422 ; gain = 761.844
+INFO: [Timing 38-480] Writing timing data to binary archive.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/David/Desktop/KeyGen/KeyGen.runs/impl_3/BIKE_1_top_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file BIKE_1_top_drc_opted.rpt -pb BIKE_1_top_drc_opted.pb -rpx BIKE_1_top_drc_opted.rpx
+Command: report_drc -file BIKE_1_top_drc_opted.rpt -pb BIKE_1_top_drc_opted.pb -rpx BIKE_1_top_drc_opted.rpx
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/David/Desktop/KeyGen/KeyGen.runs/impl_3/BIKE_1_top_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design -directive ExtraTimingOpt
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a75t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a75t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'ExtraTimingOpt' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1460.422 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: b584738d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1460.422 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 101e97228
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 105d76eb0
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 105d76eb0
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1460.422 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 105d76eb0
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 1af9977f1
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1af9977f1
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 207c9f4ef
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 17d4bf74e
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 17d4bf74e
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 17d4bf74e
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 1f5e907ea
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 3.7 Small Shape Detail Placement
+Phase 3.7 Small Shape Detail Placement | Checksum: 1658d76aa
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: c8ace26e
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: c8ace26e
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 3.10 Fast Optimization
+Phase 3.10 Fast Optimization | Checksum: 18a052320
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1460.422 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 18a052320
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 13b93da78
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Place 46-31] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 13b93da78
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 1460.422 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.619. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1939dca40
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:37 . Memory (MB): peak = 1460.422 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 1939dca40
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:37 . Memory (MB): peak = 1460.422 ; gain = 0.000
+Post Placement Optimization Initialization | Checksum: 17f296211
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Place 46-31] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.619. For the most accurate timing information please run report_timing.
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 20caa7305
+
+Time (s): cpu = 00:01:58 ; elapsed = 00:02:09 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 20caa7305
+
+Time (s): cpu = 00:01:58 ; elapsed = 00:02:09 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 23cd1f41d
+
+Time (s): cpu = 00:01:58 ; elapsed = 00:02:09 . Memory (MB): peak = 1460.422 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 23cd1f41d
+
+Time (s): cpu = 00:01:58 ; elapsed = 00:02:09 . Memory (MB): peak = 1460.422 ; gain = 0.000
+Ending Placer Task | Checksum: 168e932ed
+
+Time (s): cpu = 00:01:58 ; elapsed = 00:02:09 . Memory (MB): peak = 1460.422 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+57 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:59 ; elapsed = 00:02:10 . Memory (MB): peak = 1460.422 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.246 . Memory (MB): peak = 1460.422 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/David/Desktop/KeyGen/KeyGen.runs/impl_3/BIKE_1_top_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file BIKE_1_top_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1460.422 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file BIKE_1_top_utilization_placed.rpt -pb BIKE_1_top_utilization_placed.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1460.422 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file BIKE_1_top_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1460.422 ; gain = 0.000
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a75t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a75t'
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.619 | TNS=-20.390 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1813cf14a
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1460.422 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.619 | TNS=-20.390 |
+
+Phase 2 Fanout Optimization
+INFO: [Physopt 32-76] Pass 1. Identified 4 candidate nets for fanout optimization.
+INFO: [Physopt 32-572] Net mul1_ctrl/rotate[127]_i_1__0_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net mul0_ctrl/rotate[127]_i_1_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net mul0_ctrl/rotate[12]_i_5_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net mul1_ctrl/rotate[12]_i_5__0_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1460.422 ; gain = 0.000
+Phase 2 Fanout Optimization | Checksum: 1813cf14a
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 3 Placement Based Optimization
+INFO: [Physopt 32-660] Identified 158 candidate nets for placement-based optimization.
+INFO: [Physopt 32-662] Processed net h1_ctrl/h_douta[13]_i_1__0_n_0.  Did not re-place instance h1_ctrl/h_douta[13]_i_1__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/h_addra[5]_i_2__0_n_0.  Did not re-place instance h1_ctrl/h_addra[5]_i_2__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/h_chk_done[0]_i_3__0_n_0.  Did not re-place instance h1_ctrl/h_chk_done[0]_i_3__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/entry_num[6]_i_1__0_n_0.  Did not re-place instance h1_ctrl/entry_num[6]_i_1__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/done4_carry_i_3__0_n_0.  Did not re-place instance h1_ctrl/done4_carry_i_3__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/p_0_in[0].  Did not re-place instance h1_ctrl/entry_num_reg[1]
+INFO: [Physopt 32-662] Processed net h1_ctrl/p_0_in[3].  Did not re-place instance h1_ctrl/entry_num_reg[4]
+INFO: [Physopt 32-662] Processed net h1_ctrl/p_0_in[4].  Did not re-place instance h1_ctrl/entry_num_reg[5]
+INFO: [Physopt 32-662] Processed net h1_ctrl/p_0_in[5].  Did not re-place instance h1_ctrl/entry_num_reg[6]
+INFO: [Physopt 32-662] Processed net h1_ctrl/entry_num_reg_n_0_[0].  Did not re-place instance h1_ctrl/entry_num_reg[0]
+INFO: [Physopt 32-662] Processed net h1_ctrl/done6_carry_i_3__0_n_0.  Did not re-place instance h1_ctrl/done6_carry_i_3__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/done6_carry_i_1__0_n_0.  Did not re-place instance h1_ctrl/done6_carry_i_1__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/done4_carry_i_4__0_n_0.  Did not re-place instance h1_ctrl/done4_carry_i_4__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/done4_carry_i_2__0_n_0.  Did not re-place instance h1_ctrl/done4_carry_i_2__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/done6_carry_i_4__0_n_0.  Did not re-place instance h1_ctrl/done6_carry_i_4__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/done6_carry_i_2__0_n_0.  Did not re-place instance h1_ctrl/done6_carry_i_2__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/done4_carry_i_1__0_n_0.  Did not re-place instance h1_ctrl/done4_carry_i_1__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/entry_num[6]_i_2__0_n_0.  Did not re-place instance h1_ctrl/entry_num[6]_i_2__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/done5_carry_i_1__0_n_0.  Did not re-place instance h1_ctrl/done5_carry_i_1__0
+INFO: [Physopt 32-662] Processed net h0_ctrl/h_doutb[13]_i_1_n_0.  Did not re-place instance h0_ctrl/h_doutb[13]_i_1
+INFO: [Physopt 32-662] Processed net h0_ctrl/h_chk_done[0]_i_3_n_0.  Did not re-place instance h0_ctrl/h_chk_done[0]_i_3
+INFO: [Physopt 32-662] Processed net h0_ctrl/h_addrb[6]_i_2__0_n_0.  Did not re-place instance h0_ctrl/h_addrb[6]_i_2__0
+INFO: [Physopt 32-662] Processed net h0_ctrl/i__carry_i_3_n_0.  Did not re-place instance h0_ctrl/i__carry_i_3
+INFO: [Physopt 32-662] Processed net h0_ctrl/h0_ctrl_doutb[3].  Did not re-place instance h0_ctrl/h_doutb_reg[3]
+INFO: [Physopt 32-662] Processed net h0_ctrl/h0_ctrl_doutb[5].  Did not re-place instance h0_ctrl/h_doutb_reg[5]
+INFO: [Physopt 32-662] Processed net h0_ctrl/h0_ctrl_doutb[6].  Did not re-place instance h0_ctrl/h_doutb_reg[6]
+INFO: [Physopt 32-662] Processed net h0_ctrl/h0_ctrl_doutb[7].  Did not re-place instance h0_ctrl/h_doutb_reg[7]
+INFO: [Physopt 32-662] Processed net h0_ctrl/i__carry_i_4_n_0.  Did not re-place instance h0_ctrl/i__carry_i_4
+INFO: [Physopt 32-662] Processed net h0_ctrl/h0_ctrl_doutb[11].  Did not re-place instance h0_ctrl/h_doutb_reg[11]
+INFO: [Physopt 32-662] Processed net h0_ctrl/h_douta[13]_i_1_n_0.  Did not re-place instance h0_ctrl/h_douta[13]_i_1
+INFO: [Physopt 32-662] Processed net h0_ctrl/entry_num[6]_i_1_n_0.  Did not re-place instance h0_ctrl/entry_num[6]_i_1
+INFO: [Physopt 32-662] Processed net h0_ctrl/p_0_in[0].  Did not re-place instance h0_ctrl/entry_num_reg[1]
+INFO: [Physopt 32-662] Processed net h0_ctrl/p_0_in[3].  Did not re-place instance h0_ctrl/entry_num_reg[4]
+INFO: [Physopt 32-662] Processed net h0_ctrl/p_0_in[4].  Did not re-place instance h0_ctrl/entry_num_reg[5]
+INFO: [Physopt 32-662] Processed net h0_ctrl/p_0_in[5].  Did not re-place instance h0_ctrl/entry_num_reg[6]
+INFO: [Physopt 32-662] Processed net h0_ctrl/entry_num_reg_n_0_[0].  Did not re-place instance h0_ctrl/entry_num_reg[0]
+INFO: [Physopt 32-662] Processed net h1_ctrl/done5_carry_i_3__0_n_0.  Did not re-place instance h1_ctrl/done5_carry_i_3__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/done5_carry_i_2__0_n_0.  Did not re-place instance h1_ctrl/done5_carry_i_2__0
+INFO: [Physopt 32-662] Processed net h0_ctrl/done6_carry_i_1_n_0.  Did not re-place instance h0_ctrl/done6_carry_i_1
+INFO: [Physopt 32-662] Processed net h1_ctrl/done5_carry_i_4__0_n_0.  Did not re-place instance h1_ctrl/done5_carry_i_4__0
+INFO: [Physopt 32-662] Processed net h0_ctrl/done6_carry_i_2_n_0.  Did not re-place instance h0_ctrl/done6_carry_i_2
+INFO: [Physopt 32-662] Processed net h0_ctrl/done6_carry_i_3_n_0.  Did not re-place instance h0_ctrl/done6_carry_i_3
+INFO: [Physopt 32-662] Processed net h0_ctrl/done6_carry_i_4_n_0.  Did not re-place instance h0_ctrl/done6_carry_i_4
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_done.  Did not re-place instance h1_ctrl/done_reg
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[12].  Did not re-place instance h1_ctrl/h_douta_reg[12]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[13].  Did not re-place instance h1_ctrl/h_douta_reg[13]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[5].  Did not re-place instance h1_ctrl/h_douta_reg[5]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[7].  Did not re-place instance h1_ctrl/h_douta_reg[7]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[8].  Did not re-place instance h1_ctrl/h_douta_reg[8]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[9].  Did not re-place instance h1_ctrl/h_douta_reg[9]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_web.  Did not re-place instance h1_ctrl/h_web_reg
+INFO: [Physopt 32-662] Processed net h0_ctrl/done4_carry_i_3_n_0.  Did not re-place instance h0_ctrl/done4_carry_i_3
+INFO: [Physopt 32-662] Processed net h1_ctrl/i__carry_i_3__0_n_0.  Did not re-place instance h1_ctrl/i__carry_i_3__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/i__carry_i_4__0_n_0.  Did not re-place instance h1_ctrl/i__carry_i_4__0
+INFO: [Physopt 32-662] Processed net h0_ctrl/done4_carry_i_4_n_0.  Did not re-place instance h0_ctrl/done4_carry_i_4
+INFO: [Physopt 32-662] Processed net h0_ctrl/done5_carry_i_3_n_0.  Did not re-place instance h0_ctrl/done5_carry_i_3
+INFO: [Physopt 32-662] Processed net h0_ctrl/h0_ctrl_doutb[10].  Did not re-place instance h0_ctrl/h_doutb_reg[10]
+INFO: [Physopt 32-662] Processed net h0_ctrl/h0_ctrl_doutb[12].  Did not re-place instance h0_ctrl/h_doutb_reg[12]
+INFO: [Physopt 32-662] Processed net h0_ctrl/h0_ctrl_doutb[13].  Did not re-place instance h0_ctrl/h_doutb_reg[13]
+INFO: [Physopt 32-662] Processed net h0_ctrl/h0_ctrl_doutb[8].  Did not re-place instance h0_ctrl/h_doutb_reg[8]
+INFO: [Physopt 32-662] Processed net h0_ctrl/h0_ctrl_doutb[9].  Did not re-place instance h0_ctrl/h_doutb_reg[9]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[0].  Did not re-place instance h1_ctrl/h_douta_reg[0]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[10].  Did not re-place instance h1_ctrl/h_douta_reg[10]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[11].  Did not re-place instance h1_ctrl/h_douta_reg[11]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[1].  Did not re-place instance h1_ctrl/h_douta_reg[1]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[2].  Did not re-place instance h1_ctrl/h_douta_reg[2]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[3].  Did not re-place instance h1_ctrl/h_douta_reg[3]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[4].  Did not re-place instance h1_ctrl/h_douta_reg[4]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[6].  Did not re-place instance h1_ctrl/h_douta_reg[6]
+INFO: [Physopt 32-663] Processed net mul0_ctrl/g_addrb[7]_i_2_n_0.  Re-placed instance mul0_ctrl/g_addrb[7]_i_2
+INFO: [Physopt 32-662] Processed net mul0_ctrl/ld_done_i_2_n_0.  Did not re-place instance mul0_ctrl/ld_done_i_2
+INFO: [Physopt 32-662] Processed net mul0_ctrl/ld_done_i_5_n_0.  Did not re-place instance mul0_ctrl/ld_done_i_5
+INFO: [Physopt 32-662] Processed net mul0_ctrl/g_addrb[3]_i_1_n_0.  Did not re-place instance mul0_ctrl/g_addrb[3]_i_1
+INFO: [Physopt 32-662] Processed net mul0_ctrl/mul0_ctrl_g_addrb[3].  Did not re-place instance mul0_ctrl/g_addrb_reg[3]
+INFO: [Physopt 32-663] Processed net h0_ctrl/h_addra[5]_i_2_n_0.  Re-placed instance h0_ctrl/h_addra[5]_i_2
+INFO: [Physopt 32-662] Processed net h0_ctrl/h_addra[4]_i_1__0_n_0.  Did not re-place instance h0_ctrl/h_addra[4]_i_1__0
+INFO: [Physopt 32-662] Processed net h0_ctrl/h_addra_reg[6]_0[3].  Did not re-place instance h0_ctrl/h_addra_reg[4]
+INFO: [Physopt 32-662] Processed net h0_ctrl/h_addra[3]_i_1__0_n_0.  Did not re-place instance h0_ctrl/h_addra[3]_i_1__0
+INFO: [Physopt 32-662] Processed net h0_ctrl/h_addra_reg[6]_0[2].  Did not re-place instance h0_ctrl/h_addra_reg[3]
+INFO: [Physopt 32-662] Processed net mul1_ctrl/g_addra[7]_i_1__0_n_0.  Did not re-place instance mul1_ctrl/g_addra[7]_i_1__0
+INFO: [Physopt 32-662] Processed net mul1_ctrl/g_addra[7]_i_11_n_0.  Did not re-place instance mul1_ctrl/g_addra[7]_i_11
+INFO: [Physopt 32-662] Processed net mul1_ctrl/g_addra[7]_i_14_n_0.  Did not re-place instance mul1_ctrl/g_addra[7]_i_14
+INFO: [Physopt 32-662] Processed net mul1_ctrl/g_addra[7]_i_4__0_n_0.  Did not re-place instance mul1_ctrl/g_addra[7]_i_4__0
+INFO: [Physopt 32-662] Processed net mul1_ctrl/mul1_ctrl_g_addrb[1].  Did not re-place instance mul1_ctrl/g_addrb_reg[1]
+INFO: [Physopt 32-662] Processed net mul1_ctrl/mul1_ctrl_g_addrb[4].  Did not re-place instance mul1_ctrl/g_addrb_reg[4]
+INFO: [Physopt 32-662] Processed net mul1_ctrl/mul1_ctrl_g_addrb[7].  Did not re-place instance mul1_ctrl/g_addrb_reg[7]
+INFO: [Physopt 32-662] Processed net h0_ctrl/done5_carry_i_4_n_0.  Did not re-place instance h0_ctrl/done5_carry_i_4
+INFO: [Physopt 32-662] Processed net mul1_ctrl/rotate[127]_i_1__0_n_0.  Did not re-place instance mul1_ctrl/rotate[127]_i_1__0
+INFO: [Physopt 32-662] Processed net mul1_ctrl/offset_reg[5]_i_6_n_0.  Did not re-place instance mul1_ctrl/offset_reg[5]_i_6
+INFO: [Physopt 32-662] Processed net mul1_ctrl/ld_done_i_3__0_n_0.  Did not re-place instance mul1_ctrl/ld_done_i_3__0
+INFO: [Physopt 32-662] Processed net mul1_ctrl/ld_done_i_2__0_n_0.  Did not re-place instance mul1_ctrl/ld_done_i_2__0
+INFO: [Physopt 32-662] Processed net mul1_ctrl/rotate[12]_i_10__0_n_0.  Did not re-place instance mul1_ctrl/rotate[12]_i_10__0
+INFO: [Physopt 32-662] Processed net mul0_ctrl/g_addrb[7]_i_1_n_0.  Did not re-place instance mul0_ctrl/g_addrb[7]_i_1
+INFO: [Physopt 32-662] Processed net mul1_ctrl/offset_reg[5]_i_11_n_0.  Did not re-place instance mul1_ctrl/offset_reg[5]_i_11
+INFO: [Physopt 32-662] Processed net mul1_ctrl/p_0_in[0].  Did not re-place instance mul1_ctrl/rotate_reg[64]
+INFO: [Physopt 32-662] Processed net mul0_ctrl/mul0_ctrl_g_addrb[7].  Did not re-place instance mul0_ctrl/g_addrb_reg[7]
+INFO: [Physopt 32-663] Processed net h0_ctrl/h_addra[2]_i_4_n_0.  Re-placed instance h0_ctrl/h_addra[2]_i_4
+INFO: [Physopt 32-662] Processed net h0_ctrl/h_addrb[2]_i_1_n_0.  Did not re-place instance h0_ctrl/h_addrb[2]_i_1
+INFO: [Physopt 32-662] Processed net h0_ctrl/h0_ctrl_addrb[2].  Did not re-place instance h0_ctrl/h_addrb_reg[2]
+INFO: [Physopt 32-662] Processed net mul0_ctrl/rotate[127]_i_1_n_0.  Did not re-place instance mul0_ctrl/rotate[127]_i_1
+INFO: [Physopt 32-662] Processed net mul0_ctrl/rotate[12]_i_5_n_0.  Did not re-place instance mul0_ctrl/rotate[12]_i_5
+INFO: [Physopt 32-662] Processed net mul0_ctrl/rotate[12]_i_9_n_0.  Did not re-place instance mul0_ctrl/rotate[12]_i_9
+INFO: [Physopt 32-662] Processed net mul0_ctrl/rotate[32]_i_1_n_0.  Did not re-place instance mul0_ctrl/rotate[32]_i_1
+INFO: [Physopt 32-663] Processed net mul0_ctrl/rotate[32]_i_3_n_0.  Re-placed instance mul0_ctrl/rotate[32]_i_3
+INFO: [Physopt 32-662] Processed net mul0_ctrl/data3[32].  Did not re-place instance mul0_ctrl/rotate_reg[32]
+INFO: [Physopt 32-663] Processed net mul0_ctrl/data3[39].  Re-placed instance mul0_ctrl/rotate_reg[39]
+INFO: [Physopt 32-662] Processed net offset_reg[3]_i_7__0_n_0.  Did not re-place instance offset_reg[3]_i_7__0
+INFO: [Physopt 32-662] Processed net mul0_ctrl/rotate[62]_i_1_n_0.  Did not re-place instance mul0_ctrl/rotate[62]_i_1
+INFO: [Physopt 32-663] Processed net mul0_ctrl/rotate[62]_i_3_n_0.  Re-placed instance mul0_ctrl/rotate[62]_i_3
+INFO: [Physopt 32-663] Processed net mul0_ctrl/data3[62].  Re-placed instance mul0_ctrl/rotate_reg[62]
+INFO: [Physopt 32-662] Processed net mul1_ctrl/data3[58].  Did not re-place instance mul1_ctrl/rotate_reg[58]
+INFO: [Physopt 32-662] Processed net mul0_ctrl/g_addrb[6]_i_2_n_0.  Did not re-place instance mul0_ctrl/g_addrb[6]_i_2
+INFO: [Physopt 32-663] Processed net mul0_ctrl/g_addra[0]_i_2_n_0.  Re-placed instance mul0_ctrl/g_addra[0]_i_2
+INFO: [Physopt 32-663] Processed net h1_rng/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gsm.sm/dout[20].  Re-placed instance h1_rng/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gsm.sm/dout_i_reg[20]
+INFO: [Physopt 32-662] Processed net mul1_ctrl/rotate[12]_i_5__0_n_0.  Did not re-place instance mul1_ctrl/rotate[12]_i_5__0
+INFO: [Physopt 32-662] Processed net mul1_ctrl/g_addra[1]_i_8_n_0.  Did not re-place instance mul1_ctrl/g_addra[1]_i_8
+INFO: [Physopt 32-662] Processed net mul1_ctrl/rotate[54]_i_1__0_n_0.  Did not re-place instance mul1_ctrl/rotate[54]_i_1__0
+INFO: [Physopt 32-663] Processed net mul1_ctrl/rotate[54]_i_3__0_n_0.  Re-placed instance mul1_ctrl/rotate[54]_i_3__0
+INFO: [Physopt 32-662] Processed net mul1_ctrl/data3[54].  Did not re-place instance mul1_ctrl/rotate_reg[54]
+INFO: [Physopt 32-663] Processed net mul0_ctrl/data3[42].  Re-placed instance mul0_ctrl/rotate_reg[42]
+INFO: [Physopt 32-663] Processed net mul0_ctrl/p_0_in[12].  Re-placed instance mul0_ctrl/rotate_reg[76]
+INFO: [Physopt 32-663] Processed net mul1_ctrl/p_0_in[17].  Re-placed instance mul1_ctrl/rotate_reg[81]
+INFO: [Physopt 32-662] Processed net h1_ctrl/done6_carry__0_i_1__0_n_0.  Did not re-place instance h1_ctrl/done6_carry__0_i_1__0
+INFO: [Physopt 32-663] Processed net mul0_ctrl/data3[15].  Re-placed instance mul0_ctrl/rotate_reg[15]
+INFO: [Physopt 32-663] Processed net h1_rng/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gsm.sm/dout[16].  Re-placed instance h1_rng/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gsm.sm/dout_i_reg[16]
+INFO: [Physopt 32-662] Processed net mul1_ctrl/rotate[46]_i_1__0_n_0.  Did not re-place instance mul1_ctrl/rotate[46]_i_1__0
+INFO: [Physopt 32-663] Processed net mul1_ctrl/rotate[46]_i_3__0_n_0.  Re-placed instance mul1_ctrl/rotate[46]_i_3__0
+INFO: [Physopt 32-662] Processed net mul1_ctrl/data3[46].  Did not re-place instance mul1_ctrl/rotate_reg[46]
+INFO: [Physopt 32-662] Processed net mul0_ctrl/rotate[71]_i_1_n_0.  Did not re-place instance mul0_ctrl/rotate[71]_i_1
+INFO: [Physopt 32-663] Processed net mul0_ctrl/rotate[71]_i_3_n_0.  Re-placed instance mul0_ctrl/rotate[71]_i_3
+INFO: [Physopt 32-663] Processed net mul0_ctrl/p_0_in[7].  Re-placed instance mul0_ctrl/rotate_reg[71]
+INFO: [Physopt 32-662] Processed net mul1_ctrl/rotate[17]_i_1__0_n_0.  Did not re-place instance mul1_ctrl/rotate[17]_i_1__0
+INFO: [Physopt 32-663] Processed net mul1_ctrl/rotate[17]_i_3__0_n_0.  Re-placed instance mul1_ctrl/rotate[17]_i_3__0
+INFO: [Physopt 32-662] Processed net mul1_ctrl/data3[17].  Did not re-place instance mul1_ctrl/rotate_reg[17]
+INFO: [Physopt 32-662] Processed net mul1_ctrl/p_0_in[11].  Did not re-place instance mul1_ctrl/rotate_reg[75]
+INFO: [Physopt 32-663] Processed net mul1_ctrl/p_0_in[7].  Re-placed instance mul1_ctrl/rotate_reg[71]
+INFO: [Physopt 32-663] Processed net mul0_ctrl/g_addrb[5]_i_3__0_n_0.  Re-placed instance mul0_ctrl/g_addrb[5]_i_3__0
+INFO: [Physopt 32-663] Processed net mul0_ctrl/g_addrb[7]_i_3_n_0.  Re-placed instance mul0_ctrl/g_addrb[7]_i_3
+INFO: [Physopt 32-663] Processed net mul0_ctrl/g_addrb[7]_i_5_n_0.  Re-placed instance mul0_ctrl/g_addrb[7]_i_5
+INFO: [Physopt 32-663] Processed net mul0_ctrl/g_addra[2]_i_3_n_0.  Re-placed instance mul0_ctrl/g_addra[2]_i_3
+INFO: [Physopt 32-662] Processed net mul0_ctrl/data3[43].  Did not re-place instance mul0_ctrl/rotate_reg[43]
+INFO: [Physopt 32-662] Processed net mul0_ctrl/data3[56].  Did not re-place instance mul0_ctrl/rotate_reg[56]
+INFO: [Physopt 32-663] Processed net mul0_ctrl/p_0_in[26].  Re-placed instance mul0_ctrl/rotate_reg[90]
+INFO: [Physopt 32-663] Processed net mul0_ctrl/data3[27].  Re-placed instance mul0_ctrl/rotate_reg[27]
+INFO: [Physopt 32-663] Processed net mul0_ctrl/p_0_in[23].  Re-placed instance mul0_ctrl/rotate_reg[87]
+INFO: [Physopt 32-663] Processed net mul0_ctrl/p_0_in[27].  Re-placed instance mul0_ctrl/rotate_reg[91]
+INFO: [Physopt 32-663] Processed net mul0_ctrl/p_0_in[30].  Re-placed instance mul0_ctrl/rotate_reg[94]
+INFO: [Physopt 32-663] Processed net mul0_ctrl/p_0_in[32].  Re-placed instance mul0_ctrl/rotate_reg[96]
+INFO: [Physopt 32-663] Processed net h1_rng/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gsm.sm/dout[25].  Re-placed instance h1_rng/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gsm.sm/dout_i_reg[25]
+INFO: [Physopt 32-662] Processed net mul1_ctrl/data3[63].  Did not re-place instance mul1_ctrl/rotate_reg[63]
+INFO: [Physopt 32-662] Processed net h0_ctrl/h_addra[2]_i_1__0_n_0.  Did not re-place instance h0_ctrl/h_addra[2]_i_1__0
+INFO: [Physopt 32-662] Processed net h0_ctrl/h_addra_reg[6]_0[1].  Did not re-place instance h0_ctrl/h_addra_reg[2]
+INFO: [Physopt 32-662] Processed net mul1_ctrl/rotate[55]_i_1__0_n_0.  Did not re-place instance mul1_ctrl/rotate[55]_i_1__0
+INFO: [Physopt 32-663] Processed net mul1_ctrl/rotate[55]_i_3__0_n_0.  Re-placed instance mul1_ctrl/rotate[55]_i_3__0
+INFO: [Physopt 32-662] Processed net mul1_ctrl/data3[55].  Did not re-place instance mul1_ctrl/rotate_reg[55]
+INFO: [Physopt 32-663] Processed net h0_ctrl/h0_ctrl_douta[2].  Re-placed instance h0_ctrl/h_douta_reg[2]
+INFO: [Physopt 32-663] Processed net h0_ctrl/h0_ctrl_douta[3].  Re-placed instance h0_ctrl/h_douta_reg[3]
+INFO: [Physopt 32-663] Processed net h0_ctrl/h0_ctrl_douta[8].  Re-placed instance h0_ctrl/h_douta_reg[8]
+INFO: [Physopt 32-661] Optimized 35 nets.  Re-placed 35 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 35 nets or cells. Created 0 new cell, deleted 0 existing cell and moved 35 existing cells
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.619 | TNS=-17.955 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1460.422 ; gain = 0.000
+Phase 3 Placement Based Optimization | Checksum: 18857e9aa
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 4 Rewire
+INFO: [Physopt 32-246] Starting Signal Push optimization...
+INFO: [Physopt 32-77] Pass 1. Identified 1 candidate net for rewire optimization.
+INFO: [Physopt 32-134] Processed net h1_ctrl/h_douta[13]_i_1__0_n_0. Rewiring did not optimize the net.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1460.422 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1460.422 ; gain = 0.000
+Phase 4 Rewire | Checksum: 135d751cc
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 5 Critical Cell Optimization
+INFO: [Physopt 32-46] Identified 10 candidate nets for critical-cell optimization.
+INFO: [Physopt 32-572] Net h1_ctrl/h_douta[13]_i_1__0_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-571] Net h1_ctrl/h_addra[5]_i_2__0_n_0 was not replicated.
+INFO: [Physopt 32-572] Net h1_ctrl/h_chk_done[0]_i_3__0_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net h1_ctrl/entry_num[6]_i_1__0_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net h1_ctrl/entry_num[6]_i_2__0_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net h0_ctrl/h_doutb[13]_i_1_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net h0_ctrl/h_chk_done[0]_i_3_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net h0_ctrl/h_addrb[6]_i_2__0_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-571] Net h0_ctrl/h_douta[13]_i_1_n_0 was not replicated.
+INFO: [Physopt 32-572] Net h0_ctrl/entry_num[6]_i_1_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1460.422 ; gain = 0.000
+Phase 5 Critical Cell Optimization | Checksum: 18cec88f2
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 6 Fanout Optimization
+INFO: [Physopt 32-76] Pass 1. Identified 3 candidate nets for fanout optimization.
+INFO: [Physopt 32-572] Net mul0_ctrl/rotate[12]_i_5_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net mul0_ctrl/rotate[127]_i_1_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net mul1_ctrl/rotate[12]_i_5__0_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1460.422 ; gain = 0.000
+Phase 6 Fanout Optimization | Checksum: 1ce1cd3e3
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 7 Placement Based Optimization
+INFO: [Physopt 32-660] Identified 111 candidate nets for placement-based optimization.
+INFO: [Physopt 32-662] Processed net h1_ctrl/h_douta[13]_i_1__0_n_0.  Did not re-place instance h1_ctrl/h_douta[13]_i_1__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/h_addra[5]_i_2__0_n_0.  Did not re-place instance h1_ctrl/h_addra[5]_i_2__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/h_chk_done[0]_i_3__0_n_0.  Did not re-place instance h1_ctrl/h_chk_done[0]_i_3__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/entry_num[6]_i_1__0_n_0.  Did not re-place instance h1_ctrl/entry_num[6]_i_1__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/done4_carry_i_3__0_n_0.  Did not re-place instance h1_ctrl/done4_carry_i_3__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/p_0_in[0].  Did not re-place instance h1_ctrl/entry_num_reg[1]
+INFO: [Physopt 32-662] Processed net h1_ctrl/p_0_in[3].  Did not re-place instance h1_ctrl/entry_num_reg[4]
+INFO: [Physopt 32-662] Processed net h1_ctrl/p_0_in[4].  Did not re-place instance h1_ctrl/entry_num_reg[5]
+INFO: [Physopt 32-662] Processed net h1_ctrl/p_0_in[5].  Did not re-place instance h1_ctrl/entry_num_reg[6]
+INFO: [Physopt 32-662] Processed net h1_ctrl/entry_num_reg_n_0_[0].  Did not re-place instance h1_ctrl/entry_num_reg[0]
+INFO: [Physopt 32-662] Processed net h1_ctrl/done6_carry_i_3__0_n_0.  Did not re-place instance h1_ctrl/done6_carry_i_3__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/done6_carry_i_1__0_n_0.  Did not re-place instance h1_ctrl/done6_carry_i_1__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/done4_carry_i_4__0_n_0.  Did not re-place instance h1_ctrl/done4_carry_i_4__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/done4_carry_i_2__0_n_0.  Did not re-place instance h1_ctrl/done4_carry_i_2__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/done6_carry_i_4__0_n_0.  Did not re-place instance h1_ctrl/done6_carry_i_4__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/done6_carry_i_2__0_n_0.  Did not re-place instance h1_ctrl/done6_carry_i_2__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/done4_carry_i_1__0_n_0.  Did not re-place instance h1_ctrl/done4_carry_i_1__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/entry_num[6]_i_2__0_n_0.  Did not re-place instance h1_ctrl/entry_num[6]_i_2__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/done5_carry_i_1__0_n_0.  Did not re-place instance h1_ctrl/done5_carry_i_1__0
+INFO: [Physopt 32-662] Processed net h0_ctrl/h_doutb[13]_i_1_n_0.  Did not re-place instance h0_ctrl/h_doutb[13]_i_1
+INFO: [Physopt 32-662] Processed net h0_ctrl/h_chk_done[0]_i_3_n_0.  Did not re-place instance h0_ctrl/h_chk_done[0]_i_3
+INFO: [Physopt 32-662] Processed net h0_ctrl/h_addrb[6]_i_2__0_n_0.  Did not re-place instance h0_ctrl/h_addrb[6]_i_2__0
+INFO: [Physopt 32-662] Processed net h0_ctrl/i__carry_i_3_n_0.  Did not re-place instance h0_ctrl/i__carry_i_3
+INFO: [Physopt 32-662] Processed net h0_ctrl/h0_ctrl_doutb[3].  Did not re-place instance h0_ctrl/h_doutb_reg[3]
+INFO: [Physopt 32-662] Processed net h0_ctrl/h0_ctrl_doutb[5].  Did not re-place instance h0_ctrl/h_doutb_reg[5]
+INFO: [Physopt 32-662] Processed net h0_ctrl/h0_ctrl_doutb[6].  Did not re-place instance h0_ctrl/h_doutb_reg[6]
+INFO: [Physopt 32-662] Processed net h0_ctrl/h0_ctrl_doutb[7].  Did not re-place instance h0_ctrl/h_doutb_reg[7]
+INFO: [Physopt 32-662] Processed net h0_ctrl/i__carry_i_4_n_0.  Did not re-place instance h0_ctrl/i__carry_i_4
+INFO: [Physopt 32-662] Processed net h0_ctrl/h0_ctrl_doutb[11].  Did not re-place instance h0_ctrl/h_doutb_reg[11]
+INFO: [Physopt 32-662] Processed net h0_ctrl/h_douta[13]_i_1_n_0.  Did not re-place instance h0_ctrl/h_douta[13]_i_1
+INFO: [Physopt 32-662] Processed net h0_ctrl/entry_num[6]_i_1_n_0.  Did not re-place instance h0_ctrl/entry_num[6]_i_1
+INFO: [Physopt 32-662] Processed net h0_ctrl/p_0_in[0].  Did not re-place instance h0_ctrl/entry_num_reg[1]
+INFO: [Physopt 32-662] Processed net h0_ctrl/p_0_in[3].  Did not re-place instance h0_ctrl/entry_num_reg[4]
+INFO: [Physopt 32-662] Processed net h0_ctrl/p_0_in[4].  Did not re-place instance h0_ctrl/entry_num_reg[5]
+INFO: [Physopt 32-662] Processed net h0_ctrl/p_0_in[5].  Did not re-place instance h0_ctrl/entry_num_reg[6]
+INFO: [Physopt 32-662] Processed net h0_ctrl/entry_num_reg_n_0_[0].  Did not re-place instance h0_ctrl/entry_num_reg[0]
+INFO: [Physopt 32-662] Processed net h1_ctrl/done5_carry_i_3__0_n_0.  Did not re-place instance h1_ctrl/done5_carry_i_3__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/done5_carry_i_2__0_n_0.  Did not re-place instance h1_ctrl/done5_carry_i_2__0
+INFO: [Physopt 32-662] Processed net h0_ctrl/done6_carry_i_1_n_0.  Did not re-place instance h0_ctrl/done6_carry_i_1
+INFO: [Physopt 32-662] Processed net h1_ctrl/done5_carry_i_4__0_n_0.  Did not re-place instance h1_ctrl/done5_carry_i_4__0
+INFO: [Physopt 32-662] Processed net h0_ctrl/done6_carry_i_2_n_0.  Did not re-place instance h0_ctrl/done6_carry_i_2
+INFO: [Physopt 32-662] Processed net h0_ctrl/done6_carry_i_3_n_0.  Did not re-place instance h0_ctrl/done6_carry_i_3
+INFO: [Physopt 32-662] Processed net h0_ctrl/done6_carry_i_4_n_0.  Did not re-place instance h0_ctrl/done6_carry_i_4
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_done.  Did not re-place instance h1_ctrl/done_reg
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[12].  Did not re-place instance h1_ctrl/h_douta_reg[12]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[13].  Did not re-place instance h1_ctrl/h_douta_reg[13]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[5].  Did not re-place instance h1_ctrl/h_douta_reg[5]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[7].  Did not re-place instance h1_ctrl/h_douta_reg[7]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[8].  Did not re-place instance h1_ctrl/h_douta_reg[8]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[9].  Did not re-place instance h1_ctrl/h_douta_reg[9]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_web.  Did not re-place instance h1_ctrl/h_web_reg
+INFO: [Physopt 32-662] Processed net h0_ctrl/done4_carry_i_3_n_0.  Did not re-place instance h0_ctrl/done4_carry_i_3
+INFO: [Physopt 32-662] Processed net h1_ctrl/i__carry_i_3__0_n_0.  Did not re-place instance h1_ctrl/i__carry_i_3__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/i__carry_i_4__0_n_0.  Did not re-place instance h1_ctrl/i__carry_i_4__0
+INFO: [Physopt 32-662] Processed net h0_ctrl/done4_carry_i_4_n_0.  Did not re-place instance h0_ctrl/done4_carry_i_4
+INFO: [Physopt 32-662] Processed net h0_ctrl/done5_carry_i_3_n_0.  Did not re-place instance h0_ctrl/done5_carry_i_3
+INFO: [Physopt 32-662] Processed net h0_ctrl/h0_ctrl_doutb[10].  Did not re-place instance h0_ctrl/h_doutb_reg[10]
+INFO: [Physopt 32-662] Processed net h0_ctrl/h0_ctrl_doutb[12].  Did not re-place instance h0_ctrl/h_doutb_reg[12]
+INFO: [Physopt 32-662] Processed net h0_ctrl/h0_ctrl_doutb[13].  Did not re-place instance h0_ctrl/h_doutb_reg[13]
+INFO: [Physopt 32-662] Processed net h0_ctrl/h0_ctrl_doutb[8].  Did not re-place instance h0_ctrl/h_doutb_reg[8]
+INFO: [Physopt 32-662] Processed net h0_ctrl/h0_ctrl_doutb[9].  Did not re-place instance h0_ctrl/h_doutb_reg[9]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[0].  Did not re-place instance h1_ctrl/h_douta_reg[0]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[10].  Did not re-place instance h1_ctrl/h_douta_reg[10]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[11].  Did not re-place instance h1_ctrl/h_douta_reg[11]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[1].  Did not re-place instance h1_ctrl/h_douta_reg[1]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[2].  Did not re-place instance h1_ctrl/h_douta_reg[2]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[3].  Did not re-place instance h1_ctrl/h_douta_reg[3]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[4].  Did not re-place instance h1_ctrl/h_douta_reg[4]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[6].  Did not re-place instance h1_ctrl/h_douta_reg[6]
+INFO: [Physopt 32-662] Processed net h0_ctrl/h_addra[5]_i_2_n_0.  Did not re-place instance h0_ctrl/h_addra[5]_i_2
+INFO: [Physopt 32-662] Processed net h0_ctrl/h_addra[4]_i_1__0_n_0.  Did not re-place instance h0_ctrl/h_addra[4]_i_1__0
+INFO: [Physopt 32-662] Processed net h0_ctrl/h_addra_reg[6]_0[3].  Did not re-place instance h0_ctrl/h_addra_reg[4]
+INFO: [Physopt 32-662] Processed net mul1_ctrl/g_addra[7]_i_1__0_n_0.  Did not re-place instance mul1_ctrl/g_addra[7]_i_1__0
+INFO: [Physopt 32-662] Processed net mul1_ctrl/g_addra[7]_i_11_n_0.  Did not re-place instance mul1_ctrl/g_addra[7]_i_11
+INFO: [Physopt 32-662] Processed net h0_ctrl/h_addra[3]_i_1__0_n_0.  Did not re-place instance h0_ctrl/h_addra[3]_i_1__0
+INFO: [Physopt 32-662] Processed net mul1_ctrl/g_addra[7]_i_14_n_0.  Did not re-place instance mul1_ctrl/g_addra[7]_i_14
+INFO: [Physopt 32-662] Processed net mul1_ctrl/g_addra[7]_i_4__0_n_0.  Did not re-place instance mul1_ctrl/g_addra[7]_i_4__0
+INFO: [Physopt 32-662] Processed net mul1_ctrl/mul1_ctrl_g_addrb[1].  Did not re-place instance mul1_ctrl/g_addrb_reg[1]
+INFO: [Physopt 32-662] Processed net mul1_ctrl/mul1_ctrl_g_addrb[4].  Did not re-place instance mul1_ctrl/g_addrb_reg[4]
+INFO: [Physopt 32-662] Processed net h0_ctrl/h_addra_reg[6]_0[2].  Did not re-place instance h0_ctrl/h_addra_reg[3]
+INFO: [Physopt 32-662] Processed net mul1_ctrl/mul1_ctrl_g_addrb[7].  Did not re-place instance mul1_ctrl/g_addrb_reg[7]
+INFO: [Physopt 32-662] Processed net h0_ctrl/done5_carry_i_4_n_0.  Did not re-place instance h0_ctrl/done5_carry_i_4
+INFO: [Physopt 32-662] Processed net mul1_ctrl/rotate[127]_i_1__0_n_0.  Did not re-place instance mul1_ctrl/rotate[127]_i_1__0
+INFO: [Physopt 32-662] Processed net mul1_ctrl/offset_reg[5]_i_6_n_0.  Did not re-place instance mul1_ctrl/offset_reg[5]_i_6
+INFO: [Physopt 32-662] Processed net mul1_ctrl/ld_done_i_3__0_n_0.  Did not re-place instance mul1_ctrl/ld_done_i_3__0
+INFO: [Physopt 32-662] Processed net mul1_ctrl/ld_done_i_2__0_n_0.  Did not re-place instance mul1_ctrl/ld_done_i_2__0
+INFO: [Physopt 32-662] Processed net mul1_ctrl/rotate[12]_i_10__0_n_0.  Did not re-place instance mul1_ctrl/rotate[12]_i_10__0
+INFO: [Physopt 32-662] Processed net mul1_ctrl/offset_reg[5]_i_11_n_0.  Did not re-place instance mul1_ctrl/offset_reg[5]_i_11
+INFO: [Physopt 32-662] Processed net mul1_ctrl/p_0_in[0].  Did not re-place instance mul1_ctrl/rotate_reg[64]
+INFO: [Physopt 32-662] Processed net offset_reg[3]_i_7__0_n_0.  Did not re-place instance offset_reg[3]_i_7__0
+INFO: [Physopt 32-662] Processed net mul1_ctrl/data3[58].  Did not re-place instance mul1_ctrl/rotate_reg[58]
+INFO: [Physopt 32-662] Processed net h1_ctrl/done6_carry__0_i_1__0_n_0.  Did not re-place instance h1_ctrl/done6_carry__0_i_1__0
+INFO: [Physopt 32-662] Processed net mul1_ctrl/p_0_in[11].  Did not re-place instance mul1_ctrl/rotate_reg[75]
+INFO: [Physopt 32-663] Processed net mul0_ctrl/g_addrb[7]_i_2_n_0.  Re-placed instance mul0_ctrl/g_addrb[7]_i_2
+INFO: [Physopt 32-662] Processed net mul0_ctrl/ld_done_i_2_n_0.  Did not re-place instance mul0_ctrl/ld_done_i_2
+INFO: [Physopt 32-662] Processed net mul0_ctrl/ld_done_i_5_n_0.  Did not re-place instance mul0_ctrl/ld_done_i_5
+INFO: [Physopt 32-662] Processed net mul0_ctrl/g_addrb[3]_i_1_n_0.  Did not re-place instance mul0_ctrl/g_addrb[3]_i_1
+INFO: [Physopt 32-662] Processed net mul0_ctrl/mul0_ctrl_g_addrb[3].  Did not re-place instance mul0_ctrl/g_addrb_reg[3]
+INFO: [Physopt 32-662] Processed net mul0_ctrl/rotate[12]_i_5_n_0.  Did not re-place instance mul0_ctrl/rotate[12]_i_5
+INFO: [Physopt 32-662] Processed net mul0_ctrl/rotate[12]_i_9_n_0.  Did not re-place instance mul0_ctrl/rotate[12]_i_9
+INFO: [Physopt 32-663] Processed net mul0_ctrl/rotate[76]_i_1_n_0.  Re-placed instance mul0_ctrl/rotate[76]_i_1
+INFO: [Physopt 32-663] Processed net mul0_ctrl/rotate[76]_i_3_n_0.  Re-placed instance mul0_ctrl/rotate[76]_i_3
+INFO: [Physopt 32-663] Processed net mul0_ctrl/p_0_in[12].  Re-placed instance mul0_ctrl/rotate_reg[76]
+INFO: [Physopt 32-662] Processed net mul0_ctrl/rotate[127]_i_1_n_0.  Did not re-place instance mul0_ctrl/rotate[127]_i_1
+INFO: [Physopt 32-662] Processed net mul0_ctrl/data3[43].  Did not re-place instance mul0_ctrl/rotate_reg[43]
+INFO: [Physopt 32-662] Processed net mul0_ctrl/data3[56].  Did not re-place instance mul0_ctrl/rotate_reg[56]
+INFO: [Physopt 32-662] Processed net mul0_ctrl/data3[32].  Did not re-place instance mul0_ctrl/rotate_reg[32]
+INFO: [Physopt 32-662] Processed net mul0_ctrl/rotate[39]_i_1_n_0.  Did not re-place instance mul0_ctrl/rotate[39]_i_1
+INFO: [Physopt 32-663] Processed net mul0_ctrl/rotate[39]_i_3_n_0.  Re-placed instance mul0_ctrl/rotate[39]_i_3
+INFO: [Physopt 32-662] Processed net mul0_ctrl/data3[39].  Did not re-place instance mul0_ctrl/rotate_reg[39]
+INFO: [Physopt 32-662] Processed net mul1_ctrl/data3[63].  Did not re-place instance mul1_ctrl/rotate_reg[63]
+INFO: [Physopt 32-661] Optimized 5 nets.  Re-placed 5 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 5 nets or cells. Created 0 new cell, deleted 0 existing cell and moved 5 existing cells
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.619 | TNS=-17.667 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1460.422 ; gain = 0.000
+Phase 7 Placement Based Optimization | Checksum: 16c307d4b
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 8 Rewire
+INFO: [Physopt 32-246] Starting Signal Push optimization...
+INFO: [Physopt 32-241] No nets found for rewiring () optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1460.422 ; gain = 0.000
+Phase 8 Rewire | Checksum: 16c307d4b
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 9 Critical Cell Optimization
+INFO: [Physopt 32-68] No nets found for critical-cell optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 9 Critical Cell Optimization | Checksum: 16c307d4b
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 10 Slr Crossing Optimization
+Phase 10 Slr Crossing Optimization | Checksum: 16c307d4b
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 11 Fanout Optimization
+INFO: [Physopt 32-76] Pass 1. Identified 1 candidate net for fanout optimization.
+INFO: [Physopt 32-572] Net mul0_ctrl/rotate[12]_i_5_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1460.422 ; gain = 0.000
+Phase 11 Fanout Optimization | Checksum: 184117874
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 12 Placement Based Optimization
+INFO: [Physopt 32-660] Identified 100 candidate nets for placement-based optimization.
+INFO: [Physopt 32-662] Processed net h1_ctrl/h_douta[13]_i_1__0_n_0.  Did not re-place instance h1_ctrl/h_douta[13]_i_1__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/h_addra[5]_i_2__0_n_0.  Did not re-place instance h1_ctrl/h_addra[5]_i_2__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/h_chk_done[0]_i_3__0_n_0.  Did not re-place instance h1_ctrl/h_chk_done[0]_i_3__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/entry_num[6]_i_1__0_n_0.  Did not re-place instance h1_ctrl/entry_num[6]_i_1__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/done4_carry_i_3__0_n_0.  Did not re-place instance h1_ctrl/done4_carry_i_3__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/p_0_in[0].  Did not re-place instance h1_ctrl/entry_num_reg[1]
+INFO: [Physopt 32-662] Processed net h1_ctrl/p_0_in[3].  Did not re-place instance h1_ctrl/entry_num_reg[4]
+INFO: [Physopt 32-662] Processed net h1_ctrl/p_0_in[4].  Did not re-place instance h1_ctrl/entry_num_reg[5]
+INFO: [Physopt 32-662] Processed net h1_ctrl/p_0_in[5].  Did not re-place instance h1_ctrl/entry_num_reg[6]
+INFO: [Physopt 32-662] Processed net h1_ctrl/entry_num_reg_n_0_[0].  Did not re-place instance h1_ctrl/entry_num_reg[0]
+INFO: [Physopt 32-662] Processed net h1_ctrl/done6_carry_i_3__0_n_0.  Did not re-place instance h1_ctrl/done6_carry_i_3__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/done6_carry_i_1__0_n_0.  Did not re-place instance h1_ctrl/done6_carry_i_1__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/done4_carry_i_4__0_n_0.  Did not re-place instance h1_ctrl/done4_carry_i_4__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/done4_carry_i_2__0_n_0.  Did not re-place instance h1_ctrl/done4_carry_i_2__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/done6_carry_i_4__0_n_0.  Did not re-place instance h1_ctrl/done6_carry_i_4__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/done6_carry_i_2__0_n_0.  Did not re-place instance h1_ctrl/done6_carry_i_2__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/done4_carry_i_1__0_n_0.  Did not re-place instance h1_ctrl/done4_carry_i_1__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/entry_num[6]_i_2__0_n_0.  Did not re-place instance h1_ctrl/entry_num[6]_i_2__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/done5_carry_i_1__0_n_0.  Did not re-place instance h1_ctrl/done5_carry_i_1__0
+INFO: [Physopt 32-662] Processed net h0_ctrl/h_doutb[13]_i_1_n_0.  Did not re-place instance h0_ctrl/h_doutb[13]_i_1
+INFO: [Physopt 32-662] Processed net h0_ctrl/h_chk_done[0]_i_3_n_0.  Did not re-place instance h0_ctrl/h_chk_done[0]_i_3
+INFO: [Physopt 32-662] Processed net h0_ctrl/h_addrb[6]_i_2__0_n_0.  Did not re-place instance h0_ctrl/h_addrb[6]_i_2__0
+INFO: [Physopt 32-662] Processed net h0_ctrl/i__carry_i_3_n_0.  Did not re-place instance h0_ctrl/i__carry_i_3
+INFO: [Physopt 32-662] Processed net h0_ctrl/h0_ctrl_doutb[3].  Did not re-place instance h0_ctrl/h_doutb_reg[3]
+INFO: [Physopt 32-662] Processed net h0_ctrl/h0_ctrl_doutb[5].  Did not re-place instance h0_ctrl/h_doutb_reg[5]
+INFO: [Physopt 32-662] Processed net h0_ctrl/h0_ctrl_doutb[6].  Did not re-place instance h0_ctrl/h_doutb_reg[6]
+INFO: [Physopt 32-662] Processed net h0_ctrl/h0_ctrl_doutb[7].  Did not re-place instance h0_ctrl/h_doutb_reg[7]
+INFO: [Physopt 32-662] Processed net h0_ctrl/i__carry_i_4_n_0.  Did not re-place instance h0_ctrl/i__carry_i_4
+INFO: [Physopt 32-662] Processed net h0_ctrl/h0_ctrl_doutb[11].  Did not re-place instance h0_ctrl/h_doutb_reg[11]
+INFO: [Physopt 32-662] Processed net h0_ctrl/h_douta[13]_i_1_n_0.  Did not re-place instance h0_ctrl/h_douta[13]_i_1
+INFO: [Physopt 32-662] Processed net h0_ctrl/entry_num[6]_i_1_n_0.  Did not re-place instance h0_ctrl/entry_num[6]_i_1
+INFO: [Physopt 32-662] Processed net h0_ctrl/p_0_in[0].  Did not re-place instance h0_ctrl/entry_num_reg[1]
+INFO: [Physopt 32-662] Processed net h0_ctrl/p_0_in[3].  Did not re-place instance h0_ctrl/entry_num_reg[4]
+INFO: [Physopt 32-662] Processed net h0_ctrl/p_0_in[4].  Did not re-place instance h0_ctrl/entry_num_reg[5]
+INFO: [Physopt 32-662] Processed net h0_ctrl/p_0_in[5].  Did not re-place instance h0_ctrl/entry_num_reg[6]
+INFO: [Physopt 32-662] Processed net h0_ctrl/entry_num_reg_n_0_[0].  Did not re-place instance h0_ctrl/entry_num_reg[0]
+INFO: [Physopt 32-662] Processed net h1_ctrl/done5_carry_i_3__0_n_0.  Did not re-place instance h1_ctrl/done5_carry_i_3__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/done5_carry_i_2__0_n_0.  Did not re-place instance h1_ctrl/done5_carry_i_2__0
+INFO: [Physopt 32-662] Processed net h0_ctrl/done6_carry_i_1_n_0.  Did not re-place instance h0_ctrl/done6_carry_i_1
+INFO: [Physopt 32-662] Processed net h1_ctrl/done5_carry_i_4__0_n_0.  Did not re-place instance h1_ctrl/done5_carry_i_4__0
+INFO: [Physopt 32-662] Processed net h0_ctrl/done6_carry_i_2_n_0.  Did not re-place instance h0_ctrl/done6_carry_i_2
+INFO: [Physopt 32-662] Processed net h0_ctrl/done6_carry_i_3_n_0.  Did not re-place instance h0_ctrl/done6_carry_i_3
+INFO: [Physopt 32-662] Processed net h0_ctrl/done6_carry_i_4_n_0.  Did not re-place instance h0_ctrl/done6_carry_i_4
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_done.  Did not re-place instance h1_ctrl/done_reg
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[12].  Did not re-place instance h1_ctrl/h_douta_reg[12]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[13].  Did not re-place instance h1_ctrl/h_douta_reg[13]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[5].  Did not re-place instance h1_ctrl/h_douta_reg[5]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[7].  Did not re-place instance h1_ctrl/h_douta_reg[7]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[8].  Did not re-place instance h1_ctrl/h_douta_reg[8]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[9].  Did not re-place instance h1_ctrl/h_douta_reg[9]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_web.  Did not re-place instance h1_ctrl/h_web_reg
+INFO: [Physopt 32-662] Processed net h0_ctrl/done4_carry_i_3_n_0.  Did not re-place instance h0_ctrl/done4_carry_i_3
+INFO: [Physopt 32-662] Processed net h1_ctrl/i__carry_i_3__0_n_0.  Did not re-place instance h1_ctrl/i__carry_i_3__0
+INFO: [Physopt 32-662] Processed net h1_ctrl/i__carry_i_4__0_n_0.  Did not re-place instance h1_ctrl/i__carry_i_4__0
+INFO: [Physopt 32-662] Processed net h0_ctrl/done4_carry_i_4_n_0.  Did not re-place instance h0_ctrl/done4_carry_i_4
+INFO: [Physopt 32-662] Processed net h0_ctrl/done5_carry_i_3_n_0.  Did not re-place instance h0_ctrl/done5_carry_i_3
+INFO: [Physopt 32-662] Processed net h0_ctrl/h0_ctrl_doutb[10].  Did not re-place instance h0_ctrl/h_doutb_reg[10]
+INFO: [Physopt 32-662] Processed net h0_ctrl/h0_ctrl_doutb[12].  Did not re-place instance h0_ctrl/h_doutb_reg[12]
+INFO: [Physopt 32-662] Processed net h0_ctrl/h0_ctrl_doutb[13].  Did not re-place instance h0_ctrl/h_doutb_reg[13]
+INFO: [Physopt 32-662] Processed net h0_ctrl/h0_ctrl_doutb[8].  Did not re-place instance h0_ctrl/h_doutb_reg[8]
+INFO: [Physopt 32-662] Processed net h0_ctrl/h0_ctrl_doutb[9].  Did not re-place instance h0_ctrl/h_doutb_reg[9]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[0].  Did not re-place instance h1_ctrl/h_douta_reg[0]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[10].  Did not re-place instance h1_ctrl/h_douta_reg[10]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[11].  Did not re-place instance h1_ctrl/h_douta_reg[11]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[1].  Did not re-place instance h1_ctrl/h_douta_reg[1]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[2].  Did not re-place instance h1_ctrl/h_douta_reg[2]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[3].  Did not re-place instance h1_ctrl/h_douta_reg[3]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[4].  Did not re-place instance h1_ctrl/h_douta_reg[4]
+INFO: [Physopt 32-662] Processed net h1_ctrl/h1_ctrl_douta[6].  Did not re-place instance h1_ctrl/h_douta_reg[6]
+INFO: [Physopt 32-662] Processed net h0_ctrl/h_addra[5]_i_2_n_0.  Did not re-place instance h0_ctrl/h_addra[5]_i_2
+INFO: [Physopt 32-662] Processed net h0_ctrl/h_addra[4]_i_1__0_n_0.  Did not re-place instance h0_ctrl/h_addra[4]_i_1__0
+INFO: [Physopt 32-662] Processed net h0_ctrl/h_addra_reg[6]_0[3].  Did not re-place instance h0_ctrl/h_addra_reg[4]
+INFO: [Physopt 32-662] Processed net mul1_ctrl/g_addra[7]_i_1__0_n_0.  Did not re-place instance mul1_ctrl/g_addra[7]_i_1__0
+INFO: [Physopt 32-662] Processed net mul1_ctrl/g_addra[7]_i_11_n_0.  Did not re-place instance mul1_ctrl/g_addra[7]_i_11
+INFO: [Physopt 32-662] Processed net h0_ctrl/h_addra[3]_i_1__0_n_0.  Did not re-place instance h0_ctrl/h_addra[3]_i_1__0
+INFO: [Physopt 32-662] Processed net mul1_ctrl/g_addra[7]_i_14_n_0.  Did not re-place instance mul1_ctrl/g_addra[7]_i_14
+INFO: [Physopt 32-662] Processed net mul1_ctrl/g_addra[7]_i_4__0_n_0.  Did not re-place instance mul1_ctrl/g_addra[7]_i_4__0
+INFO: [Physopt 32-662] Processed net mul1_ctrl/mul1_ctrl_g_addrb[1].  Did not re-place instance mul1_ctrl/g_addrb_reg[1]
+INFO: [Physopt 32-662] Processed net mul1_ctrl/mul1_ctrl_g_addrb[4].  Did not re-place instance mul1_ctrl/g_addrb_reg[4]
+INFO: [Physopt 32-662] Processed net h0_ctrl/h_addra_reg[6]_0[2].  Did not re-place instance h0_ctrl/h_addra_reg[3]
+INFO: [Physopt 32-662] Processed net mul1_ctrl/mul1_ctrl_g_addrb[7].  Did not re-place instance mul1_ctrl/g_addrb_reg[7]
+INFO: [Physopt 32-662] Processed net h0_ctrl/done5_carry_i_4_n_0.  Did not re-place instance h0_ctrl/done5_carry_i_4
+INFO: [Physopt 32-662] Processed net mul1_ctrl/rotate[127]_i_1__0_n_0.  Did not re-place instance mul1_ctrl/rotate[127]_i_1__0
+INFO: [Physopt 32-662] Processed net mul1_ctrl/offset_reg[5]_i_6_n_0.  Did not re-place instance mul1_ctrl/offset_reg[5]_i_6
+INFO: [Physopt 32-662] Processed net mul1_ctrl/ld_done_i_3__0_n_0.  Did not re-place instance mul1_ctrl/ld_done_i_3__0
+INFO: [Physopt 32-662] Processed net mul1_ctrl/ld_done_i_2__0_n_0.  Did not re-place instance mul1_ctrl/ld_done_i_2__0
+INFO: [Physopt 32-662] Processed net mul1_ctrl/rotate[12]_i_10__0_n_0.  Did not re-place instance mul1_ctrl/rotate[12]_i_10__0
+INFO: [Physopt 32-662] Processed net mul1_ctrl/offset_reg[5]_i_11_n_0.  Did not re-place instance mul1_ctrl/offset_reg[5]_i_11
+INFO: [Physopt 32-662] Processed net mul1_ctrl/p_0_in[0].  Did not re-place instance mul1_ctrl/rotate_reg[64]
+INFO: [Physopt 32-662] Processed net offset_reg[3]_i_7__0_n_0.  Did not re-place instance offset_reg[3]_i_7__0
+INFO: [Physopt 32-662] Processed net mul1_ctrl/data3[58].  Did not re-place instance mul1_ctrl/rotate_reg[58]
+INFO: [Physopt 32-662] Processed net h1_ctrl/done6_carry__0_i_1__0_n_0.  Did not re-place instance h1_ctrl/done6_carry__0_i_1__0
+INFO: [Physopt 32-662] Processed net mul1_ctrl/p_0_in[11].  Did not re-place instance mul1_ctrl/rotate_reg[75]
+INFO: [Physopt 32-662] Processed net mul0_ctrl/rotate[127]_i_1_n_0.  Did not re-place instance mul0_ctrl/rotate[127]_i_1
+INFO: [Physopt 32-662] Processed net mul0_ctrl/ld_done_i_2_n_0.  Did not re-place instance mul0_ctrl/ld_done_i_2
+INFO: [Physopt 32-662] Processed net mul0_ctrl/ld_done_i_5_n_0.  Did not re-place instance mul0_ctrl/ld_done_i_5
+INFO: [Physopt 32-662] Processed net mul0_ctrl/data3[43].  Did not re-place instance mul0_ctrl/rotate_reg[43]
+INFO: [Physopt 32-662] Processed net mul0_ctrl/data3[56].  Did not re-place instance mul0_ctrl/rotate_reg[56]
+INFO: [Physopt 32-662] Processed net mul0_ctrl/data3[32].  Did not re-place instance mul0_ctrl/rotate_reg[32]
+INFO: [Physopt 32-662] Processed net mul1_ctrl/data3[63].  Did not re-place instance mul1_ctrl/rotate_reg[63]
+INFO: [Physopt 32-661] Optimized 0 net.  Re-placed 0 instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1460.422 ; gain = 0.000
+Phase 12 Placement Based Optimization | Checksum: 16b0d9778
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:14 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 13 Rewire
+INFO: [Physopt 32-246] Starting Signal Push optimization...
+INFO: [Physopt 32-241] No nets found for rewiring () optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1460.422 ; gain = 0.000
+Phase 13 Rewire | Checksum: 16b0d9778
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:14 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 14 Critical Cell Optimization
+INFO: [Physopt 32-68] No nets found for critical-cell optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 14 Critical Cell Optimization | Checksum: 16b0d9778
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:14 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 15 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 15 DSP Register Optimization | Checksum: 16b0d9778
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:14 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 16 BRAM Register Optimization
+INFO: [Physopt 32-665] Processed cell h1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM18.ram. 14 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell h1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM18.ram. 14 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell h0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM18.ram. 14 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell h0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM18.ram. 14 registers were pushed out.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 4 nets or cells. Created 56 new cells, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.222 | TNS=-1.112 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1460.422 ; gain = 0.000
+Phase 16 BRAM Register Optimization | Checksum: 137643d1f
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 17 URAM Register Optimization
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 17 URAM Register Optimization | Checksum: 137643d1f
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 18 Shift Register Optimization
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 18 Shift Register Optimization | Checksum: 137643d1f
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 19 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 19 DSP Register Optimization | Checksum: 137643d1f
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 20 BRAM Register Optimization
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 20 BRAM Register Optimization | Checksum: 137643d1f
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 21 URAM Register Optimization
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 21 URAM Register Optimization | Checksum: 137643d1f
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 22 Shift Register Optimization
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 22 Shift Register Optimization | Checksum: 137643d1f
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 23 Critical Pin Optimization
+INFO: [Physopt 32-606] Identified 8 candidate nets for critical-pin optimization.
+INFO: [Physopt 32-608] Optimized 3 nets.  Swapped 50 pins.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 3 nets or cells. Created 0 new cell, deleted 0 existing cell and moved 50 existing cells
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.135 | TNS=0.000 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1460.422 ; gain = 0.000
+Phase 23 Critical Pin Optimization | Checksum: 137643d1f
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 24 Very High Fanout Optimization
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 24 Very High Fanout Optimization | Checksum: 137643d1f
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 25 Placement Based Optimization
+INFO: [Physopt 32-670] No setup violation found.  Placement Based Optimization was not performed.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1460.422 ; gain = 0.000
+Phase 25 Placement Based Optimization | Checksum: 137643d1f
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 26 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.135 | TNS=0.000 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.135 | TNS=0.000 |
+Phase 26 Critical Path Optimization | Checksum: 137643d1f
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 27 BRAM Enable Optimization
+Phase 27 BRAM Enable Optimization | Checksum: 137643d1f
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1460.422 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1460.422 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=0.135 | TNS=0.000 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization       |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Fanout             |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           3  |  00:00:01  |
+|  Placement Based    |          0.000  |          2.724  |            0  |              0  |                    40  |           0  |           3  |  00:00:11  |
+|  Rewire             |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           3  |  00:00:00  |
+|  Critical Cell      |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           3  |  00:00:01  |
+|  Slr Crossing       |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register       |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           2  |  00:00:00  |
+|  BRAM Register      |          0.396  |         33.109  |           56  |              0  |                     4  |           0  |           2  |  00:00:01  |
+|  URAM Register      |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           2  |  00:00:00  |
+|  Shift Register     |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           2  |  00:00:00  |
+|  Critical Pin       |          0.357  |          1.112  |            0  |              0  |                     3  |           0  |           1  |  00:00:00  |
+|  Very High Fanout   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Enable        |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path      |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total              |          0.753  |         36.945  |           56  |              0  |                    47  |           0  |          25  |  00:00:14  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Physical Synthesis Task | Checksum: 137643d1f
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1460.422 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+528 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 1460.422 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.249 . Memory (MB): peak = 1460.422 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/David/Desktop/KeyGen/KeyGen.runs/impl_3/BIKE_1_top_physopt.dcp' has been generated.
+Command: route_design -directive NoTimingRelaxation
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a75t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a75t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'NoTimingRelaxation'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: a0956b1f ConstDB: 0 ShapeSum: 208d00f9 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: fc0a3865
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1460.422 ; gain = 0.000
+Post Restoration Checksum: NetGraph: 43bbd860 NumContArr: b84e6005 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: fc0a3865
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: fc0a3865
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1460.422 ; gain = 0.000
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: fc0a3865
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1460.422 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 100a228d2
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:26 . Memory (MB): peak = 1469.137 ; gain = 8.715
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.250  | TNS=0.000  | WHS=-0.362 | THS=-72.446|
+
+Phase 2 Router Initialization | Checksum: d9e023ef
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:26 . Memory (MB): peak = 1469.137 ; gain = 8.715
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: f77cc914
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:26 . Memory (MB): peak = 1469.137 ; gain = 8.715
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 1287
+ Number of Nodes with overlaps = 564
+ Number of Nodes with overlaps = 287
+ Number of Nodes with overlaps = 162
+ Number of Nodes with overlaps = 83
+ Number of Nodes with overlaps = 54
+ Number of Nodes with overlaps = 29
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.280 | TNS=-12.520| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1d819ac75
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:34 . Memory (MB): peak = 1469.137 ; gain = 8.715
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 82
+ Number of Nodes with overlaps = 55
+ Number of Nodes with overlaps = 38
+ Number of Nodes with overlaps = 36
+ Number of Nodes with overlaps = 21
+ Number of Nodes with overlaps = 32
+ Number of Nodes with overlaps = 27
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.234 | TNS=-2.929 | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 11eba4fe4
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:37 . Memory (MB): peak = 1469.137 ; gain = 8.715
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 37
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.104 | TNS=-0.619 | WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 1c8ee1d11
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:39 . Memory (MB): peak = 1469.137 ; gain = 8.715
+
+Phase 4.4 Global Iteration 3
+ Number of Nodes with overlaps = 80
+ Number of Nodes with overlaps = 28
+ Number of Nodes with overlaps = 18
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.039 | TNS=-0.256 | WHS=N/A    | THS=N/A    |
+
+Phase 4.4 Global Iteration 3 | Checksum: 1b3920e27
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:40 . Memory (MB): peak = 1469.137 ; gain = 8.715
+
+Phase 4.5 Global Iteration 4
+ Number of Nodes with overlaps = 48
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.160 | TNS=-0.561 | WHS=N/A    | THS=N/A    |
+
+Phase 4.5 Global Iteration 4 | Checksum: 1a364a160
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:41 . Memory (MB): peak = 1469.137 ; gain = 8.715
+Phase 4 Rip-up And Reroute | Checksum: 1a364a160
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:41 . Memory (MB): peak = 1469.137 ; gain = 8.715
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1ba6583e7
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:41 . Memory (MB): peak = 1469.137 ; gain = 8.715
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.048  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: 1ba6583e7
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:41 . Memory (MB): peak = 1469.137 ; gain = 8.715
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1ba6583e7
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:41 . Memory (MB): peak = 1469.137 ; gain = 8.715
+Phase 5 Delay and Skew Optimization | Checksum: 1ba6583e7
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:41 . Memory (MB): peak = 1469.137 ; gain = 8.715
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1e466b5c4
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:42 . Memory (MB): peak = 1469.137 ; gain = 8.715
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.048  | TNS=0.000  | WHS=0.056  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1e466b5c4
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:42 . Memory (MB): peak = 1469.137 ; gain = 8.715
+Phase 6 Post Hold Fix | Checksum: 1e466b5c4
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:42 . Memory (MB): peak = 1469.137 ; gain = 8.715
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.05188 %
+  Global Horizontal Routing Utilization  = 1.27771 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 1848f44d5
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:42 . Memory (MB): peak = 1469.137 ; gain = 8.715
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1848f44d5
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:42 . Memory (MB): peak = 1469.137 ; gain = 8.715
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1e2106658
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:42 . Memory (MB): peak = 1469.137 ; gain = 8.715
+
+Phase 10 Post Router Timing
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=0.051  | TNS=0.000  | WHS=0.058  | THS=0.000  |
+
+INFO: [Route 35-61] The design met the timing requirement.
+Phase 10 Post Router Timing | Checksum: 1f59ddda9
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:42 . Memory (MB): peak = 1469.137 ; gain = 8.715
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:42 . Memory (MB): peak = 1469.137 ; gain = 8.715
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+551 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 1469.137 ; gain = 8.715
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.346 . Memory (MB): peak = 1469.137 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/David/Desktop/KeyGen/KeyGen.runs/impl_3/BIKE_1_top_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file BIKE_1_top_drc_routed.rpt -pb BIKE_1_top_drc_routed.pb -rpx BIKE_1_top_drc_routed.rpx
+Command: report_drc -file BIKE_1_top_drc_routed.rpt -pb BIKE_1_top_drc_routed.pb -rpx BIKE_1_top_drc_routed.rpx
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/David/Desktop/KeyGen/KeyGen.runs/impl_3/BIKE_1_top_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file BIKE_1_top_methodology_drc_routed.rpt -pb BIKE_1_top_methodology_drc_routed.pb -rpx BIKE_1_top_methodology_drc_routed.rpx
+Command: report_methodology -file BIKE_1_top_methodology_drc_routed.rpt -pb BIKE_1_top_methodology_drc_routed.pb -rpx BIKE_1_top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/David/Desktop/KeyGen/KeyGen.runs/impl_3/BIKE_1_top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file BIKE_1_top_power_routed.rpt -pb BIKE_1_top_power_summary_routed.pb -rpx BIKE_1_top_power_routed.rpx
+Command: report_power -file BIKE_1_top_power_routed.rpt -pb BIKE_1_top_power_summary_routed.pb -rpx BIKE_1_top_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+563 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file BIKE_1_top_route_status.rpt -pb BIKE_1_top_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file BIKE_1_top_timing_summary_routed.rpt -pb BIKE_1_top_timing_summary_routed.pb -rpx BIKE_1_top_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max, Timing Stage: Requireds.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file BIKE_1_top_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-545] No incremental reuse to report, no incremental placement and routing data was found.
+INFO: [runtcl-4] Executing : report_clock_utilization -file BIKE_1_top_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file route_report_bus_skew_0.rpt -rpx route_report_bus_skew_0.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max, Timing Stage: Requireds.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Sat May  4 12:30:50 2019...

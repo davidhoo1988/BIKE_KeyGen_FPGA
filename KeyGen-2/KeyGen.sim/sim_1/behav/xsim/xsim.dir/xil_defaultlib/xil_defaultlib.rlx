@@ -1,0 +1,17 @@
+0.6
+2018.1
+Apr  4 2018
+19:30:32
+C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/fifo_rng/sim/fifo_rng.v,1551925637,verilog,,C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/src/core_ctrl.v,,fifo_rng,,,,,,,,
+C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mem_g/sim/mem_g.v,1553142084,verilog,,C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mem_h/sim/mem_h.v,,mem_g,,,,,,,,
+C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mem_h/sim/mem_h.v,1553142204,verilog,,C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/src/BIKE_2_top.v,,mem_h,,,,,,,,
+C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mul_64bit/mul_64bit/sim/mul_64bit.vhd,1551092823,vhdl,,,,mul_64bit,,,,,,,,
+C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.sim/sim_1/behav/xsim/glbl.v,1522801934,verilog,,,,glbl,,,,,,,,
+C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/src/BIKE_2_top.v,1554172479,verilog,,C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/src/BIKE_2_top_tb.v,,BIKE_2_top,,,,,,,,
+C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/src/BIKE_2_top_tb.v,1554171654,verilog,,,,BIKE_2_top_tb,,,,,,,,
+C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/src/core_ctrl.v,1554172502,verilog,,C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/src/g_ctrl.v,,core_ctrl,,,,,,,,
+C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/src/g_ctrl.v,1551876852,verilog,,C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/src/prng_lcg.v,,g_ctrl;hw_sum,,,,,,,,
+C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/src/h_ctrl.v,1552358324,verilog,,C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/src/mul_ctrl.v,,h_ctrl,,,,,,,,
+C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/src/mul_ctrl.v,1553515617,verilog,,C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mem_g/sim/mem_g.v,,mul_ctrl,,,,,,,,
+C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/src/prng_lcg.v,1551615153,verilog,,C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/src/prng_lcg_tb.v,,prng_lcg,,,,,,,,
+C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/src/prng_lcg_tb.v,1550739141,verilog,,C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/src/h_ctrl.v,,prng_lcg_tb,,,,,,,,

@@ -1,0 +1,147 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat May  4 12:12:54 2019
+# Process ID: 8460
+# Current directory: C:/Users/David/Desktop/KeyGen
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13756 C:\Users\David\Desktop\KeyGen\KeyGen.xpr
+# Log file: C:/Users/David/Desktop/KeyGen/vivado.log
+# Journal file: C:/Users/David/Desktop/KeyGen\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/David/Desktop/KeyGen/KeyGen.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/David/Desktop/BIKE KeyGen/KeyGen' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 845.227 ; gain = 146.793
+set_property part xc7a75tcsg324-1 [current_project]
+WARNING: [IP_Flow 19-2162] IP 'mem_g' is locked:
+* Current project part 'xc7a75tcsg324-1' and the part 'xc7s50csga324-1' used to customize the IP 'mem_g' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'mem_h' is locked:
+* Current project part 'xc7a75tcsg324-1' and the part 'xc7s50csga324-1' used to customize the IP 'mem_h' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'mul_64bit' is locked:
+* Current project part 'xc7a75tcsg324-1' and the part 'xc7s50csga324-1' used to customize the IP 'mul_64bit' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'fifo_rng' is locked:
+* Current project part 'xc7a75tcsg324-1' and the part 'xc7s50csga324-1' used to customize the IP 'fifo_rng' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+update_ip_catalog
+reset_run mul_64bit_synth_1
+reset_run fifo_rng_synth_1
+reset_run synth_6
+launch_runs impl_3 -jobs 6
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP mem_g, cache-ID = c45697fbb1fe0209; cache size = 35.335 MB.
+WARNING: [Vivado 12-4801] The synthesis checkpoint for IP 'C:/Users/David/Desktop/KeyGen/KeyGen.ip/mem_g/mem_g.xci' is available but stale and the IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP mem_h, cache-ID = bbffb752de0e9e3e; cache size = 35.335 MB.
+WARNING: [Vivado 12-4801] The synthesis checkpoint for IP 'C:/Users/David/Desktop/KeyGen/KeyGen.ip/mem_h/mem_h.xci' is available but stale and the IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-577] IP run mul_64bit_synth_1 is available but is out of date. Since the IP is locked, the synthesis checkpoint cannot be updated. The out-of-date checkpoint will be used and it may result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-577] IP run fifo_rng_synth_1 is available but is out of date. Since the IP is locked, the synthesis checkpoint cannot be updated. The out-of-date checkpoint will be used and it may result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+C:/Users/David/Desktop/KeyGen/KeyGen.ip/mul_64bit/mul_64bit/mul_64bit.xci
+
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+C:/Users/David/Desktop/KeyGen/KeyGen.ip/fifo_rng/fifo_rng.xci
+
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+C:/Users/David/Desktop/KeyGen/KeyGen.ip/mem_g/mem_g.xci
+C:/Users/David/Desktop/KeyGen/KeyGen.ip/mem_h/mem_h.xci
+
+WARNING: [Project 1-576] IP 'C:/Users/David/Desktop/KeyGen/KeyGen.ip/mul_64bit/mul_64bit/mul_64bit.xci' in run mul_64bit_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'C:/Users/David/Desktop/KeyGen/KeyGen.ip/fifo_rng/fifo_rng.xci' in run fifo_rng_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+[Sat May  4 12:16:35 2019] Launched mul_64bit_synth_1, synth_6...
+Run output will be captured here:
+mul_64bit_synth_1: C:/Users/David/Desktop/KeyGen/KeyGen.runs/mul_64bit_synth_1/runme.log
+synth_6: C:/Users/David/Desktop/KeyGen/KeyGen.runs/synth_6/runme.log
+[Sat May  4 12:16:35 2019] Launched impl_3...
+Run output will be captured here: C:/Users/David/Desktop/KeyGen/KeyGen.runs/impl_3/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:21 . Memory (MB): peak = 960.750 ; gain = 2.906
+open_run impl_3
+INFO: [Netlist 29-17] Analyzing 100 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Device 21-403] Loading part xc7a75tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.276 . Memory (MB): peak = 1825.172 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.277 . Memory (MB): peak = 1825.172 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 120 instances were transformed.
+  SRLC16E => SRL16E: 120 instances
+
+open_run: Time (s): cpu = 00:00:25 ; elapsed = 00:00:35 . Memory (MB): peak = 1905.527 ; gain = 938.676
+save_constraints
+reset_run synth_6
+reset_run impl_3
+launch_runs impl_3 -jobs 6
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP mem_g, cache-ID = c45697fbb1fe0209; cache size = 35.336 MB.
+WARNING: [Vivado 12-4801] The synthesis checkpoint for IP 'C:/Users/David/Desktop/KeyGen/KeyGen.ip/mem_g/mem_g.xci' is available but stale and the IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP mem_h, cache-ID = bbffb752de0e9e3e; cache size = 35.336 MB.
+WARNING: [Vivado 12-4801] The synthesis checkpoint for IP 'C:/Users/David/Desktop/KeyGen/KeyGen.ip/mem_h/mem_h.xci' is available but stale and the IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+C:/Users/David/Desktop/KeyGen/KeyGen.ip/mem_g/mem_g.xci
+C:/Users/David/Desktop/KeyGen/KeyGen.ip/mem_h/mem_h.xci
+
+[Sat May  4 12:25:22 2019] Launched synth_6...
+Run output will be captured here: C:/Users/David/Desktop/KeyGen/KeyGen.runs/synth_6/runme.log
+[Sat May  4 12:25:22 2019] Launched impl_3...
+Run output will be captured here: C:/Users/David/Desktop/KeyGen/KeyGen.runs/impl_3/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:20 . Memory (MB): peak = 1924.438 ; gain = 3.625
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1926.438 ; gain = 2.000
+WARNING: [Vivado 12-4144] IP run mul_64bit_synth_1 is available but is out of date. Since the IP is locked, the synthesis checkpoint cannot be updated. The out-of-date checkpoint will be used and it may result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Vivado 12-4144] IP run fifo_rng_synth_1 is available but is out of date. Since the IP is locked, the synthesis checkpoint cannot be updated. The out-of-date checkpoint will be used and it may result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Vivado 12-4172] The following IPs are either missing output products or output products are not up-to-date. Since these IPs are locked, no update to the output products cant be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+C:/Users/David/Desktop/KeyGen/KeyGen.ip/mem_g/mem_g.xci
+C:/Users/David/Desktop/KeyGen/KeyGen.ip/mem_h/mem_h.xci
+
+refresh_design
+INFO: [Netlist 29-17] Analyzing 100 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.286 . Memory (MB): peak = 1949.398 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.286 . Memory (MB): peak = 1949.398 ; gain = 0.000
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1978.195 ; gain = 15.547
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat May  4 12:33:42 2019...

@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Thu Mar 28 10:59:42 2019
+# Process ID: 29108
+# Current directory: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28452 C:\Users\David\Desktop\BIKE KeyGen\KeyGen-2\KeyGen2.xpr
+# Log file: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/vivado.log
+# Journal file: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen2.xpr}
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen2.srcs/constrs_1/new/user_constrains.xdc'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_6' not found
+WARNING: [Project 1-509] GeneratedRun file for 'mul_64bit_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'fifo_rng_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_2' not found
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen2.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 875.582 ; gain = 112.359
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 28 11:00:17 2019...

@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Fri Mar 15 10:06:28 2019
+# Process ID: 12824
+# Current directory: C:/Users/David/Desktop/BIKE KeyGen/KeyGen
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9952 C:\Users\David\Desktop\BIKE KeyGen\KeyGen\KeyGen.xpr
+# Log file: C:/Users/David/Desktop/BIKE KeyGen/KeyGen/vivado.log
+# Journal file: C:/Users/David/Desktop/BIKE KeyGen/KeyGen\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.xpr}
+synth_design -rtl -name rtl_1
+reset_run synth_6
+launch_runs synth_6 -jobs 4
+wait_on_run synth_6
+launch_runs impl_2 -jobs 4
+wait_on_run impl_2
+open_run impl_2
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+launch_simulation -install_path F:/modelsim64_10.5/win64
+report_utilization -name utilization_1

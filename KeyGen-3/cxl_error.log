@@ -1,0 +1,182 @@
+==============================================================================
+Library 'xdma_v4_1_0' compilation error(s)
+==============================================================================
+** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+Start time: 19:41:40 on Feb 20,2019
+vlog -64 -L xdma_v4_1_0 "+incdir+C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl" -sv -work xdma_v4_1_0 -f F:\modelsim64_10.5\Xilinx_lib\64bit_vivado_lib/xdma_v4_1_0/.cxl.systemverilog.xdma_v4_1_0.xdma_v4_1_0.nt64.cmf 
+** Warning: F:/Xilinx/Vivado/2018.1/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv(64): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: F:/Xilinx/Vivado/2018.1/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv(64): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: F:/Xilinx/Vivado/2018.1/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv(64): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: F:/Xilinx/Vivado/2018.1/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv(64): (vlog-2600) <protected>
+** Warning: F:/Xilinx/Vivado/2018.1/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv(64): (vlog-2600) <protected>
+-- Compiling package xdma_v4_1_vl_rfs_sv_unit
+** Error: (vlog-13069) C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/xdma_axi4mm_axi_bridge.vh(204): syntax error, unexpected "SystemVerilog keyword 'endpackage'", expecting class.
+-- Compiling interface dma_pcie_axis_cc_if
+-- Compiling interface dma_pcie_axis_cq_if
+-- Compiling interface dma_pcie_axis_rc_if
+-- Compiling interface dma_pcie_axis_rq_if
+-- Compiling interface dma_pcie_c2h_crdt_if
+-- Compiling interface dma_pcie_dsc_in_if
+** Error: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/dma_pcie_dsc_in_if.svh(6): 'dma_dsc_in_crd_t' is an unknown type.
+Or did you omit the '()' for an instantiation?
+** Error: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/dma_pcie_dsc_in_if.svh(7): 'dma_dsc_block_t' is an unknown type.
+Or did you omit the '()' for an instantiation?
+-- Compiling interface dma_pcie_dsc_out_if
+** Error: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/dma_pcie_dsc_out_if.svh(6): 'dma_dsc_out_crd_t' is an unknown type.
+Or did you omit the '()' for an instantiation?
+** Error: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/dma_pcie_dsc_out_if.svh(7): 'dma_dsc_block_t' is an unknown type.
+Or did you omit the '()' for an instantiation?
+-- Compiling interface dma_pcie_fabric_input_if
+-- Compiling interface dma_pcie_fabric_output_if
+-- Compiling interface dma_pcie_gic_if
+-- Compiling interface dma_pcie_h2c_crdt_if
+-- Compiling interface dma_pcie_mi_16Bx2048_4Bwe_ram_if
+-- Compiling interface dma_pcie_mi_2Bx2048_ram_if
+-- Compiling interface dma_pcie_mi_4Bx2048_4Bwe_ram_if
+-- Compiling interface dma_pcie_mi_64Bx128_32Bwe_ram_if
+-- Compiling interface dma_pcie_mi_64Bx256_32Bwe_ram_if
+-- Compiling interface dma_pcie_mi_64Bx512_32Bwe_ram_if
+-- Compiling interface dma_pcie_mi_8Bx2048_4Bwe_ram_if
+-- Compiling interface dma_pcie_mi_dsc_cpld_if
+-- Compiling interface dma_pcie_mi_dsc_cpli_if
+-- Compiling interface dma_pcie_misc_input_if
+-- Compiling interface dma_pcie_misc_output_if
+** Error: (vlog-13069) C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/dma_pcie_misc_output_if.svh(157): syntax error in protected region.
+
+** Error: (vlog-13069) C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/dma_pcie_misc_output_if.svh(157): syntax error in protected region.
+
+** Error: (vlog-13069) C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/dma_pcie_misc_output_if.svh(157): syntax error in protected region.
+
+** Error: (vlog-13069) C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/dma_pcie_misc_output_if.svh(157): syntax error in protected region.
+
+** Error: (vlog-13069) C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/dma_pcie_misc_output_if.svh(157): syntax error in protected region.
+
+** Error: (vlog-13069) C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/dma_pcie_misc_output_if.svh(157): syntax error in protected region.
+
+** Error: (vlog-13069) C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/dma_pcie_misc_output_if.svh(157): syntax error in protected region.
+
+** Error: (vlog-13069) C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/dma_pcie_misc_output_if.svh(157): syntax error in protected region.
+
+** Error: (vlog-13069) C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/dma_pcie_misc_output_if.svh(157): syntax error in protected region.
+
+** Error: (vlog-13069) C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/dma_pcie_misc_output_if.svh(157): syntax error in protected region.
+
+** Error: (vlog-13069) C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/dma_pcie_misc_output_if.svh(157): syntax error in protected region.
+
+-- Compiling module xdma_v4_1_0_BufferMem
+-- Compiling module xdma_v4_1_0_GenericFIFO1R2W
+-- Compiling module xdma_v4_1_0_GenericFIFO
+-- Compiling module xdma_v4_1_0_GenericFIFOAsyncNoHead
+-- Compiling module xdma_v4_1_0_GenericFIFOAsync
+-- Compiling module xdma_v4_1_0_GenericFIFOHead
+-- Compiling module xdma_v4_1_0_GenericFIFOHead2
+** Error: (vlog-13069) C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): syntax error in protected region.
+
+** Error: (vlog-13069) C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): syntax error in protected region.
+
+** Error: (vlog-13069) C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): syntax error in protected region.
+
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+** Error: (vlog-13069) C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): syntax error in protected region.
+
+** Error: (vlog-13069) C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): syntax error in protected region.
+
+** Error: (vlog-13069) C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): syntax error in protected region.
+
+** Error: (vlog-13069) C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): syntax error in protected region.
+
+** Error: (vlog-13069) C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): syntax error in protected region.
+
+** Error: (vlog-13069) C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): syntax error in protected region.
+
+** Error: (vlog-13069) C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): syntax error in protected region.
+
+** Error: (vlog-13069) C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): syntax error in protected region.
+
+** Error: (vlog-13069) C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): syntax error in protected region.
+
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2600) <protected>
+** Warning: C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): (vlog-2600) <protected>
+** Error: (vlog-13069) C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl/axidma_fifo.vh(1123): syntax error in protected region.
+
+End time: 19:41:42 on Feb 20,2019, Elapsed time: 0:00:02
+Errors: 54, Warnings: 62
+
+==============================================================================
+Library 'ldpc_v2_0_0' compilation error(s)
+==============================================================================
+** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+Start time: 19:49:15 on Feb 20,2019
+vlog -64 -L fec_5g_common_v1_1_0 -L ldpc_v2_0_0 "+incdir+C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl" -sv -work ldpc_v2_0_0 -f F:\modelsim64_10.5\Xilinx_lib\64bit_vivado_lib/ldpc_v2_0_0/.cxl.systemverilog.ldpc_v2_0_0.ldpc_v2_0_0.nt64.cmf 
+** Error: (vlog-13069) F:/Xilinx/Vivado/2018.1/data/ip/xilinx/ldpc_v2_0/hdl/ldpc_v2_0_rfs.sv(64): syntax error in protected region.
+
+End time: 19:49:15 on Feb 20,2019, Elapsed time: 0:00:00
+Errors: 2, Warnings: 1
+
+==============================================================================
+Library 'polar_v1_0_0' compilation error(s)
+==============================================================================
+** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+Start time: 19:50:27 on Feb 20,2019
+vlog -64 -L fec_5g_common_v1_1_0 -L polar_v1_0_0 "+incdir+C:\Users\David\Desktop\BIKE KeyGen\KeyGen\.cxl.ip/incl" -sv -work polar_v1_0_0 -f F:\modelsim64_10.5\Xilinx_lib\64bit_vivado_lib/polar_v1_0_0/.cxl.systemverilog.polar_v1_0_0.polar_v1_0_0.nt64.cmf 
+** Error: (vlog-13069) F:/Xilinx/Vivado/2018.1/data/ip/xilinx/polar_v1_0/hdl/polar_v1_0_vl_rfs.sv(64): syntax error in protected region.
+
+End time: 19:50:27 on Feb 20,2019, Elapsed time: 0:00:00
+Errors: 2, Warnings: 1
+

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat May  4 12:16:20 2019
+# Process ID: 14108
+# Current directory: C:/Users/David/Desktop/KeyGen/KeyGen.runs/fifo_rng_synth_1
+# Command line: vivado.exe -log fifo_rng.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fifo_rng.tcl
+# Log file: C:/Users/David/Desktop/KeyGen/KeyGen.runs/fifo_rng_synth_1/fifo_rng.vds
+# Journal file: C:/Users/David/Desktop/KeyGen/KeyGen.runs/fifo_rng_synth_1\vivado.jou
+#-----------------------------------------------------------
+source fifo_rng.tcl -notrace

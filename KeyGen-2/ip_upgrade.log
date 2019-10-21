@@ -1,0 +1,205 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Sat May  4 13:23:05 2019
+| Host         : David-NTU-Desktop running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mul_64bit'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of mul_64bit (xilinx.com:ip:mult_gen:12.0 (Rev. 14)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Sat May  4 13:23:03 2019
+| Host         : David-NTU-Desktop running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mem_h'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of mem_h (xilinx.com:ip:blk_mem_gen:8.4 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Sat May  4 13:23:02 2019
+| Host         : David-NTU-Desktop running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mem_g'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of mem_g (xilinx.com:ip:blk_mem_gen:8.4 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Sat May  4 13:22:57 2019
+| Host         : David-NTU-Desktop running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fifo_rng'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of fifo_rng (xilinx.com:ip:fifo_generator:13.2 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Mon Feb 25 19:06:57 2019
+| Host         : David-NTU-Desktop running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mul_64bit'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of mul_64bit (xilinx.com:ip:mult_gen:12.0 (Rev. 14)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Fri Feb 22 10:29:23 2019
+| Host         : David-NTU-Desktop running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7v585tffg1157-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mul_64bit'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of mul_64bit (xilinx.com:ip:mult_gen:12.0 (Rev. 14)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Thu Feb 21 21:43:57 2019
+| Host         : David-NTU-Desktop running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcvu065-ffvc1517-3-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mul_64bit'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of mul_64bit (xilinx.com:ip:mult_gen:12.0 (Rev. 14)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Thu Feb 21 21:06:53 2019
+| Host         : David-NTU-Desktop running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7v585tffg1157-3
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mul_64bit'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of mul_64bit (xilinx.com:ip:mult_gen:12.0 (Rev. 14)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Thu Feb 21 20:41:05 2019
+| Host         : David-NTU-Desktop running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k70tfbg484-3
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mul_64bit'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of mul_64bit (xilinx.com:ip:mult_gen:12.0 (Rev. 14)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Thu Feb 21 17:02:00 2019
+| Host         : David-NTU-Desktop running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xa7a35tcsg324-2I
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mul_64bit'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of mul_64bit (xilinx.com:ip:mult_gen:12.0 (Rev. 14)) to Vivado generation flows.
+

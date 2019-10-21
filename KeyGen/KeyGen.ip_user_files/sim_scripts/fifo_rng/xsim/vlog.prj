@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../KeyGen.ip/fifo_rng/sim/fifo_rng.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

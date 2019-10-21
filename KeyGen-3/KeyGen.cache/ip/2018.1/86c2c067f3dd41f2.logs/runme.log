@@ -1,0 +1,868 @@
+
+*** Running vivado
+    with args -log mul_64bit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mul_64bit.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source mul_64bit.tcl -notrace
+Command: synth_design -top mul_64bit -part xc7v585tffg1157-3 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7v585t'
+WARNING: [Common 17-348] Failed to get the license for feature 'Synthesis' and/or device 'xc7v585t'. Explanation: Invalid (inconsistent) license key.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". 
+0 Infos, 1 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-345] A valid license was not found for feature 'Synthesis' and/or device 'xc7v585t'. Please run the Vivado License Manager for assistance in determining
+which features and devices are licensed for your system.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". If you are using a license server, verify that the license server is up and running a version of the xilinx daemon that is compatible with the version of Xilinx software that you are using. Please note that Vivado 2017.3 and later requires upgrading your license server tools to the Flex 11.14.1 tools. Please confirm with your license admin that the correct version of the license server tools are installed.
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 21 21:29:38 2019...
+
+*** Running vivado
+    with args -log mul_64bit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mul_64bit.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source mul_64bit.tcl -notrace
+Command: synth_design -top mul_64bit -part xc7v585tffg1157-3 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7v585t'
+WARNING: [Common 17-348] Failed to get the license for feature 'Synthesis' and/or device 'xc7v585t'. Explanation: Invalid (inconsistent) license key.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". 
+0 Infos, 1 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-345] A valid license was not found for feature 'Synthesis' and/or device 'xc7v585t'. Please run the Vivado License Manager for assistance in determining
+which features and devices are licensed for your system.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". If you are using a license server, verify that the license server is up and running a version of the xilinx daemon that is compatible with the version of Xilinx software that you are using. Please note that Vivado 2017.3 and later requires upgrading your license server tools to the Flex 11.14.1 tools. Please confirm with your license admin that the correct version of the license server tools are installed.
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 21 21:39:41 2019...
+
+*** Running vivado
+    with args -log mul_64bit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mul_64bit.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source mul_64bit.tcl -notrace
+Command: synth_design -top mul_64bit -part xcvu065-ffvc1517-3-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvu065'
+WARNING: [Common 17-348] Failed to get the license for feature 'Synthesis' and/or device 'xcvu065'. Explanation: Invalid (inconsistent) license key.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". 
+0 Infos, 1 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-345] A valid license was not found for feature 'Synthesis' and/or device 'xcvu065'. Please run the Vivado License Manager for assistance in determining
+which features and devices are licensed for your system.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". If you are using a license server, verify that the license server is up and running a version of the xilinx daemon that is compatible with the version of Xilinx software that you are using. Please note that Vivado 2017.3 and later requires upgrading your license server tools to the Flex 11.14.1 tools. Please confirm with your license admin that the correct version of the license server tools are installed.
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 21 21:45:16 2019...
+
+*** Running vivado
+    with args -log mul_64bit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mul_64bit.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source mul_64bit.tcl -notrace
+Command: synth_design -top mul_64bit -part xc7v585tffg1157-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7v585t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7v585t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9692 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 446.754 ; gain = 98.715
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mul_64bit' [c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mul_64bit/mul_64bit/synth/mul_64bit.vhd:67]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mul_64bit/mul_64bit/synth/mul_64bit.vhd:70]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mul_64bit/mul_64bit/synth/mul_64bit.vhd:70]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_A_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_TYPE bound to: 1 - type: integer 
+	Parameter C_B_WIDTH bound to: 63 - type: integer 
+	Parameter C_B_TYPE bound to: 1 - type: integer 
+	Parameter C_OUT_HIGH bound to: 126 - type: integer 
+	Parameter C_OUT_LOW bound to: 0 - type: integer 
+	Parameter C_MULT_TYPE bound to: 2 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_CCM_IMP bound to: 2 - type: integer 
+	Parameter C_B_VALUE bound to: 101100001010001111101000010110101001100100101010111111100101101 - type: string 
+	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
+	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
+	Parameter C_ROUND_PT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_14' declared at 'c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mul_64bit/mul_64bit/hdl/mult_gen_v12_0_vh_rfs.vhd:21013' bound to instance 'U0' of component 'mult_gen_v12_0_14' [c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mul_64bit/mul_64bit/synth/mul_64bit.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'mul_64bit' (7#1) [c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mul_64bit/mul_64bit/synth/mul_64bit.vhd:67]
+WARNING: [Synth 8-3331] design delay_line__parameterized6 has unconnected port CLK
+WARNING: [Synth 8-3331] design delay_line__parameterized6 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized6 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line__parameterized5 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized5 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line__parameterized2 has unconnected port CLK
+WARNING: [Synth 8-3331] design delay_line__parameterized2 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized2 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line__parameterized4 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized4 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line__parameterized3 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line__parameterized1 has unconnected port CLK
+WARNING: [Synth 8-3331] design delay_line__parameterized1 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized1 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line has unconnected port CLK
+WARNING: [Synth 8-3331] design delay_line has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line__parameterized0 has unconnected port CLK
+WARNING: [Synth 8-3331] design delay_line__parameterized0 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized0 has unconnected port SCLR
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[24]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[23]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[22]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[21]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[20]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[19]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[18]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[17]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[16]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[15]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[14]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[13]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[12]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[11]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[10]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[9]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[8]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[7]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[6]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[5]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[4]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[3]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[2]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[1]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[0]
+WARNING: [Synth 8-3331] design dsp has unconnected port CARRY_IN
+WARNING: [Synth 8-3331] design ccm has unconnected port B[62]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[61]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[60]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[59]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[58]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[57]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[56]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[55]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[54]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[53]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[52]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[51]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[50]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[49]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[48]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[47]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[46]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[45]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[44]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[43]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[42]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[41]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[40]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[39]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[38]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[37]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[36]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[35]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[34]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[33]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[32]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[31]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[30]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[29]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[28]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[27]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[26]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[25]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[24]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[23]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[22]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[21]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[20]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[19]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[18]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[17]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[16]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[15]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[14]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[13]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[12]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[11]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[10]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 534.836 ; gain = 186.797
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 534.836 ; gain = 186.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 534.836 ; gain = 186.797
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7v585tffg1157-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mul_64bit/mul_64bit/mul_64bit_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mul_64bit/mul_64bit/mul_64bit_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.runs/mul_64bit_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.runs/mul_64bit_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 986.246 ; gain = 1.500
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:50 . Memory (MB): peak = 986.246 ; gain = 638.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7v585tffg1157-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:50 . Memory (MB): peak = 986.246 ; gain = 638.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.runs/mul_64bit_synth_1/dont_touch.xdc}, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:50 . Memory (MB): peak = 986.246 ; gain = 638.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:50 . Memory (MB): peak = 986.246 ; gain = 638.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1260 (col length:180)
+BRAMs: 1590 (col length: RAMB18 180 RAMB36 90)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_mult/\gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.appDSP48[1].bppDSP48[2].use_subtract_delay.subtract_delay/d1.dout_i_reg[0] )
+INFO: [Synth 8-3332] Sequential element (gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.appDSP48[1].bppDSP48[2].use_subtract_delay.subtract_delay/d1.dout_i_reg[0]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:51 . Memory (MB): peak = 986.246 ; gain = 638.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:01:04 . Memory (MB): peak = 1087.480 ; gain = 739.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:01:04 . Memory (MB): peak = 1093.441 ; gain = 745.402
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:01:04 . Memory (MB): peak = 1103.691 ; gain = 755.652
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:01:05 . Memory (MB): peak = 1103.691 ; gain = 755.652
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:01:05 . Memory (MB): peak = 1103.691 ; gain = 755.652
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:01:05 . Memory (MB): peak = 1103.691 ; gain = 755.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:01:05 . Memory (MB): peak = 1103.691 ; gain = 755.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:01:05 . Memory (MB): peak = 1103.691 ; gain = 755.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:01:05 . Memory (MB): peak = 1103.691 ; gain = 755.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |DSP48E1    |     3|
+|2     |DSP48E1_1  |     1|
+|3     |DSP48E1_10 |     1|
+|4     |DSP48E1_11 |     1|
+|5     |DSP48E1_2  |     1|
+|6     |DSP48E1_3  |     1|
+|7     |DSP48E1_4  |     1|
+|8     |DSP48E1_5  |     2|
+|9     |DSP48E1_6  |     1|
+|10    |DSP48E1_7  |     2|
+|11    |DSP48E1_8  |     1|
+|12    |DSP48E1_9  |     1|
+|13    |SRL16E     |    51|
+|14    |FDRE       |   102|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:01:05 . Memory (MB): peak = 1103.691 ; gain = 755.652
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 65 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1103.691 ; gain = 304.242
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:01:05 . Memory (MB): peak = 1103.691 ; gain = 755.652
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+19 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:01:24 . Memory (MB): peak = 1103.691 ; gain = 767.125
+INFO: [Common 17-1381] The checkpoint 'C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.runs/mul_64bit_synth_1/mul_64bit.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mul_64bit/mul_64bit/mul_64bit.xci
+INFO: [Coretcl 2-1174] Renamed 10 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.runs/mul_64bit_synth_1/mul_64bit.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mul_64bit_utilization_synth.rpt -pb mul_64bit_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.290 . Memory (MB): peak = 1103.691 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 22 10:31:24 2019...
+
+*** Running vivado
+    with args -log mul_64bit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mul_64bit.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source mul_64bit.tcl -notrace
+Command: synth_design -top mul_64bit -part xc7v585tffg1157-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7v585t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7v585t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13340 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 447.023 ; gain = 99.063
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mul_64bit' [c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mul_64bit/mul_64bit/synth/mul_64bit.vhd:67]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mul_64bit/mul_64bit/synth/mul_64bit.vhd:70]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mul_64bit/mul_64bit/synth/mul_64bit.vhd:70]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 10 - type: integer 
+	Parameter C_A_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_TYPE bound to: 1 - type: integer 
+	Parameter C_B_WIDTH bound to: 63 - type: integer 
+	Parameter C_B_TYPE bound to: 1 - type: integer 
+	Parameter C_OUT_HIGH bound to: 126 - type: integer 
+	Parameter C_OUT_LOW bound to: 0 - type: integer 
+	Parameter C_MULT_TYPE bound to: 2 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_CCM_IMP bound to: 2 - type: integer 
+	Parameter C_B_VALUE bound to: 101100001010001111101000010110101001100100101010111111100101101 - type: string 
+	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
+	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
+	Parameter C_ROUND_PT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_14' declared at 'c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mul_64bit/mul_64bit/hdl/mult_gen_v12_0_vh_rfs.vhd:21013' bound to instance 'U0' of component 'mult_gen_v12_0_14' [c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mul_64bit/mul_64bit/synth/mul_64bit.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'mul_64bit' (7#1) [c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mul_64bit/mul_64bit/synth/mul_64bit.vhd:67]
+WARNING: [Synth 8-3331] design delay_line__parameterized17 has unconnected port CLK
+WARNING: [Synth 8-3331] design delay_line__parameterized17 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized17 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line__parameterized16 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized16 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line__parameterized11 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized11 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line__parameterized9 has unconnected port CLK
+WARNING: [Synth 8-3331] design delay_line__parameterized9 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized9 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line__parameterized15 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized15 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line__parameterized14 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized14 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line__parameterized13 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized13 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line__parameterized12 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized12 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line__parameterized10 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized10 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line__parameterized8 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized8 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line__parameterized7 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized7 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line__parameterized2 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized2 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line__parameterized6 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized6 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line__parameterized5 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized5 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line__parameterized1 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized1 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line has unconnected port CLK
+WARNING: [Synth 8-3331] design delay_line has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line__parameterized0 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized0 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line__parameterized4 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized4 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line__parameterized3 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[24]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[23]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[22]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[21]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[20]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[19]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[18]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[17]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[16]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[15]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[14]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[13]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[12]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[11]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[10]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[9]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[8]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[7]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[6]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[5]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[4]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[3]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[2]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[1]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[0]
+WARNING: [Synth 8-3331] design dsp has unconnected port CARRY_IN
+WARNING: [Synth 8-3331] design ccm has unconnected port B[62]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[61]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[60]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[59]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[58]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[57]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[56]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[55]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[54]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[53]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[52]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[51]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[50]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[49]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[48]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[47]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[46]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[45]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[44]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[43]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[42]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[41]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[40]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[39]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[38]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[37]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[36]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[35]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[34]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[33]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[32]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[31]
+WARNING: [Synth 8-3331] design ccm has unconnected port B[30]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 590.531 ; gain = 242.570
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 590.531 ; gain = 242.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 590.531 ; gain = 242.570
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7v585tffg1157-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mul_64bit/mul_64bit/mul_64bit_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mul_64bit/mul_64bit/mul_64bit_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.runs/mul_64bit_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.runs/mul_64bit_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 981.477 ; gain = 1.789
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:00:53 . Memory (MB): peak = 981.477 ; gain = 633.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7v585tffg1157-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:35 ; elapsed = 00:00:53 . Memory (MB): peak = 981.477 ; gain = 633.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.runs/mul_64bit_synth_1/dont_touch.xdc}, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:53 . Memory (MB): peak = 981.477 ; gain = 633.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:54 . Memory (MB): peak = 981.477 ; gain = 633.516
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1260 (col length:180)
+BRAMs: 1590 (col length: RAMB18 180 RAMB36 90)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.appDSP48[0].bppDSP48[1].use_subtract_delay.subtract_delay/d1.dout_i_reg[0]' (FD) to 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[0]' (FD) to 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[1]' (FD) to 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[2]' (FD) to 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[3]' (FD) to 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[4]' (FD) to 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[5]' (FD) to 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[6]' (FD) to 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[7]' (FD) to 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[8]' (FD) to 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[9]' (FD) to 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[10]' (FD) to 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[11]' (FD) to 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[12]' (FD) to 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[13]' (FD) to 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[15]' (FD) to 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[16]' (FD) to 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[17]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_mult/\gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[17] )
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.iBdelx[0].iBdely[2].need_delay_line.Bdelay/d1.dout_i_reg[17]' (FD) to 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.appDSP48[2].bppDSP48[0].use_subtract_delay.subtract_delay/d1.dout_i_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_mult/\gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.appDSP48[2].bppDSP48[0].use_subtract_delay.subtract_delay/d1.dout_i_reg[0] )
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.appDSP48[2].bppDSP48[0].use_subtract_delay.subtract_delay/d1.dout_i_reg[0]' (FD) to 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.appDSP48[0].bppDSP48[2].use_subtract_delay.subtract_delay/d1.dout_i_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_mult/\gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.appDSP48[0].bppDSP48[2].use_subtract_delay.subtract_delay/d1.dout_i_reg[0] )
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.appDSP48[1].bppDSP48[2].use_subtract_delay.subtract_delay/d1.dout_i_reg[0]' (FD) to 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.appDSP48[0].bppDSP48[2].use_subtract_delay.subtract_delay/d1.dout_i_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_mult/\gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.appDSP48[0].bppDSP48[2].use_subtract_delay.subtract_delay/d1.dout_i_reg[0] )
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.appDSP48[0].bppDSP48[2].use_subtract_delay.subtract_delay/d1.dout_i_reg[0]' (FD) to 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.appDSP48[3].bppDSP48[0].use_subtract_delay.subtract_delay/d1.dout_i_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_mult/\gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.appDSP48[3].bppDSP48[0].use_subtract_delay.subtract_delay/d1.dout_i_reg[0] )
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.appDSP48[2].bppDSP48[2].use_subtract_delay.subtract_delay/d1.dout_i_reg[0]' (FD) to 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.appDSP48[3].bppDSP48[0].use_subtract_delay.subtract_delay/d1.dout_i_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_mult/\gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.appDSP48[3].bppDSP48[0].use_subtract_delay.subtract_delay/d1.dout_i_reg[0] )
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.appDSP48[2].bppDSP48[3].use_subtract_delay.subtract_delay/d1.dout_i_reg[0]' (FD) to 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.appDSP48[3].bppDSP48[0].use_subtract_delay.subtract_delay/d1.dout_i_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_mult/\gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.appDSP48[3].bppDSP48[0].use_subtract_delay.subtract_delay/d1.dout_i_reg[0] )
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.appDSP48[3].bppDSP48[2].use_subtract_delay.subtract_delay/d1.dout_i_reg[0]' (FD) to 'U0/i_mult/gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.appDSP48[3].bppDSP48[0].use_subtract_delay.subtract_delay/d1.dout_i_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_mult/\gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.appDSP48[3].bppDSP48[0].use_subtract_delay.subtract_delay/d1.dout_i_reg[0] )
+INFO: [Synth 8-3332] Sequential element (gCCM.iCCM/emb_mult_ccm.dsp_ccm.dsp48_array/use_prim.appDSP48[3].bppDSP48[0].use_subtract_delay.subtract_delay/d1.dout_i_reg[0]) is unused and will be removed from module mult_gen_v12_0_14_viv.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:54 . Memory (MB): peak = 981.477 ; gain = 633.516
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:01:07 . Memory (MB): peak = 1068.230 ; gain = 720.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:01:07 . Memory (MB): peak = 1072.508 ; gain = 724.547
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:01:07 . Memory (MB): peak = 1083.742 ; gain = 735.781
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:01:08 . Memory (MB): peak = 1083.742 ; gain = 735.781
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:01:08 . Memory (MB): peak = 1083.742 ; gain = 735.781
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:01:08 . Memory (MB): peak = 1083.742 ; gain = 735.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:01:08 . Memory (MB): peak = 1083.742 ; gain = 735.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:01:08 . Memory (MB): peak = 1083.742 ; gain = 735.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:01:08 . Memory (MB): peak = 1083.742 ; gain = 735.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |DSP48E1    |     1|
+|2     |DSP48E1_1  |     1|
+|3     |DSP48E1_10 |     2|
+|4     |DSP48E1_2  |     2|
+|5     |DSP48E1_3  |     1|
+|6     |DSP48E1_4  |     2|
+|7     |DSP48E1_5  |     1|
+|8     |DSP48E1_6  |     1|
+|9     |DSP48E1_7  |     1|
+|10    |DSP48E1_8  |     3|
+|11    |DSP48E1_9  |     1|
+|12    |SRL16E     |   324|
+|13    |FDRE       |   376|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:01:08 . Memory (MB): peak = 1083.742 ; gain = 735.781
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 65 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:37 . Memory (MB): peak = 1083.742 ; gain = 344.836
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:01:08 . Memory (MB): peak = 1083.742 ; gain = 735.781
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+50 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:01:27 . Memory (MB): peak = 1083.742 ; gain = 747.250
+INFO: [Common 17-1381] The checkpoint 'C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.runs/mul_64bit_synth_1/mul_64bit.dcp' has been generated.

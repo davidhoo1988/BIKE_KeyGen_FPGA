@@ -1,0 +1,19 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../KeyGen.ip/fifo_rng/sim/fifo_rng.v" \
+"../../../../src/core_ctrl.v" \
+"../../../../src/g_ctrl.v" \
+"../../../../src/prng_lcg.v" \
+"../../../../src/prng_lcg_tb.v" \
+"../../../../src/h_ctrl.v" \
+"../../../../src/mul_ctrl.v" \
+"../../../../KeyGen.ip/mem_g/sim/mem_g.v" \
+"../../../../KeyGen.ip/mem_h/sim/mem_h.v" \
+"../../../../src/BIKE_2_top.v" \
+"../../../../src/BIKE_2_top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

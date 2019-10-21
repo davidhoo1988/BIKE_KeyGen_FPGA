@@ -1,0 +1,336 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sun Mar  3 20:10:02 2019
+# Process ID: 13076
+# Current directory: C:/Users/David/Desktop/BIKE KeyGen/KeyGen
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15132 C:\Users\David\Desktop\BIKE KeyGen\KeyGen\KeyGen.xpr
+# Log file: C:/Users/David/Desktop/BIKE KeyGen/KeyGen/vivado.log
+# Journal file: C:/Users/David/Desktop/BIKE KeyGen/KeyGen\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.xpr}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/src/BIKE_1_top.v} w ]
+add_files {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen/src/BIKE_1_top.v}}
+update_compile_order -fileset sources_1
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name mem_g -dir {c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.srcs/sources_1/ip}
+set_property -dict [list CONFIG.Component_Name {mem_g} CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {64} CONFIG.Write_Depth_A {159} CONFIG.Read_Width_A {64} CONFIG.Write_Width_B {64} CONFIG.Read_Width_B {64} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Fill_Remaining_Memory_Locations {true} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {50} CONFIG.Port_B_Enable_Rate {100}] [get_ips mem_g]
+generate_target {instantiation_template} [get_files {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.srcs/sources_1/ip/mem_g/mem_g.xci}}]
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.srcs/sources_1/ip/mem_g/mem_g.xci}}] -no_script -reset -force -quiet
+remove_files  {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.srcs/sources_1/ip/mem_g/mem_g.xci}}
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_0 -dir {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mem_g}
+set_property -dict [list CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {64} CONFIG.Write_Depth_A {159} CONFIG.Read_Width_A {64} CONFIG.Write_Width_B {64} CONFIG.Read_Width_B {64} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Fill_Remaining_Memory_Locations {true} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {50} CONFIG.Port_B_Enable_Rate {100}] [get_ips blk_mem_gen_0]
+generate_target {instantiation_template} [get_files {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mem_g/blk_mem_gen_0/blk_mem_gen_0.xci}}]
+generate_target all [get_files  {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mem_g/blk_mem_gen_0/blk_mem_gen_0.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+export_ip_user_files -of_objects [get_files {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mem_g/blk_mem_gen_0/blk_mem_gen_0.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mem_g/blk_mem_gen_0/blk_mem_gen_0.xci}}]
+launch_runs -jobs 4 blk_mem_gen_0_synth_1
+export_simulation -of_objects [get_files {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mem_g/blk_mem_gen_0/blk_mem_gen_0.xci}}] -directory {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip_user_files} -ipstatic_source_dir {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip_user_files/ipstatic} -lib_map_path [list {modelsim=F:/modelsim64_10.5/Xilinx_lib/64bit_vivado_lib} {questa=C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.cache/compile_simlib/questa} {riviera=C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.cache/compile_simlib/riviera} {activehdl=C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mem_g/blk_mem_gen_0/blk_mem_gen_0.xci}}] -no_script -reset -force -quiet
+remove_files  -fileset blk_mem_gen_0 {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mem_g/blk_mem_gen_0/blk_mem_gen_0.xci}}
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name mem_g -dir {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mem_g}
+set_property -dict [list CONFIG.Component_Name {mem_g} CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {64} CONFIG.Write_Depth_A {159} CONFIG.Read_Width_A {64} CONFIG.Write_Width_B {64} CONFIG.Read_Width_B {64} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Fill_Remaining_Memory_Locations {true} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {50} CONFIG.Port_B_Enable_Rate {100}] [get_ips mem_g]
+generate_target {instantiation_template} [get_files {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mem_g/mem_g/mem_g.xci}}]
+generate_target all [get_files  {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mem_g/mem_g/mem_g.xci}}]
+catch { config_ip_cache -export [get_ips -all mem_g] }
+export_ip_user_files -of_objects [get_files {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mem_g/mem_g/mem_g.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mem_g/mem_g/mem_g.xci}}]
+export_simulation -of_objects [get_files {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mem_g/mem_g/mem_g.xci}}] -directory {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip_user_files} -ipstatic_source_dir {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip_user_files/ipstatic} -lib_map_path [list {modelsim=F:/modelsim64_10.5/Xilinx_lib/64bit_vivado_lib} {questa=C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.cache/compile_simlib/questa} {riviera=C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.cache/compile_simlib/riviera} {activehdl=C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mem_g/mem_g/mem_g.xci}}] -no_script -reset -force -quiet
+remove_files  {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mem_g/mem_g/mem_g.xci}}
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name mem_g -dir {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip}
+set_property -dict [list CONFIG.Component_Name {mem_g} CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Write_Width_A {64} CONFIG.Write_Depth_A {159} CONFIG.Read_Width_A {64} CONFIG.Write_Width_B {64} CONFIG.Read_Width_B {64} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Fill_Remaining_Memory_Locations {true} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {50} CONFIG.Port_B_Enable_Rate {100}] [get_ips mem_g]
+generate_target {instantiation_template} [get_files {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mem_g/mem_g.xci}}]
+generate_target all [get_files  {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mem_g/mem_g.xci}}]
+catch { config_ip_cache -export [get_ips -all mem_g] }
+export_ip_user_files -of_objects [get_files {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mem_g/mem_g.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mem_g/mem_g.xci}}]
+launch_runs -jobs 4 mem_g_synth_1
+export_simulation -of_objects [get_files {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mem_g/mem_g.xci}}] -directory {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip_user_files} -ipstatic_source_dir {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip_user_files/ipstatic} -lib_map_path [list {modelsim=F:/modelsim64_10.5/Xilinx_lib/64bit_vivado_lib} {questa=C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.cache/compile_simlib/questa} {riviera=C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.cache/compile_simlib/riviera} {activehdl=C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name fifo_generator -vendor xilinx.com -library ip -version 13.2 -module_name fifo_rng -dir {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip}
+set_property -dict [list CONFIG.Component_Name {fifo_rng} CONFIG.Input_Data_Width {64} CONFIG.Input_Depth {16} CONFIG.Output_Data_Width {64} CONFIG.Output_Depth {16} CONFIG.Almost_Full_Flag {false} CONFIG.Data_Count {true} CONFIG.Data_Count_Width {4} CONFIG.Write_Data_Count_Width {4} CONFIG.Read_Data_Count_Width {4} CONFIG.Full_Threshold_Assert_Value {14} CONFIG.Full_Threshold_Negate_Value {13}] [get_ips fifo_rng]
+generate_target {instantiation_template} [get_files {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/fifo_rng/fifo_rng.xci}}]
+generate_target all [get_files  {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/fifo_rng/fifo_rng.xci}}]
+catch { config_ip_cache -export [get_ips -all fifo_rng] }
+export_ip_user_files -of_objects [get_files {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/fifo_rng/fifo_rng.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/fifo_rng/fifo_rng.xci}}]
+launch_runs -jobs 4 fifo_rng_synth_1
+export_simulation -of_objects [get_files {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/fifo_rng/fifo_rng.xci}}] -directory {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip_user_files} -ipstatic_source_dir {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip_user_files/ipstatic} -lib_map_path [list {modelsim=F:/modelsim64_10.5/Xilinx_lib/64bit_vivado_lib} {questa=C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.cache/compile_simlib/questa} {riviera=C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.cache/compile_simlib/riviera} {activehdl=C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close [ open {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/src/core_ctrl.v} w ]
+add_files {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen/src/core_ctrl.v}}
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top BIKE_1_top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen/src/g_ctrl.v}}
+update_compile_order -fileset sources_1
+reset_run synth_6
+launch_runs synth_6 -jobs 4
+wait_on_run synth_6
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_6
+launch_runs synth_6 -jobs 4
+wait_on_run synth_6
+update_compile_order -fileset sources_1
+set_property source_mgmt_mode DisplayOnly [current_project]
+reset_run synth_6
+launch_runs synth_6 -jobs 4
+wait_on_run synth_6
+reset_run synth_6
+launch_runs synth_6 -jobs 4
+wait_on_run synth_6
+reset_run synth_6
+launch_runs synth_6 -jobs 4
+wait_on_run synth_6
+report_methodology -name ultrafast_methodology_1 -checks {XDCH-2 XDCH-1 XDCC-8 XDCC-7 XDCC-6 XDCC-5 XDCC-4 XDCC-3 XDCC-2 XDCC-1 XDCB-5 XDCB-4 XDCB-3 XDCB-2 XDCB-1 CLKC-54 CLKC-53 CLKC-9 CLKC-5 CLKC-38 CLKC-37 CLKC-36 CLKC-35 CLKC-4 CLKC-18 CLKC-3 CLKC-2 CLKC-1 HPDR-1 RRRS-1 RROR-1 ROAS-1 RMOR-1 RMIR-1 RFTL-1 RFRC-1 RFRA-1 RFFI-1 RFFH-1 RFCF-1 RCCL-1 RCBG-1 RAMP-1 RAMF-1 RAMD-1 RAKN-1}
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+reset_run synth_6
+launch_runs synth_6 -jobs 4
+wait_on_run synth_6
+reset_run synth_6
+launch_runs synth_6 -jobs 4
+wait_on_run synth_6
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/src/BIKE_1_top_tb.v} w ]
+add_files -fileset sim_1 {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen/src/BIKE_1_top_tb.v}}
+close_design
+set_property top BIKE_1_top_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+set_property -name {modelsim.simulate.runtime} -value {} -objects [get_filesets sim_1]
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+report_methodology -name ultrafast_methodology_1 -checks {XDCH-2 XDCH-1 XDCC-8 XDCC-7 XDCC-6 XDCC-5 XDCC-4 XDCC-3 XDCC-2 XDCC-1 XDCB-5 XDCB-4 XDCB-3 XDCB-2 XDCB-1 CLKC-54 CLKC-53 CLKC-9 CLKC-5 CLKC-38 CLKC-37 CLKC-36 CLKC-35 CLKC-4 CLKC-18 CLKC-3 CLKC-2 CLKC-1 HPDR-1 RRRS-1 RROR-1 ROAS-1 RMOR-1 RMIR-1 RFTL-1 RFRC-1 RFRA-1 RFFI-1 RFFH-1 RFCF-1 RCCL-1 RCBG-1 RAMP-1 RAMF-1 RAMD-1 RAKN-1}
+refresh_design
+launch_simulation -install_path F:/modelsim64_10.5/win64
+reset_run synth_6
+launch_runs synth_6 -jobs 4
+wait_on_run synth_6
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+refresh_design
+refresh_design
+reset_run synth_6
+launch_runs synth_6 -jobs 4
+wait_on_run synth_6
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+refresh_design
+reset_run synth_6
+launch_runs synth_6 -jobs 4
+wait_on_run synth_6
+refresh_design
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+refresh_design
+refresh_design
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+refresh_design
+refresh_design
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+reset_run synth_6
+launch_runs synth_6 -jobs 4
+wait_on_run synth_6
+open_run synth_6 -name synth_6
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+set_property -dict [list CONFIG.Fifo_Implementation {Common_Clock_Shift_Register}] [get_ips fifo_rng]
+generate_target all [get_files  {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/fifo_rng/fifo_rng.xci}}]
+catch { config_ip_cache -export [get_ips -all fifo_rng] }
+export_ip_user_files -of_objects [get_files {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/fifo_rng/fifo_rng.xci}}] -no_script -sync -force -quiet
+reset_run fifo_rng_synth_1
+launch_runs -jobs 4 fifo_rng_synth_1
+export_simulation -of_objects [get_files {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/fifo_rng/fifo_rng.xci}}] -directory {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip_user_files} -ipstatic_source_dir {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip_user_files/ipstatic} -lib_map_path [list {modelsim=F:/modelsim64_10.5/Xilinx_lib/64bit_vivado_lib} {questa=C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.cache/compile_simlib/questa} {riviera=C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.cache/compile_simlib/riviera} {activehdl=C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_6
+launch_runs synth_6 -jobs 4
+wait_on_run synth_6
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+refresh_design
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_utilization -name utilization_1
+reset_run synth_6
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+current_design rtl_1
+refresh_design
+launch_simulation -install_path F:/modelsim64_10.5/win64
+reset_run synth_6
+launch_runs synth_6 -jobs 4
+wait_on_run synth_6
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+current_design impl_1
+report_utilization -name utilization_1
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name mem_h -dir {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip}
+set_property -dict [list CONFIG.Component_Name {mem_h} CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Write_Width_A {14} CONFIG.Write_Depth_A {71} CONFIG.Read_Width_A {14} CONFIG.Write_Width_B {14} CONFIG.Read_Width_B {14} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Fill_Remaining_Memory_Locations {true} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {50} CONFIG.Port_B_Enable_Rate {100}] [get_ips mem_h]
+generate_target {instantiation_template} [get_files {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mem_h/mem_h.xci}}]
+generate_target all [get_files  {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mem_h/mem_h.xci}}]
+catch { config_ip_cache -export [get_ips -all mem_h] }
+export_ip_user_files -of_objects [get_files {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mem_h/mem_h.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mem_h/mem_h.xci}}]
+launch_runs -jobs 4 mem_h_synth_1
+export_simulation -of_objects [get_files {{c:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip/mem_h/mem_h.xci}}] -directory {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip_user_files} -ipstatic_source_dir {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.ip_user_files/ipstatic} -lib_map_path [list {modelsim=F:/modelsim64_10.5/Xilinx_lib/64bit_vivado_lib} {questa=C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.cache/compile_simlib/questa} {riviera=C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.cache/compile_simlib/riviera} {activehdl=C:/Users/David/Desktop/BIKE KeyGen/KeyGen/KeyGen.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+current_design rtl_1
+refresh_design
+close [ open {C:/Users/David/Desktop/BIKE KeyGen/KeyGen/src/h_ctrl.v} w ]
+add_files {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen/src/h_ctrl.v}}
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+launch_simulation -install_path F:/modelsim64_10.5/win64
+refresh_design
+launch_simulation -install_path F:/modelsim64_10.5/win64
+refresh_design
+refresh_design
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+refresh_design
+launch_simulation -install_path F:/modelsim64_10.5/win64
+refresh_design
+refresh_design
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+reset_run synth_6
+launch_runs synth_6 -jobs 4
+wait_on_run synth_6
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+current_design impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_utilization -name utilization_2
+refresh_design
+create_run impl_2 -parent_run synth_6 -flow {Vivado Implementation 2018} -strategy {Vivado Implementation Defaults} -report_strategy {Vivado Implementation Default Reports}
+current_run [get_runs impl_2]
+set_property strategy Performance_Explore [get_runs impl_2]
+launch_runs impl_2 -jobs 4
+wait_on_run impl_2
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+delete_runs "impl_1"
+open_run impl_2
+report_utilization -name utilization_1
+reset_run synth_6
+reset_run impl_2
+launch_runs impl_2 -jobs 4
+wait_on_run impl_2
+refresh_design
+reset_run synth_6
+launch_runs impl_2 -jobs 4
+wait_on_run impl_2
+close_design
+refresh_design
+open_run impl_2
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+reset_run synth_6
+launch_runs impl_2 -jobs 4
+wait_on_run impl_2
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+refresh_design
+save_constraints
+reset_run synth_6
+reset_run impl_2
+launch_runs impl_2 -jobs 4
+wait_on_run impl_2
+refresh_design
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+current_design rtl_1
+refresh_design
+refresh_design
+current_design impl_2
+current_design rtl_1
+refresh_design
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+refresh_design
+launch_simulation -install_path F:/modelsim64_10.5/win64
+reset_run synth_6
+launch_runs impl_2 -jobs 4
+wait_on_run impl_2
+current_design impl_2
+refresh_design
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+save_constraints
+reset_run synth_6
+reset_run impl_2
+launch_runs impl_2 -jobs 4
+wait_on_run impl_2
+refresh_design
+show_objects -name WARNING [get_cells -hierarchical -filter { PRIMITIVE_TYPE =~ BMEM.*.* } ]
+report_utilization -name utilization_1
+current_design rtl_1
+refresh_design
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+launch_simulation -install_path F:/modelsim64_10.5/win64
+launch_simulation -install_path F:/modelsim64_10.5/win64
+refresh_design
+refresh_design
+launch_simulation -install_path F:/modelsim64_10.5/win64
+reset_run synth_6
+launch_runs impl_2 -jobs 4
+wait_on_run impl_2
+current_design impl_2
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_utilization -name utilization_2
+refresh_design
+save_constraints
+reset_run synth_6
+reset_run impl_2
+launch_runs impl_2 -jobs 4
+wait_on_run impl_2
+refresh_design

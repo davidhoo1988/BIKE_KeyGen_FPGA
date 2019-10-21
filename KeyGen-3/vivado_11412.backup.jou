@@ -1,0 +1,101 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon Apr  1 18:55:00 2019
+# Process ID: 11412
+# Current directory: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent36600 C:\Users\David\Desktop\BIKE KeyGen\KeyGen-2\KeyGen.xpr
+# Log file: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/vivado.log
+# Journal file: C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.xpr}
+set_property -dict [list CONFIG.Write_Depth_A {173}] [get_ips mem_g]
+generate_target all [get_files  {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mem_g/mem_g.xci}}]
+catch { config_ip_cache -export [get_ips -all mem_g] }
+export_ip_user_files -of_objects [get_files {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mem_g/mem_g.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mem_g/mem_g.xci}}]
+launch_runs -jobs 4 mem_g_synth_1
+export_simulation -of_objects [get_files {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mem_g/mem_g.xci}}] -directory {C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip_user_files} -ipstatic_source_dir {C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip_user_files/ipstatic} -lib_map_path [list {modelsim=F:/modelsim64_10.5/Xilinx_lib/64bit_vivado_lib} {questa=C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.cache/compile_simlib/questa} {riviera=C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.cache/compile_simlib/riviera} {activehdl=C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Write_Depth_A {67}] [get_ips mem_h]
+generate_target all [get_files  {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mem_h/mem_h.xci}}]
+catch { config_ip_cache -export [get_ips -all mem_h] }
+export_ip_user_files -of_objects [get_files {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mem_h/mem_h.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mem_h/mem_h.xci}}]
+launch_runs -jobs 4 mem_h_synth_1
+export_simulation -of_objects [get_files {{C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip/mem_h/mem_h.xci}}] -directory {C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip_user_files} -ipstatic_source_dir {C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.ip_user_files/ipstatic} -lib_map_path [list {modelsim=F:/modelsim64_10.5/Xilinx_lib/64bit_vivado_lib} {questa=C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.cache/compile_simlib/questa} {riviera=C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.cache/compile_simlib/riviera} {activehdl=C:/Users/David/Desktop/BIKE KeyGen/KeyGen-2/KeyGen.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_6
+launch_runs impl_2 -jobs 4
+wait_on_run impl_2
+open_run impl_2
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+set_property part xc7v585tffg1157-3 [current_project]
+report_ip_status -name ip_status 
+upgrade_ip -srcset fifo_rng [get_ips  {fifo_rng mem_g mem_h mul_64bit}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {fifo_rng mem_g mem_h mul_64bit}] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_6
+launch_runs impl_2 -jobs 4
+wait_on_run impl_2
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+save_constraints -force
+reset_run impl_2
+save_constraints -force
+reset_run synth_6
+launch_runs synth_6 -jobs 4
+wait_on_run synth_6
+launch_runs impl_2 -jobs 4
+wait_on_run impl_2
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_3
+report_utilization -name utilization_1
+close_design; open_run impl_2
+save_constraints
+reset_run synth_6
+reset_run impl_2
+launch_runs impl_2 -jobs 4
+wait_on_run impl_2
+refresh_design
+report_utilization -name utilization_1
+set_property part xc7s50csga324-2 [current_project]
+reset_run mem_g_synth_1
+reset_run mul_64bit_synth_1
+reset_run mem_h_synth_1
+reset_run fifo_rng_synth_1
+save_constraints -force
+reset_run synth_6
+launch_runs synth_6 -jobs 4
+wait_on_run synth_6
+report_ip_status -name ip_status 
+upgrade_ip -srcset fifo_rng [get_ips  {fifo_rng mem_g mem_h mul_64bit}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {fifo_rng mem_g mem_h mul_64bit}] -no_script -sync -force -quiet
+close_design
+reset_run synth_6
+launch_runs synth_6 -jobs 4
+wait_on_run synth_6
+launch_runs impl_2 -jobs 4
+wait_on_run impl_2
+open_run impl_2
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+save_constraints
+reset_run synth_6
+reset_run impl_2
+launch_runs impl_2 -jobs 4
+wait_on_run impl_2
+refresh_design
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+save_constraints
+reset_run synth_6
+reset_run impl_2
+launch_runs impl_2 -jobs 4
+wait_on_run impl_2
+refresh_design
+save_constraints
+reset_run synth_6
+reset_run impl_2
+launch_runs impl_2 -jobs 4
+wait_on_run impl_2
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+refresh_design
+report_utilization -name utilization_1

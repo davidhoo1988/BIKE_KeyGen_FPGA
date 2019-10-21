@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="mem_g_synth_1" LaunchDir="C:/Users/David/Desktop/KeyGen/KeyGen.runs/mem_g_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mem_h_synth_1" LaunchDir="C:/Users/David/Desktop/KeyGen/KeyGen.runs/mem_h_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mul_64bit_synth_1" LaunchDir="C:/Users/David/Desktop/KeyGen/KeyGen.runs/mul_64bit_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_rng_synth_1" LaunchDir="C:/Users/David/Desktop/KeyGen/KeyGen.runs/fifo_rng_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_8" LaunchDir="C:/Users/David/Desktop/KeyGen/KeyGen.runs/synth_8" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="mem_g_synth_1"/>
+		<Parent Id="mem_h_synth_1"/>
+		<Parent Id="mul_64bit_synth_1"/>
+		<Parent Id="fifo_rng_synth_1"/>
+	</Run>
+</Runs>
+

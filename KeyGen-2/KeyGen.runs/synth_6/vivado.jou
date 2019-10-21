@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat May  4 13:53:50 2019
+# Process ID: 9948
+# Current directory: C:/Users/David/Desktop/KeyGen-2/KeyGen.runs/synth_6
+# Command line: vivado.exe -log BIKE_2_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BIKE_2_top.tcl
+# Log file: C:/Users/David/Desktop/KeyGen-2/KeyGen.runs/synth_6/BIKE_2_top.vds
+# Journal file: C:/Users/David/Desktop/KeyGen-2/KeyGen.runs/synth_6\vivado.jou
+#-----------------------------------------------------------
+source BIKE_2_top.tcl -notrace

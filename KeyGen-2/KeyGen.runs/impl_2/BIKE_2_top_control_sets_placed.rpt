@@ -1,0 +1,129 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Sat May  4 13:58:37 2019
+| Host         : David-NTU-Desktop running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file BIKE_2_top_control_sets_placed.rpt
+| Design       : BIKE_2_top
+| Device       : xc7a75t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    56 |
+| Unused register locations in slices containing registers |   126 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            4 |
+|      5 |            2 |
+|      6 |            5 |
+|      7 |            2 |
+|      8 |            7 |
+|      9 |            1 |
+|     12 |            2 |
+|     13 |            5 |
+|     14 |            3 |
+|    16+ |           25 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             160 |           74 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             836 |          269 |
+| Yes          | No                    | No                     |             744 |          278 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             358 |          116 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------------------------------------------------------------------+-------------------------------------------+------------------+----------------+
+|  Clock Signal  |                                      Enable Signal                                     |              Set/Reset Signal             | Slice Load Count | Bel Load Count |
++----------------+----------------------------------------------------------------------------------------+-------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | inv_ctrl/mul/cnt_reg[1]_0                                                              | inv_ctrl/cnt[4]_i_1__4_n_0                |                3 |              4 |
+|  clk_IBUF_BUFG |                                                                                        | h0_ctrl/cnt[5]_i_1_n_0                    |                1 |              4 |
+|  clk_IBUF_BUFG |                                                                                        | h1_ctrl/cnt[5]_i_1__0_n_0                 |                1 |              4 |
+|  clk_IBUF_BUFG | mul_ctrl/offset_reg2[5]_i_2_n_0                                                        | mul_ctrl/offset_reg2[5]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG | mul_ctrl/f_addra[4]_i_2_n_0                                                            | mul_ctrl/f_addra[4]_i_1__0_n_0            |                2 |              5 |
+|  clk_IBUF_BUFG |                                                                                        | spa2dsn/cnt[5]_i_1__2_n_0                 |                3 |              5 |
+|  clk_IBUF_BUFG | inv_ctrl/exp/offset_reg[5]_i_2_n_0                                                     | inv_ctrl/exp/offset_reg[5]_i_1_n_0        |                1 |              6 |
+|  clk_IBUF_BUFG | inv_ctrl/mul/cnt[5]_i_1__1_n_0                                                         | inv_ctrl/mul/cnt[7]_i_1_n_0               |                4 |              6 |
+|  clk_IBUF_BUFG | spa2dsn/h_spa_addra[6]_i_2_n_0                                                         | spa2dsn/h_spa_addra[6]_i_1_n_0            |                2 |              6 |
+|  clk_IBUF_BUFG | mul_ctrl/h_addra[6]_i_1__1_n_0                                                         |                                           |                2 |              6 |
+|  clk_IBUF_BUFG | mul_ctrl/offset_reg[5]_i_1__0_n_0                                                      |                                           |                4 |              6 |
+|  clk_IBUF_BUFG | h0_ctrl/entry_num[6]_i_1_n_0                                                           |                                           |                3 |              7 |
+|  clk_IBUF_BUFG | h1_ctrl/entry_num[6]_i_1__0_n_0                                                        |                                           |                3 |              7 |
+|  clk_IBUF_BUFG | spa2dsn/h_dsn_addra[7]_i_2_n_0                                                         | spa2dsn/h_dsn_addra[7]_i_1_n_0            |                3 |              8 |
+|  clk_IBUF_BUFG | inv_ctrl/exp/re_addra[7]_i_2__0_n_0                                                    | inv_ctrl/exp/re_addra[7]_i_1__1_n_0       |                5 |              8 |
+|  clk_IBUF_BUFG |                                                                                        | inv_ctrl/op1_addrb[7]_i_1__0_n_0          |                4 |              8 |
+|  clk_IBUF_BUFG |                                                                                        | inv_ctrl/h0_addra[7]_i_1_n_0              |                3 |              8 |
+|  clk_IBUF_BUFG | inv_ctrl/exp/op0_addra[7]_i_1__1_n_0                                                   | inv_ctrl/exp/FSM_onehot_state_reg_n_0_[0] |                3 |              8 |
+|  clk_IBUF_BUFG | inv_ctrl/exp/cnt[4]_i_1__3_n_0                                                         |                                           |                6 |              8 |
+|  clk_IBUF_BUFG | inv_ctrl/op1_addra[7]_i_1__0_n_0                                                       |                                           |                4 |              8 |
+|  clk_IBUF_BUFG | mul_ctrl/cnt[3]_i_1__4_n_0                                                             |                                           |                8 |              9 |
+|  clk_IBUF_BUFG | h0_rng/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl1.lsshft/wsts/E[0]     |                                           |                5 |             12 |
+|  clk_IBUF_BUFG | h1_rng/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl1.lsshft/wsts/E[0]     |                                           |                3 |             12 |
+|  clk_IBUF_BUFG | inv_ctrl/mul/idx[13]_i_2_n_0                                                           | inv_ctrl/mul/idx[13]_i_1_n_0              |                6 |             13 |
+|  clk_IBUF_BUFG | inv_ctrl/mul/data[76]_i_1_n_0                                                          |                                           |                5 |             13 |
+|  clk_IBUF_BUFG | inv_ctrl/exp/cnt[4]_i_1__3_n_0                                                         | inv_ctrl/exp/op0_douta[12]_i_1_n_0        |                6 |             13 |
+|  clk_IBUF_BUFG | mul_ctrl/cnt[3]_i_1__4_n_0                                                             | mul_ctrl/f_douta[12]_i_1_n_0              |                4 |             13 |
+|  clk_IBUF_BUFG | mul_ctrl/rotate[12]_i_1__1_n_0                                                         |                                           |                6 |             13 |
+|  clk_IBUF_BUFG |                                                                                        | h0_ctrl/h_doutb[13]_i_1_n_0               |                3 |             14 |
+|  clk_IBUF_BUFG | inv_ctrl/exp/idx[13]_i_2__0_n_0                                                        | inv_ctrl/exp/idx[13]_i_1__0_n_0           |                6 |             14 |
+|  clk_IBUF_BUFG |                                                                                        | h1_ctrl/h_doutb[13]_i_1__0_n_0            |                3 |             14 |
+|  clk_IBUF_BUFG |                                                                                        | h0_ctrl/h_douta[13]_i_1_n_0               |                4 |             16 |
+|  clk_IBUF_BUFG | inv_ctrl/mul/op1_addra[7]_i_1_n_0                                                      |                                           |                9 |             16 |
+|  clk_IBUF_BUFG | mul_ctrl/g_addra[7]_i_1_n_0                                                            |                                           |                6 |             16 |
+|  clk_IBUF_BUFG |                                                                                        | h1_ctrl/h_douta[13]_i_1__0_n_0            |                5 |             16 |
+|  clk_IBUF_BUFG | mul_ctrl/cnt[3]_i_1__4_n_0                                                             | mul_ctrl/f_douta[63]_i_1_n_0              |                6 |             23 |
+|  clk_IBUF_BUFG | h0_rng/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl1.lsshft/wsts/p_10_out |                                           |                4 |             28 |
+|  clk_IBUF_BUFG | h0_rng/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl1.lsshft/rsts/E[0]     |                                           |                4 |             28 |
+|  clk_IBUF_BUFG | h1_rng/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl1.lsshft/rsts/E[0]     |                                           |                4 |             28 |
+|  clk_IBUF_BUFG | h1_rng/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl1.lsshft/wsts/p_10_out |                                           |                4 |             28 |
+|  clk_IBUF_BUFG | inv_ctrl/mul/data[146]_i_1_n_0                                                         | inv_ctrl/mul/data[190]_i_1_n_0            |               10 |             44 |
+|  clk_IBUF_BUFG | inv_ctrl/mul/data[63]_i_1_n_0                                                          |                                           |               17 |             51 |
+|  clk_IBUF_BUFG | inv_ctrl/exp/cnt[4]_i_1__3_n_0                                                         | inv_ctrl/exp/op0_douta[63]_i_1__0_n_0     |               12 |             51 |
+|  clk_IBUF_BUFG | inv_ctrl/mul/op_a[63]_i_2_n_0                                                          | inv_ctrl/mul/op_a[63]_i_1_n_0             |               27 |             64 |
+|  clk_IBUF_BUFG |                                                                                        | spa2dsn/h_dsn_douta[63]_i_1_n_0           |               25 |             64 |
+|  clk_IBUF_BUFG | inv_ctrl/exp/rotate[63]_i_1__0_n_0                                                     |                                           |               39 |             64 |
+|  clk_IBUF_BUFG | spa2dsn/rotate                                                                         |                                           |               36 |             64 |
+|  clk_IBUF_BUFG |                                                                                        | inv_ctrl/op0_douta[63]_i_1_n_0            |               21 |             65 |
+|  clk_IBUF_BUFG | inv_ctrl/exp/full[5]_i_2_n_0                                                           | inv_ctrl/exp/full[5]_i_1_n_0              |               14 |             68 |
+|  clk_IBUF_BUFG | inv_ctrl/mul/data[146]_i_1_n_0                                                         |                                           |               16 |             70 |
+|  clk_IBUF_BUFG |                                                                                        | inv_ctrl/re_addrb[7]_i_1__0_n_0           |               18 |             73 |
+|  clk_IBUF_BUFG | mul_ctrl/rotate[127]_i_1_n_0                                                           |                                           |               39 |             87 |
+|  clk_IBUF_BUFG | inv_ctrl/mul/cnt[5]_i_1__1_n_0                                                         |                                           |               32 |             92 |
+|  clk_IBUF_BUFG | inv_ctrl/mul/op_b[126]_i_1_n_0                                                         |                                           |               27 |            127 |
+|  clk_IBUF_BUFG |                                                                                        |                                           |               74 |            160 |
+|  clk_IBUF_BUFG |                                                                                        | inv_ctrl/mul/blk_mul/SR[0]                |              178 |            545 |
++----------------+----------------------------------------------------------------------------------------+-------------------------------------------+------------------+----------------+
+
+
